@@ -1,0 +1,1245 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jan 23 23:44:37 2022
+# Process ID: 38400
+# Current directory: D:/vivado_prj/base/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36356 D:\vivado_prj\base\project_1\project_1.xpr
+# Log file: D:/vivado_prj/base/project_1/vivado.log
+# Journal file: D:/vivado_prj/base/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_prj/base/project_1/project_1.xpr
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_101/base_s00_regslice_101.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_101/base_m00_regslice_101.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_101/base_m01_regslice_101.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_101/base_m02_regslice_101.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_101/base_m03_regslice_101.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_97/base_m04_regslice_97.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_54/base_m05_regslice_54.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_54/base_m06_regslice_54.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_52/base_m07_regslice_52.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_0/base_m08_regslice_0.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_0/base_m09_regslice_0.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_100/base_s00_regslice_100.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_9/base_auto_pc_9.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_100/base_m00_regslice_100.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_100/base_m01_regslice_100.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_100/base_m02_regslice_100.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_100/base_m03_regslice_100.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_96/base_m04_regslice_96.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_53/base_m05_regslice_53.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_6/base_auto_pc_6.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_53/base_m06_regslice_53.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_7/base_auto_pc_7.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_51/base_m07_regslice_51.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_8/base_auto_pc_8.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_3/base_auto_us_3.xci' referenced by design 'base' could not be found.
+WARNING: [BD 41-2576] File 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_10/base_auto_pc_10.xci' referenced by design 'base' could not be found.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:resize_accel:1.0'. The one found in IP location 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/hls_example/sol1/impl/ip' will take precedence over the same IP in location d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/resize_example/sol1/impl/ip
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1190.277 ; gain = 44.117
+update_compile_order -fileset sources_1
+open_bd_design {D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd}
+Reading block design file <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - ps7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk1
+Adding component instance block -- xilinx.com:hls:color_convert:1.0 - color_convert
+Adding component instance block -- xilinx.com:user:color_swap:1.1 - color_swap_0
+Adding component instance block -- digilentinc.com:ip:dvi2rgb:1.7 - dvi2rgb_0
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_hdmiin
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - vtc_in
+Adding component instance block -- xilinx.com:hls:pixel_pack:1.0 - pixel_pack
+Adding component instance block -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+Adding component instance block -- xilinx.com:hls:color_convert:1.0 - color_convert
+Adding component instance block -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk
+Adding component instance block -- xilinx.com:user:color_swap:1.1 - color_swap_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.2 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - hdmi_out_hpd_video
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - vtc_out
+Adding component instance block -- xilinx.com:hls:pixel_unpack:1.0 - pixel_unpack
+Adding component instance block -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_pixelclk
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_s00_regslice_101 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_auto_pc_0 
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m00_regslice_101 
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m01_regslice_101 
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_auto_cc_0 
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m02_regslice_101 
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_auto_cc_1 
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m03_regslice_101 
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m04_regslice_97 
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m05_regslice_54 
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m06_regslice_54 
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_auto_cc_2 
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m07_regslice_52 
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_auto_cc_3 
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m08_regslice_0 
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m09_regslice_0 
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_auto_us_0 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_auto_pc_1 
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - btns_gpio
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_10MHz
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concat_interrupts
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - leds_gpio
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_s00_regslice_100 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_auto_pc_9 
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m00_regslice_100 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m01_regslice_100 
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m02_regslice_100 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m03_regslice_100 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m04_regslice_96 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m05_regslice_53 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m06_regslice_53 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_m07_regslice_51 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - switches_gpio
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - system_interrupts
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /gesture/axi_dma_0/M_AXIS_MM2S. Setting parameter on /gesture/axi_dma_0/M_AXIS_MM2S failed
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_1
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /gesture/axi_dma_1/M_AXIS_MM2S. Setting parameter on /gesture/axi_dma_1/M_AXIS_MM2S failed
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - gesture_top_0_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_auto_us_1 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_auto_us_2 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_auto_us_3 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: base_auto_pc_10 
+Adding component instance block -- xilinx.com:user:cnn_top:1.0 - cnn_top_0
+Successfully read diagram <base> from block design file <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd>
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1624.309 ; gain = 312.715
+launch_runs synth_1 -jobs 20
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (15) does not match property SENSITIVITY (12 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_10MHz clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_10MHz clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/RefClk have been updated from connected ip, but BD cell '/video/hdmi_in/frontend/dvi2rgb_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </video/hdmi_in/frontend/dvi2rgb_0> to completely resolve these warnings.
+Wrote  : <D:\vivado_prj\base\project_1\project_1.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/video/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/video/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gesture/axi_interconnect_0/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/gesture/axi_interconnect_0/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gesture/axi_interconnect_0/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/gesture/axi_interconnect_0/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_WID'(6) to pin: '/gesture/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_ARID'(6) to pin: '/gesture/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_AWID'(6) to pin: '/gesture/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to pin: '/video/M_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to pin: '/video/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to pin: '/video/M_AXI_awid'(1) - Only lower order bits will be connected.
+VHDL Output written to : D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/synth/base.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/video/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/video/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gesture/axi_interconnect_0/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/gesture/axi_interconnect_0/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gesture/axi_interconnect_0/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/gesture/axi_interconnect_0/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_WID'(6) to pin: '/gesture/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_ARID'(6) to pin: '/gesture/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_AWID'(6) to pin: '/gesture/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to pin: '/video/M_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to pin: '/video/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to pin: '/video/M_AXI_awid'(1) - Only lower order bits will be connected.
+VHDL Output written to : D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/sim/base.v
+VHDL Output written to : D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/hdl/base_wrapper.v
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP1'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m00_couplers/m00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m01_couplers/m01_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m01_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m02_couplers/m02_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m02_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m03_couplers/m03_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m04_couplers/m04_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m05_couplers/m05_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m06_couplers/m06_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m06_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m07_couplers/m07_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m07_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m08_couplers/m08_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m09_couplers/m09_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_mem_intercon/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_9/base_auto_pc_9_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/m00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m01_couplers/m01_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/m02_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m03_couplers/m03_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m03_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m04_couplers/m04_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m04_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m05_couplers/m05_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_6/base_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m05_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m06_couplers/m06_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_7/base_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m06_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m07_couplers/m07_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_8/base_auto_pc_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m07_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture/axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture/axi_interconnect_0/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_3/base_auto_us_3_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture/axi_interconnect_0/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_10/base_auto_pc_10_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture/axi_interconnect_0/m00_couplers/auto_pc .
+Exporting to file D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/hw_handoff/base.hwh
+Generated Block Design Tcl file D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/hw_handoff/base_bd.tcl
+Generated Hardware Definition File D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/synth/base.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_cc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_cc_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_10
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_5
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_6
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_7
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_8
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_9
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m00_regslice_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m00_regslice_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m01_regslice_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m01_regslice_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m02_regslice_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m02_regslice_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m03_regslice_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m03_regslice_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m04_regslice_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m04_regslice_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m05_regslice_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m05_regslice_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m06_regslice_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m06_regslice_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m07_regslice_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m07_regslice_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m08_regslice_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m09_regslice_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_ps7_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_s00_regslice_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_s00_regslice_2
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_0, cache-ID = d675325e3e13cf40; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_6, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m00_regslice_1, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m04_regslice_2, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_regslice_1, cache-ID = 6f00ab036815170e; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_1, cache-ID = e0096ecdab399e15; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_9, cache-ID = 35725c0547d67d7e; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m02_regslice_2, cache-ID = e0acb46842778617; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m08_regslice_0, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_2, cache-ID = e0096ecdab399e15; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_8, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m02_regslice_1, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m06_regslice_1, cache-ID = 13fb0b4a0bdc9083; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_3, cache-ID = d675325e3e13cf40; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_5, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m01_regslice_1, cache-ID = ea6aee945344af75; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m07_regslice_2, cache-ID = 91bdb424154b9785; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_0, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_0, cache-ID = 93071d4caf50e72a; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m03_regslice_1, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m07_regslice_1, cache-ID = 326e5484365d29be; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_1, cache-ID = 7e1a706f12cd41e0; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_7, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m01_regslice_2, cache-ID = 91bdb424154b9785; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m06_regslice_2, cache-ID = e0acb46842778617; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_10, cache-ID = 1819076c0c5cdde7; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_1, cache-ID = d7eba648653582be; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m03_regslice_2, cache-ID = 0ae6d4a21dc32177; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m09_regslice_0, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_2, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_2, cache-ID = 353e59eaa5921121; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m04_regslice_1, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_ps7_0_0, cache-ID = 6d5debfcb8d06060; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_3, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m00_regslice_2, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m05_regslice_2, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_4, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_3, cache-ID = 353e59eaa5921121; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m05_regslice_1, cache-ID = 13fb0b4a0bdc9083; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_regslice_2, cache-ID = ea6aee945344af75; cache size = 129.220 MB.
+[Sun Jan 23 23:47:27 2022] Launched base_xbar_11_synth_1, base_xbar_13_synth_1...
+Run output will be captured here:
+base_xbar_11_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_xbar_11_synth_1/runme.log
+base_xbar_13_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_xbar_13_synth_1/runme.log
+[Sun Jan 23 23:47:28 2022] Launched synth_1...
+Run output will be captured here: D:/vivado_prj/base/project_1/project_1.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:01:40 ; elapsed = 00:01:39 . Memory (MB): peak = 2072.094 ; gain = 294.324
+launch_runs impl_1 -jobs 20
+[Sun Jan 23 23:48:13 2022] Launched impl_1...
+Run output will be captured here: D:/vivado_prj/base/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Sun Jan 23 23:52:41 2022] Launched impl_1...
+Run output will be captured here: D:/vivado_prj/base/project_1/project_1.runs/impl_1/runme.log
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:dilation_accel:1.0 dilation_accel_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:threshold_accel:1.0 threshold_accel_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+endgroup
+group_bd_cells img_processing [get_bd_cells threshold_accel_0] [get_bd_cells dilation_accel_0] [get_bd_cells axi_interconnect_0]
+set_property location {4 1145 163} [get_bd_cells img_processing]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {11}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins img_processing/dilation_accel_0/s_axi_control] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M08_AXI]
+connect_bd_intf_net [get_bd_intf_pins img_processing/threshold_accel_0/s_axi_control] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M09_AXI]
+connect_bd_intf_net [get_bd_intf_pins img_processing/threshold_accel_0/s_axi_control_r] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M10_AXI]
+set_property -dict [list CONFIG.NUM_SI {5} CONFIG.NUM_MI {1} CONFIG.NUM_MI {1}] [get_bd_cells img_processing/axi_interconnect_0]
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP2 {1} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells ps7_0]
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+endgroup
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/M00_AXI] [get_bd_intf_pins ps7_0/S_AXI_HP2]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S00_AXI] [get_bd_intf_pins img_processing/dilation_accel_0/m_axi_gmem1]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S01_AXI] [get_bd_intf_pins img_processing/dilation_accel_0/m_axi_gmem2]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S02_AXI] [get_bd_intf_pins img_processing/dilation_accel_0/m_axi_gmem3]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S03_AXI] [get_bd_intf_pins img_processing/threshold_accel_0/m_axi_gmem2]
+undo
+INFO: [Common 17-17] undo 'connect_bd_intf_net -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S03_AXI] [get_bd_intf_pins img_processing/threshold_accel_0/m_axi_gmem2]'
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S03_AXI] [get_bd_intf_pins img_processing/threshold_accel_0/m_axi_gmem1]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S04_AXI] [get_bd_intf_pins img_processing/threshold_accel_0/m_axi_gmem2]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins img_processing/axi_interconnect_0/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins img_processing/axi_interconnect_0/M00_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins img_processing/axi_interconnect_0/S00_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins img_processing/axi_interconnect_0/S01_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins img_processing/axi_interconnect_0/S02_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins img_processing/axi_interconnect_0/S03_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins img_processing/axi_interconnect_0/S04_ACLK]
+INFO: [BD 5-455] Automation on '/img_processing/dilation_accel_0/ap_clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/img_processing/threshold_accel_0/ap_clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/ps7_0/S_AXI_HP2_ACLK' will not be run, since it is obsolete due to previously run automations
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins ps7_0_axi_periph/M08_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins ps7_0_axi_periph/M09_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins ps7_0_axi_periph/M10_ACLK]
+endgroup
+regenerate_bd_layout
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+assign_bd_address
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/dilation_accel_0/Data_m_axi_gmem1' at <0x0000_0000 [ 512M ]>.
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/dilation_accel_0/Data_m_axi_gmem2' at <0x0000_0000 [ 512M ]>.
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/dilation_accel_0/Data_m_axi_gmem3' at <0x0000_0000 [ 512M ]>.
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/threshold_accel_0/Data_m_axi_gmem1' at <0x0000_0000 [ 512M ]>.
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/threshold_accel_0/Data_m_axi_gmem2' at <0x0000_0000 [ 512M ]>.
+Slave segment '/img_processing/dilation_accel_0/s_axi_control/Reg' is being assigned into address space '/ps7_0/Data' at <0x4000_0000 [ 64K ]>.
+Slave segment '/img_processing/threshold_accel_0/s_axi_control/Reg' is being assigned into address space '/ps7_0/Data' at <0x4001_0000 [ 64K ]>.
+Slave segment '/img_processing/threshold_accel_0/s_axi_control_r/Reg' is being assigned into address space '/ps7_0/Data' at <0x4002_0000 [ 64K ]>.
+save_bd_design
+Wrote  : <D:\vivado_prj\base\project_1\project_1.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+reset_run synth_1
+reset_run base_xbar_13_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (15) does not match property SENSITIVITY (12 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_10MHz clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_10MHz clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/RefClk have been updated from connected ip, but BD cell '/video/hdmi_in/frontend/dvi2rgb_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </video/hdmi_in/frontend/dvi2rgb_0> to completely resolve these warnings.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/img_processing/dilation_accel_0/height
+/img_processing/dilation_accel_0/width
+
+Wrote  : <D:\vivado_prj\base\project_1\project_1.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/video/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/video/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gesture/axi_interconnect_0/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/gesture/axi_interconnect_0/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gesture/axi_interconnect_0/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/gesture/axi_interconnect_0/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s02_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s02_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s02_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s02_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s03_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s03_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s03_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s03_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s04_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s04_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s04_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s04_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/m00_couplers/auto_pc/m_axi_rid'(3) to pin: '/img_processing/axi_interconnect_0/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/m00_couplers/auto_pc/m_axi_bid'(3) to pin: '/img_processing/axi_interconnect_0/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_WID'(6) to pin: '/gesture/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_ARID'(6) to pin: '/gesture/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_AWID'(6) to pin: '/gesture/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to pin: '/video/M_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to pin: '/video/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to pin: '/video/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_WID'(6) to pin: '/img_processing/M00_AXI_wid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_ARID'(6) to pin: '/img_processing/M00_AXI_arid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_AWID'(6) to pin: '/img_processing/M00_AXI_awid'(3) - Only lower order bits will be connected.
+VHDL Output written to : D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/synth/base.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/video/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/video/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gesture/axi_interconnect_0/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/gesture/axi_interconnect_0/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gesture/axi_interconnect_0/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/gesture/axi_interconnect_0/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s02_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s02_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s02_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s02_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s03_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s03_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s03_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s03_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s04_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s04_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s04_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s04_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/m00_couplers/auto_pc/m_axi_rid'(3) to pin: '/img_processing/axi_interconnect_0/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/m00_couplers/auto_pc/m_axi_bid'(3) to pin: '/img_processing/axi_interconnect_0/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_WID'(6) to pin: '/gesture/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_ARID'(6) to pin: '/gesture/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_AWID'(6) to pin: '/gesture/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to pin: '/video/M_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to pin: '/video/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to pin: '/video/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_WID'(6) to pin: '/img_processing/M00_AXI_wid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_ARID'(6) to pin: '/img_processing/M00_AXI_arid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_AWID'(6) to pin: '/img_processing/M00_AXI_awid'(3) - Only lower order bits will be connected.
+VHDL Output written to : D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/sim/base.v
+VHDL Output written to : D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/hdl/base_wrapper.v
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP1'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP2'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/threshold_accel_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/dilation_accel_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m00_couplers/m00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m01_couplers/m01_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m01_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m02_couplers/m02_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m02_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m03_couplers/m03_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m04_couplers/m04_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m05_couplers/m05_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m06_couplers/m06_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m06_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m07_couplers/m07_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m07_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m08_couplers/m08_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m09_couplers/m09_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_mem_intercon/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_12/base_auto_pc_12_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/m00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m01_couplers/m01_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/m02_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m03_couplers/m03_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m03_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m04_couplers/m04_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m04_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m05_couplers/m05_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_6/base_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m05_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m06_couplers/m06_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_7/base_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m06_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m07_couplers/m07_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_8/base_auto_pc_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m07_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m08_couplers/m08_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_9/base_auto_pc_9_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m08_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m09_couplers/m09_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_10/base_auto_pc_10_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m09_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_11/base_auto_pc_11_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m10_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture/axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture/axi_interconnect_0/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_3/base_auto_us_3_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture/axi_interconnect_0/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_13/base_auto_pc_13_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture/axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_4/base_auto_us_4_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_5/base_auto_us_5_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_6/base_auto_us_6_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_7/base_auto_us_7_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s03_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_8/base_auto_us_8_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s04_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_14/base_auto_pc_14_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/m00_couplers/auto_pc .
+Exporting to file D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/hw_handoff/base.hwh
+Generated Block Design Tcl file D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/hw_handoff/base_bd.tcl
+Generated Hardware Definition File D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/synth/base.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_cc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_cc_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_10
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_11
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_12
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_13
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_14
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_5
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_6
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_7
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_8
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_9
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_5
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_6
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_7
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_8
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_dilation_accel_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m00_regslice_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m00_regslice_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m01_regslice_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m01_regslice_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m02_regslice_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m02_regslice_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m03_regslice_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m03_regslice_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m04_regslice_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m04_regslice_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m05_regslice_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m05_regslice_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m06_regslice_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m06_regslice_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m07_regslice_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m07_regslice_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m08_regslice_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m08_regslice_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m09_regslice_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m09_regslice_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_ps7_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_s00_regslice_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_s00_regslice_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_threshold_accel_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_xbar_13
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_xbar_15
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_0, cache-ID = d675325e3e13cf40; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_3, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_3, cache-ID = 353e59eaa5921121; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m04_regslice_3, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m07_regslice_3, cache-ID = 326e5484365d29be; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_1, cache-ID = e0096ecdab399e15; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_2, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_0, cache-ID = 93071d4caf50e72a; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m02_regslice_4, cache-ID = e0acb46842778617; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m06_regslice_4, cache-ID = e0acb46842778617; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_2, cache-ID = e0096ecdab399e15; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_2, cache-ID = 353e59eaa5921121; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m03_regslice_4, cache-ID = 0ae6d4a21dc32177; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_regslice_3, cache-ID = 6f00ab036815170e; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_3, cache-ID = d675325e3e13cf40; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_dilation_accel_0_0, cache-ID = 71d808092be5d716; cache size = 68.907 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m07_regslice_4, cache-ID = 91bdb424154b9785; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_0, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_1, cache-ID = d7eba648653582be; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m03_regslice_3, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m04_regslice_4, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_regslice_4, cache-ID = ea6aee945344af75; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_1, cache-ID = 7e1a706f12cd41e0; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_6, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m01_regslice_3, cache-ID = ea6aee945344af75; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m05_regslice_4, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_10, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_5, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m00_regslice_3, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m08_regslice_2, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_11, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_7, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m00_regslice_4, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m05_regslice_3, cache-ID = 13fb0b4a0bdc9083; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_threshold_accel_0_0, cache-ID = 465835c6aa5eb764; cache size = 68.907 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_12, cache-ID = 35725c0547d67d7e; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_4, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_8, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m02_regslice_3, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m06_regslice_3, cache-ID = 13fb0b4a0bdc9083; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_13, cache-ID = 1819076c0c5cdde7; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_9, cache-ID = ac1167c76961c748; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m01_regslice_4, cache-ID = 91bdb424154b9785; cache size = 129.220 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m09_regslice_2, cache-ID = 6e7034e046a17288; cache size = 129.220 MB.
+[Sun Jan 23 23:59:28 2022] Launched base_xbar_13_synth_1, base_ps7_0_0_synth_1, base_xbar_15_synth_1, base_auto_us_6_synth_1, base_auto_us_8_synth_1, base_auto_pc_14_synth_1, base_auto_us_7_synth_1, base_auto_us_4_synth_1, base_auto_us_5_synth_1, base_m09_regslice_1_synth_1, base_m08_regslice_1_synth_1, synth_1...
+Run output will be captured here:
+base_xbar_13_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_xbar_13_synth_1/runme.log
+base_ps7_0_0_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_ps7_0_0_synth_1/runme.log
+base_xbar_15_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_xbar_15_synth_1/runme.log
+base_auto_us_6_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_auto_us_6_synth_1/runme.log
+base_auto_us_8_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_auto_us_8_synth_1/runme.log
+base_auto_pc_14_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_auto_pc_14_synth_1/runme.log
+base_auto_us_7_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_auto_us_7_synth_1/runme.log
+base_auto_us_4_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_auto_us_4_synth_1/runme.log
+base_auto_us_5_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_auto_us_5_synth_1/runme.log
+base_m09_regslice_1_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_m09_regslice_1_synth_1/runme.log
+base_m08_regslice_1_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_m08_regslice_1_synth_1/runme.log
+synth_1: D:/vivado_prj/base/project_1/project_1.runs/synth_1/runme.log
+[Sun Jan 23 23:59:29 2022] Launched impl_1...
+Run output will be captured here: D:/vivado_prj/base/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:02:11 ; elapsed = 00:02:15 . Memory (MB): peak = 2426.617 ; gain = 154.570
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+delete_bd_objs [get_bd_cells xlconstant_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 img_processing/xlconstant_0
+endgroup
+set_property -dict [list CONFIG.CONST_WIDTH {32} CONFIG.CONST_VAL {32}] [get_bd_cells img_processing/xlconstant_0]
+connect_bd_net [get_bd_pins img_processing/xlconstant_0/dout] [get_bd_pins img_processing/dilation_accel_0/height]
+connect_bd_net [get_bd_pins img_processing/xlconstant_0/dout] [get_bd_pins img_processing/dilation_accel_0/width]
+regenerate_bd_layout -routing
+set_property  ip_repo_paths  {d:/vivado_prj/base/ip d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1 D:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples'. The path is contained within another repository.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:resize_accel:1.0'. The one found in IP location 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/hls_example/sol1/impl/ip' will take precedence over the same IP in location d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/resize_example/sol1/impl/ip
+set_property  ip_repo_paths  {d:/vivado_prj/base/ip d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:resize_accel:1.0'. The one found in IP location 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/hls_example/sol1/impl/ip' will take precedence over the same IP in location d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/resize_example/sol1/impl/ip
+set_property  ip_repo_paths  {d:/vivado_prj/base/ip D:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:resize_accel:1.0'. The one found in IP location 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/hls_example/sol1/impl/ip' will take precedence over the same IP in location d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/resize_example/sol1/impl/ip
+set_property  ip_repo_paths  {d:/vivado_prj/base/ip d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:resize_accel:1.0'. The one found in IP location 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/hls_example/sol1/impl/ip' will take precedence over the same IP in location d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/resize_example/sol1/impl/ip
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+set_property  ip_repo_paths  d:/vivado_prj/base/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+set_property  ip_repo_paths  {d:/vivado_prj/base/ip D:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+set_property  ip_repo_paths  d:/vivado_prj/base/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+set_property  ip_repo_paths  {d:/vivado_prj/base/ip D:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:resize_accel:1.0 resize_accel_0
+endgroup
+move_bd_cells [get_bd_cells img_processing] [get_bd_cells resize_accel_0]
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/resize_example/sol1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+report_ip_status -name ip_status
+upgrade_ip [get_ips  base_resize_accel_0_0] -log ip_upgrade.log
+Upgrading 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd'
+INFO: [IP_Flow 19-3422] Upgraded base_resize_accel_0_0 (Resize_accel 1.0) from revision 2101240033 to revision 2101240050
+WARNING: [IP_Flow 19-4703] Upgraded interface 'img_inp' (xilinx.com:interface:axis:1.0) differs from original interface 'xilinx.com:signal:data:1.0'
+WARNING: [IP_Flow 19-4703] Upgraded interface 'img_out' (xilinx.com:interface:axis:1.0) differs from original interface 'xilinx.com:signal:data:1.0'
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'base_resize_accel_0_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'img_inp'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'img_out'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'img_out_ap_vld'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TVALID'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'base_resize_accel_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'base_resize_accel_0_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/vivado_prj/base/project_1/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <D:\vivado_prj\base\project_1\project_1.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/vivado_prj/base/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips base_resize_accel_0_0] -no_script -sync -force -quiet
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/threshold/threshold_example/sol1/impl/ip/component.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/dilation/dilation_example/sol1/impl/ip/component.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/resize_example/sol1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {base_dilation_accel_0_0 base_threshold_accel_0_0 base_resize_accel_0_0}] -log ip_upgrade.log
+Upgrading 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_ID_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_DATA_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '32'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_AWUSER_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_WUSER_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_BUSER_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_ARUSER_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_RUSER_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_USER_VALUE' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '0x00000000'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_PROT_VALUE' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '"000"'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_CACHE_VALUE' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '"0011"'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ID_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_DATA_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '32'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_AWUSER_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_WUSER_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_BUSER_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ARUSER_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_RUSER_WIDTH' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_USER_VALUE' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '0x00000000'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_PROT_VALUE' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '"000"'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_CACHE_VALUE' is no longer present on the upgraded IP 'base_dilation_accel_0_0', and cannot be set to '"0011"'
+INFO: [IP_Flow 19-3422] Upgraded base_dilation_accel_0_0 (Dilation_accel 1.0) from revision 2101230602 to revision 2101240058
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'm_axi_gmem1'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'm_axi_gmem2'
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'img_inp' (xilinx.com:interface:axis:1.0)
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'img_out' (xilinx.com:interface:axis:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'base_dilation_accel_0_0'.
+WARNING: [IP_Flow 19-4706] Upgraded port 's_axi_control_ARADDR' width 5 differs from original width 6
+WARNING: [IP_Flow 19-4706] Upgraded port 's_axi_control_AWADDR' width 5 differs from original width 6
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARBURST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARCACHE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARLEN'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARLOCK'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARPROT'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARQOS'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARREGION'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARSIZE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWBURST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWCACHE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWLEN'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWLOCK'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWPROT'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWQOS'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWREGION'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWSIZE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_BREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_BRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_BVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_RDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_RLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_RREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_RRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_RVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_WDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_WLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_WREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_WSTRB'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_WVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARBURST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARCACHE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARLEN'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARLOCK'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARPROT'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARQOS'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARREGION'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARSIZE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_ARVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWBURST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWCACHE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWLEN'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWLOCK'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWPROT'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWQOS'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWREGION'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWSIZE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_AWVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_BREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_BRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_BVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_RVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WSTRB'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem2_WVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TVALID'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'base_dilation_accel_0_0'. These changes may impact your design.
+WARNING: [IP_Flow 19-7054] Upgrade has removed address space 'Data_m_axi_gmem1'
+WARNING: [IP_Flow 19-7054] Upgrade has removed address space 'Data_m_axi_gmem2'
+WARNING: [IP_Flow 19-5891] Detected addressing differences while upgrading 'base_dilation_accel_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1165] The interface pin 'm_axi_gmem1' with bus definition 'xilinx.com:interface:aximm:1.0' is not found on the upgraded version of the cell '/img_processing/dilation_accel_0'. Its connection to the interface net 'S00_AXI_1' has been removed. 
+CRITICAL WARNING: [BD 41-1165] The interface pin 'm_axi_gmem2' with bus definition 'xilinx.com:interface:aximm:1.0' is not found on the upgraded version of the cell '/img_processing/dilation_accel_0'. Its connection to the interface net 'S01_AXI_1' has been removed. 
+CRITICAL WARNING: [BD 41-1172] Cannot restore assignment <0x0000_0000 [ 512M ]> from slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' to address space '/img_processing/dilation_accel_0/Data_m_axi_gmem1'. This address space no longer exists.
+CRITICAL WARNING: [BD 41-1172] Cannot restore assignment <0x0000_0000 [ 512M ]> from slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' to address space '/img_processing/dilation_accel_0/Data_m_axi_gmem2'. This address space no longer exists.
+INFO: [IP_Flow 19-3422] Upgraded base_resize_accel_0_0 (Resize_accel 1.0) from revision 2101240050 to revision 2101240100
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_ID_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_DATA_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '32'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_AWUSER_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_WUSER_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_BUSER_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_ARUSER_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_RUSER_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_USER_VALUE' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '0x00000000'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_PROT_VALUE' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '"000"'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM1_CACHE_VALUE' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '"0011"'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ID_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_DATA_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '32'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_AWUSER_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_WUSER_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_BUSER_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_ARUSER_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_RUSER_WIDTH' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '1'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_USER_VALUE' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '0x00000000'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_PROT_VALUE' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '"000"'
+WARNING: [IP_Flow 19-4316] Parameter 'C_M_AXI_GMEM2_CACHE_VALUE' is no longer present on the upgraded IP 'base_threshold_accel_0_0', and cannot be set to '"0011"'
+INFO: [IP_Flow 19-3422] Upgraded base_threshold_accel_0_0 (Threshold_accel 1.0) from revision 2101230601 to revision 2101240059
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'm_axi_gmem1'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'm_axi_gmem2'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 's_axi_control_r'
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'img_inp' (xilinx.com:interface:axis:1.0)
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'img_out' (xilinx.com:interface:axis:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'base_threshold_accel_0_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARBURST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARCACHE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARLEN'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARLOCK'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARPROT'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARQOS'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARREGION'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARSIZE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_ARVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWBURST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWCACHE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWLEN'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWLOCK'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWPROT'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWQOS'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWREGION'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWSIZE'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_AWVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_BREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_BRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_BVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_RDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_RLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_RREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_RRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_axi_gmem1_RVALID'
+INFO: [Common 17-14] Message 'IP_Flow 19-4700' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TVALID'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'base_threshold_accel_0_0'. These changes may impact your design.
+WARNING: [IP_Flow 19-5893] Upgrade has removed address block 's_axi_control_r/Reg'
+WARNING: [IP_Flow 19-7054] Upgrade has removed address space 'Data_m_axi_gmem1'
+WARNING: [IP_Flow 19-7054] Upgrade has removed address space 'Data_m_axi_gmem2'
+WARNING: [IP_Flow 19-5891] Detected addressing differences while upgrading 'base_threshold_accel_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1165] The interface pin 's_axi_control_r' with bus definition 'xilinx.com:interface:aximm:1.0' is not found on the upgraded version of the cell '/img_processing/threshold_accel_0'. Its connection to the interface net 'Conn3' has been removed. 
+CRITICAL WARNING: [BD 41-1165] The interface pin 'm_axi_gmem1' with bus definition 'xilinx.com:interface:aximm:1.0' is not found on the upgraded version of the cell '/img_processing/threshold_accel_0'. Its connection to the interface net 'S03_AXI_1' has been removed. 
+CRITICAL WARNING: [BD 41-1165] The interface pin 'm_axi_gmem2' with bus definition 'xilinx.com:interface:aximm:1.0' is not found on the upgraded version of the cell '/img_processing/threshold_accel_0'. Its connection to the interface net 'S04_AXI_1' has been removed. 
+CRITICAL WARNING: [BD 41-1172] Cannot restore assignment <0x0000_0000 [ 512M ]> from slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' to address space '/img_processing/threshold_accel_0/Data_m_axi_gmem1'. This address space no longer exists.
+CRITICAL WARNING: [BD 41-1172] Cannot restore assignment <0x0000_0000 [ 512M ]> from slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' to address space '/img_processing/threshold_accel_0/Data_m_axi_gmem2'. This address space no longer exists.
+CRITICAL WARNING: [BD 41-1173] Cannot restore assignment <0x4002_0000 [ 64K ]> from slave segment '/img_processing/threshold_accel_0/s_axi_control_r/Reg' to address space '/ps7_0/Data'. This slave segment no longer exists.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'base_dilation_accel_0_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/vivado_prj/base/project_1/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'base_threshold_accel_0_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/vivado_prj/base/project_1/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <D:\vivado_prj\base\project_1\project_1.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/vivado_prj/base/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {base_dilation_accel_0_0 base_threshold_accel_0_0 base_resize_accel_0_0}] -no_script -sync -force -quiet
+connect_bd_intf_net [get_bd_intf_pins img_processing/resize_accel_0/img_out] [get_bd_intf_pins img_processing/dilation_accel_0/img_inp]
+connect_bd_intf_net [get_bd_intf_pins img_processing/dilation_accel_0/img_out] [get_bd_intf_pins img_processing/threshold_accel_0/img_inp]
+move_bd_cells [get_bd_cells /] [get_bd_cells img_processing/dilation_accel_0]
+undo
+INFO: [Common 17-17] undo 'move_bd_cells [get_bd_cells /] [get_bd_cells img_processing/dilation_accel_0]'
+move_bd_cells [get_bd_cells /] [get_bd_cells img_processing/threshold_accel_0]
+undo
+INFO: [Common 17-17] undo 'move_bd_cells [get_bd_cells /] [get_bd_cells img_processing/threshold_accel_0]'
+startgroup
+set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {1}] [get_bd_cells img_processing/axi_interconnect_0]
+delete_bd_objs [get_bd_intf_nets img_processing/S00_AXI_1] [get_bd_intf_nets img_processing/S01_AXI_1] [get_bd_intf_nets img_processing/S02_AXI_1] [get_bd_intf_nets img_processing/S03_AXI_1] [get_bd_intf_nets img_processing/S04_AXI_1]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins img_processing/dilation_accel_0/m_axi_gmem3] -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S00_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 img_processing/axi_dma_0
+endgroup
+set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_sg_include_stscntrl_strm {0}] [get_bd_cells img_processing/axi_dma_0]
+startgroup
+set_property -dict [list CONFIG.NUM_SI {3} CONFIG.NUM_MI {1}] [get_bd_cells img_processing/axi_interconnect_0]
+endgroup
+regenerate_bd_layout -routing
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M10_AXI]
+delete_bd_objs [get_bd_intf_nets img_processing/Conn3]
+ungroup_bd_cells [get_bd_cells img_processing]
+group_bd_cells img_processing [get_bd_cells xlconstant_0] [get_bd_cells dilation_accel_0] [get_bd_cells resize_accel_0] [get_bd_cells threshold_accel_0] [get_bd_cells axi_dma_0] [get_bd_cells axi_interconnect_0]
+set_property location {3 1466 347} [get_bd_cells img_processing]
+move_bd_cells [get_bd_cells /] [get_bd_cells img_processing/dilation_accel_0]
+undo
+INFO: [Common 17-17] undo 'move_bd_cells [get_bd_cells /] [get_bd_cells img_processing/dilation_accel_0]'
+regenerate_bd_layout -routing
+move_bd_cells [get_bd_cells /] [get_bd_cells img_processing/resize_accel_0]
+undo
+INFO: [Common 17-17] undo 'move_bd_cells [get_bd_cells /] [get_bd_cells img_processing/resize_accel_0]'
+regenerate_bd_layout -routing
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M10_AXI] [get_bd_intf_pins img_processing/resize_accel_0/s_axi_control]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {12}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins img_processing/axi_dma_0/S_AXI_LITE] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M11_AXI]
+connect_bd_intf_net [get_bd_intf_pins img_processing/axi_dma_0/M_AXI_MM2S] -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S01_AXI]
+connect_bd_intf_net [get_bd_intf_pins img_processing/axi_dma_0/M_AXI_S2MM] -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S02_AXI]
+connect_bd_intf_net [get_bd_intf_pins img_processing/axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins img_processing/resize_accel_0/img_inp]
+connect_bd_intf_net [get_bd_intf_pins img_processing/axi_dma_0/S_AXIS_S2MM] [get_bd_intf_pins img_processing/threshold_accel_0/img_out]
+move_bd_cells [get_bd_cells /] [get_bd_cells img_processing/threshold_accel_0]
+undo
+INFO: [Common 17-17] undo 'move_bd_cells [get_bd_cells /] [get_bd_cells img_processing/threshold_accel_0]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_intf_net [get_bd_intf_pins img_processing/axi_dma_0/S_AXIS_S2MM] [get_bd_intf_pins img_processing/threshold_accel_0/img_out]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_intf_net [get_bd_intf_pins img_processing/axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins img_processing/resize_accel_0/img_inp]'
+set_property location {2.5 2086 56} [get_bd_cells img_processing/threshold_accel_0]
+set_property location {2.5 2102 97} [get_bd_cells img_processing/threshold_accel_0]
+regenerate_bd_layout -routing
+set_property location {3.5 2073 351} [get_bd_cells img_processing/axi_interconnect_0]
+move_bd_cells [get_bd_cells /] [get_bd_cells img_processing/axi_interconnect_0]
+undo
+INFO: [Common 17-17] undo 'move_bd_cells [get_bd_cells /] [get_bd_cells img_processing/axi_interconnect_0]'
+connect_bd_intf_net [get_bd_intf_pins img_processing/threshold_accel_0/img_out] [get_bd_intf_pins img_processing/axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins img_processing/axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins img_processing/resize_accel_0/img_inp]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins img_processing/axi_dma_0/m_axi_mm2s_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins img_processing/axi_dma_0/m_axi_s2mm_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/ps7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins img_processing/axi_dma_0/s_axi_lite_aclk]
+INFO: [BD 5-455] Automation on '/img_processing/axi_interconnect_0/S01_ACLK' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/img_processing/axi_interconnect_0/S02_ACLK' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/img_processing/resize_accel_0/ap_clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/ps7_0_axi_periph/M11_ACLK' will not be run, since it is obsolete due to previously run automations
+endgroup
+regenerate_bd_layout -routing
+save_bd_design
+Wrote  : <D:\vivado_prj\base\project_1\project_1.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+report_ip_status -name ip_status 
+assign_bd_address -target_address_space /img_processing/axi_dma_0/Data_MM2S [get_bd_addr_segs ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM] -force
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/axi_dma_0/Data_MM2S' at <0x0000_0000 [ 512M ]>.
+assign_bd_address
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/axi_dma_0/Data_S2MM' at <0x0000_0000 [ 512M ]>.
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/dilation_accel_0/Data_m_axi_gmem3' at <0x0000_0000 [ 512M ]>.
+Slave segment '/img_processing/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/ps7_0/Data' at <0x4042_0000 [ 64K ]>.
+Slave segment '/img_processing/resize_accel_0/s_axi_control/Reg' is being assigned into address space '/ps7_0/Data' at <0x4002_0000 [ 64K ]>.
+validate_bd_design
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (15) does not match property SENSITIVITY (12 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /img_processing/axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_10MHz clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/RefClk have been updated from connected ip, but BD cell '/video/hdmi_in/frontend/dvi2rgb_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </video/hdmi_in/frontend/dvi2rgb_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:01:51 ; elapsed = 00:01:49 . Memory (MB): peak = 2986.012 ; gain = 48.082
+regenerate_bd_layout -routing
+validate_bd_design -force
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (15) does not match property SENSITIVITY (12 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /img_processing/axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_10MHz clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/RefClk have been updated from connected ip, but BD cell '/video/hdmi_in/frontend/dvi2rgb_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </video/hdmi_in/frontend/dvi2rgb_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:01:42 ; elapsed = 00:01:45 . Memory (MB): peak = 3013.242 ; gain = 23.754
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/threshold/threshold_example/sol1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:threshold_accel:1.0 [get_ips  base_threshold_accel_0_0] -log ip_upgrade.log
+Upgrading 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd'
+INFO: [IP_Flow 19-3422] Upgraded base_threshold_accel_0_0 (Threshold_accel 1.0) from revision 2101240059 to revision 2101240220
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TKEEP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TLAST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TSTRB'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TKEEP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TLAST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TSTRB'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'base_threshold_accel_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'base_threshold_accel_0_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/vivado_prj/base/project_1/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <D:\vivado_prj\base\project_1\project_1.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/vivado_prj/base/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips base_threshold_accel_0_0] -no_script -sync -force -quiet
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/resize/resize_example/sol1/impl/ip/component.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: d:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1/examples/dilation/dilation_example/sol1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {base_dilation_accel_0_0 base_resize_accel_0_0}] -log ip_upgrade.log
+Upgrading 'D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd'
+INFO: [IP_Flow 19-3422] Upgraded base_dilation_accel_0_0 (Dilation_accel 1.0) from revision 2101240058 to revision 2101240230
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TKEEP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TLAST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TSTRB'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TKEEP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TLAST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TSTRB'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'base_dilation_accel_0_0'. These changes may impact your design.
+INFO: [IP_Flow 19-3422] Upgraded base_resize_accel_0_0 (Resize_accel 1.0) from revision 2101240100 to revision 2101240226
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TKEEP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TLAST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_inp_TSTRB'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TKEEP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TLAST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'img_out_TSTRB'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'base_resize_accel_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'base_dilation_accel_0_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/vivado_prj/base/project_1/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'base_resize_accel_0_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/vivado_prj/base/project_1/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <D:\vivado_prj\base\project_1\project_1.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/vivado_prj/base/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {base_dilation_accel_0_0 base_resize_accel_0_0}] -no_script -sync -force -quiet
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+validate_bd_design
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (15) does not match property SENSITIVITY (12 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_10MHz clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/RefClk have been updated from connected ip, but BD cell '/video/hdmi_in/frontend/dvi2rgb_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </video/hdmi_in/frontend/dvi2rgb_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:01:45 ; elapsed = 00:01:39 . Memory (MB): peak = 3038.156 ; gain = 2.629
+set_property location {0.5 1310 414} [get_bd_cells img_processing/axi_dma_0]
+regenerate_bd_layout -routing
+save_bd_design
+Wrote  : <D:\vivado_prj\base\project_1\project_1.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+reset_run synth_1
+reset_run base_xbar_13_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+INFO: [BD 41-1662] The design 'base.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 

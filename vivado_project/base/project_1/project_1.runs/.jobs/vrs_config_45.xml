@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="base_xbar_13_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_xbar_13_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m00_regslice_10_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m00_regslice_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_s00_regslice_10_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_s00_regslice_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m02_regslice_10_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m02_regslice_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m03_regslice_10_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m03_regslice_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m01_regslice_10_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m01_regslice_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m08_regslice_8_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m08_regslice_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_10_synth_1"/>
+	</Run>
+	<Run Id="base_m04_regslice_10_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m04_regslice_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_10_synth_1"/>
+	</Run>
+	<Run Id="base_m05_regslice_10_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m05_regslice_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_10_synth_1"/>
+	</Run>
+	<Run Id="base_m09_regslice_8_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m09_regslice_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_10_synth_1"/>
+	</Run>
+	<Run Id="base_m07_regslice_10_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m07_regslice_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m01_regslice_10_synth_1"/>
+	</Run>
+	<Run Id="base_m06_regslice_10_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m06_regslice_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m02_regslice_10_synth_1"/>
+	</Run>
+	<Run Id="base_dilation_accel_0_0_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_dilation_accel_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_threshold_accel_0_0_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_threshold_accel_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axi_dma_0_1_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_axi_dma_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xbar_15_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_xbar_15_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m01_regslice_9_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m01_regslice_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_s00_regslice_10_synth_1"/>
+	</Run>
+	<Run Id="base_s00_regslice_9_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_s00_regslice_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m00_regslice_9_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m00_regslice_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_10_synth_1"/>
+	</Run>
+	<Run Id="base_m02_regslice_9_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m02_regslice_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_10_synth_1"/>
+	</Run>
+	<Run Id="base_m08_regslice_7_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m08_regslice_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m03_regslice_10_synth_1"/>
+	</Run>
+	<Run Id="base_m05_regslice_9_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m05_regslice_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m04_regslice_9_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m04_regslice_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_10_synth_1"/>
+	</Run>
+	<Run Id="base_m03_regslice_9_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m03_regslice_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_10_synth_1"/>
+	</Run>
+	<Run Id="base_m07_regslice_9_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m07_regslice_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m09_regslice_7_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m09_regslice_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m06_regslice_9_synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/base_m06_regslice_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m05_regslice_9_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="D:/vivado_prj/base/project_1/project_1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="base_xbar_13_synth_1"/>
+		<Parent Id="base_m00_regslice_10_synth_1"/>
+		<Parent Id="base_s00_regslice_10_synth_1"/>
+		<Parent Id="base_m02_regslice_10_synth_1"/>
+		<Parent Id="base_m03_regslice_10_synth_1"/>
+		<Parent Id="base_m01_regslice_10_synth_1"/>
+		<Parent Id="base_m08_regslice_8_synth_1"/>
+		<Parent Id="base_m04_regslice_10_synth_1"/>
+		<Parent Id="base_m05_regslice_10_synth_1"/>
+		<Parent Id="base_m09_regslice_8_synth_1"/>
+		<Parent Id="base_m07_regslice_10_synth_1"/>
+		<Parent Id="base_m06_regslice_10_synth_1"/>
+		<Parent Id="base_dilation_accel_0_0_synth_1"/>
+		<Parent Id="base_threshold_accel_0_0_synth_1"/>
+		<Parent Id="base_axi_dma_0_1_synth_1"/>
+		<Parent Id="base_xbar_15_synth_1"/>
+		<Parent Id="base_m01_regslice_9_synth_1"/>
+		<Parent Id="base_s00_regslice_9_synth_1"/>
+		<Parent Id="base_m00_regslice_9_synth_1"/>
+		<Parent Id="base_m02_regslice_9_synth_1"/>
+		<Parent Id="base_m08_regslice_7_synth_1"/>
+		<Parent Id="base_m05_regslice_9_synth_1"/>
+		<Parent Id="base_m04_regslice_9_synth_1"/>
+		<Parent Id="base_m03_regslice_9_synth_1"/>
+		<Parent Id="base_m07_regslice_9_synth_1"/>
+		<Parent Id="base_m09_regslice_7_synth_1"/>
+		<Parent Id="base_m06_regslice_9_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

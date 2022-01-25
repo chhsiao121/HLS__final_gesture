@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Dec  6 00:49:21 2021
+# Process ID: 17664
+# Current directory: E:/GT/base/project_1/project_1.runs/base_pixel_unpack_0_synth_1
+# Command line: vivado.exe -log base_pixel_unpack_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_pixel_unpack_0.tcl
+# Log file: E:/GT/base/project_1/project_1.runs/base_pixel_unpack_0_synth_1/base_pixel_unpack_0.vds
+# Journal file: E:/GT/base/project_1/project_1.runs/base_pixel_unpack_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_pixel_unpack_0.tcl -notrace

@@ -1,0 +1,620 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Dec 26 17:53:14 2021
+# Process ID: 68516
+# Current directory: E:/GT/base/project_1/project_1.runs/base_cnn_top_0_0_synth_1
+# Command line: vivado.exe -log base_cnn_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_cnn_top_0_0.tcl
+# Log file: E:/GT/base/project_1/project_1.runs/base_cnn_top_0_0_synth_1/base_cnn_top_0_0.vds
+# Journal file: E:/GT/base/project_1/project_1.runs/base_cnn_top_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_cnn_top_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/GT/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top base_cnn_top_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 57776
+WARNING: [Synth 8-6901] identifier 'Weight' is used before its declaration [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/ConvLayerCtrl.v:69]
+WARNING: [Synth 8-2507] parameter declaration becomes local in cnn_model_DMA0_MM2S_AXIS with formal parameter declaration list [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_model_DMA0_MM2S_AXIS.v:41]
+WARNING: [Synth 8-2507] parameter declaration becomes local in cnn_model_DMA1_MM2S_AXIS with formal parameter declaration list [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_model_DMA1_MM2S_AXIS.v:41]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1179.102 ; gain = 33.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'base_cnn_top_0_0' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_cnn_top_0_0/synth/base_cnn_top_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_top.v:1]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_DMA0_MM2S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DMA1_MM2S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DMA0_S2MM_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DMA0_S2MM_AXIS_START_COUNT bound to: 32 - type: integer 
+	Parameter BRAM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BRAM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter LAYER_NUM bound to: 6 - type: integer 
+	Parameter STATE_NUM bound to: 7 - type: integer 
+	Parameter STATE_TYPE_NUM bound to: 6 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter LOAD bound to: 1 - type: integer 
+	Parameter CONV bound to: 2 - type: integer 
+	Parameter MAXP bound to: 3 - type: integer 
+	Parameter OUTP bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_STATE_WIDTH bound to: 3 - type: integer 
+	Parameter DP_STATE_WIDTH bound to: 4 - type: integer 
+	Parameter DATA_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter LAYER_STATE_WIDTH bound to: 4 - type: integer 
+	Parameter LAYER_TYPE_WIDTH bound to: 3 - type: integer 
+	Parameter ROW_DATA_WIDTH bound to: 3 - type: integer 
+	Parameter STATE_WIDTH bound to: 4 - type: integer 
+	Parameter STATE_TYPE_WIDTH bound to: 3 - type: integer 
+	Parameter DATA_W2BN bound to: 1 - type: integer 
+	Parameter DATA_BM2C bound to: 2 - type: integer 
+	Parameter DATA_RELO bound to: 3 - type: integer 
+	Parameter DATA_PEND bound to: 4 - type: integer 
+	Parameter WEIGHT_W2BM bound to: 1 - type: integer 
+	Parameter WEIGHT_BM2C bound to: 2 - type: integer 
+	Parameter WEIGHT_RELO bound to: 3 - type: integer 
+	Parameter WEIGHT_HOLD bound to: 4 - type: integer 
+	Parameter WEIGHT_PEND bound to: 5 - type: integer 
+	Parameter CHANEL_SIZE_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cnn_model_S_AXI_lite' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_model_S_AXI_lite.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_model_S_AXI_lite.v:236]
+INFO: [Synth 8-226] default block is never used [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_model_S_AXI_lite.v:384]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_model_S_AXI_lite' (1#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_model_S_AXI_lite.v:4]
+WARNING: [Synth 8-689] width (33) of port connection 'axis_debug' does not match port width (32) of module 'cnn_model_S_AXI_lite' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_top.v:1274]
+INFO: [Synth 8-6157] synthesizing module 'cnn_model_DMA0_MM2S_AXIS' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_model_DMA0_MM2S_AXIS.v:4]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter WRITE_FIFO bound to: 2'b01 
+WARNING: [Synth 8-6104] Input port 'S_AXIS_TKEEP' has an internal driver [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_model_DMA0_MM2S_AXIS.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_model_DMA0_MM2S_AXIS' (2#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_model_DMA0_MM2S_AXIS.v:4]
+INFO: [Synth 8-6157] synthesizing module 'cnn_model_DMA1_MM2S_AXIS' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_model_DMA1_MM2S_AXIS.v:4]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter WRITE_FIFO bound to: 2'b01 
+WARNING: [Synth 8-6104] Input port 'S_AXIS_TKEEP' has an internal driver [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_model_DMA1_MM2S_AXIS.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_model_DMA1_MM2S_AXIS' (3#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_model_DMA1_MM2S_AXIS.v:4]
+INFO: [Synth 8-6157] synthesizing module 'LayerCtrl' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/LayerCtrl.v:1]
+	Parameter LAYER_NUM bound to: 6 - type: integer 
+	Parameter STATE_WIDTH bound to: 4 - type: integer 
+	Parameter STATE_TYPE_WIDTH bound to: 3 - type: integer 
+	Parameter STATE_NUM bound to: 7 - type: integer 
+	Parameter STATE_TYPE_NUM bound to: 6 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter LOAD bound to: 1 - type: integer 
+	Parameter CONV bound to: 2 - type: integer 
+	Parameter MAXP bound to: 3 - type: integer 
+	Parameter OUTP bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'LayerCtrl' (4#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/LayerCtrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DataProcessor' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/DataProcessor.v:1]
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter LAYER_STATE_WIDTH bound to: 4 - type: integer 
+	Parameter LAYER_TYPE_WIDTH bound to: 3 - type: integer 
+	Parameter ADDR_STATE_WIDTH bound to: 3 - type: integer 
+	Parameter DATA_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter FILTER_STRIDE_WIDTH bound to: 2 - type: integer 
+	Parameter FILTER_SIZE_WIDTH bound to: 6 - type: integer 
+	Parameter CHANEL_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter LAYER0_SIZE bound to: 32 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter LOAD bound to: 1 - type: integer 
+	Parameter CONV bound to: 2 - type: integer 
+	Parameter MAXP bound to: 3 - type: integer 
+	Parameter OUTP bound to: 4 - type: integer 
+	Parameter DATA_W2BM bound to: 1 - type: integer 
+	Parameter DATA_BM2C bound to: 2 - type: integer 
+	Parameter DATA_RELO bound to: 3 - type: integer 
+	Parameter DATA_PEND bound to: 4 - type: integer 
+	Parameter WEIGHT_W2BM bound to: 1 - type: integer 
+	Parameter WEIGHT_BM2C bound to: 2 - type: integer 
+	Parameter WEIGHT_RELO bound to: 3 - type: integer 
+	Parameter WEIGHT_HOLD bound to: 4 - type: integer 
+	Parameter WEIGHT_PEND bound to: 5 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 16 - type: integer 
+WARNING: [Synth 8-693] zero replication count - replication ignored [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/DataProcessor.v:246]
+WARNING: [Synth 8-693] zero replication count - replication ignored [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/DataProcessor.v:248]
+WARNING: [Synth 8-693] zero replication count - replication ignored [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/DataProcessor.v:252]
+INFO: [Synth 8-6157] synthesizing module 'AddrCtrl' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/AddrCtrl.v:1]
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter DATA_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter FILTER_STRIDE_WIDTH bound to: 2 - type: integer 
+	Parameter FILTER_SIZE_WIDTH bound to: 6 - type: integer 
+	Parameter CHANEL_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter LAYER_STATE_WIDTH bound to: 4 - type: integer 
+	Parameter LAYER_TYPE_WIDTH bound to: 3 - type: integer 
+	Parameter ADDR_STATE_WIDTH bound to: 3 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter LOAD bound to: 1 - type: integer 
+	Parameter CONV bound to: 2 - type: integer 
+	Parameter MAXP bound to: 3 - type: integer 
+	Parameter OUTP bound to: 4 - type: integer 
+	Parameter DATA_WO2B bound to: 1 - type: integer 
+	Parameter DATA_WI2B bound to: 2 - type: integer 
+	Parameter DATA_BM2C bound to: 3 - type: integer 
+	Parameter DATA_RELO bound to: 4 - type: integer 
+	Parameter DATA_HOLD bound to: 5 - type: integer 
+	Parameter WEIGHT_W2BM bound to: 1 - type: integer 
+	Parameter WEIGHT_BM2C bound to: 2 - type: integer 
+	Parameter WEIGHT_RELO bound to: 3 - type: integer 
+	Parameter WEIGHT_HOLD bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AddrDataCtrl' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/AddrDataCtrl.v:1]
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter DATA_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter FILTER_STRIDE_WIDTH bound to: 2 - type: integer 
+	Parameter FILTER_SIZE_WIDTH bound to: 6 - type: integer 
+	Parameter CHANEL_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter LAYER_STATE_WIDTH bound to: 4 - type: integer 
+	Parameter LAYER_TYPE_WIDTH bound to: 3 - type: integer 
+	Parameter ADDR_STATE_WIDTH bound to: 3 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter LOAD bound to: 1 - type: integer 
+	Parameter CONV bound to: 2 - type: integer 
+	Parameter MAXP bound to: 3 - type: integer 
+	Parameter OUTP bound to: 4 - type: integer 
+	Parameter W2BM bound to: 1 - type: integer 
+	Parameter BM2C bound to: 2 - type: integer 
+	Parameter RELO bound to: 3 - type: integer 
+	Parameter PEND bound to: 4 - type: integer 
+	Parameter FILTER_COUNTER_WIDTH bound to: 2 - type: integer 
+	Parameter COUNTER_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/AddrDataCtrl.v:312]
+INFO: [Synth 8-155] case statement is not full and has no default [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/AddrDataCtrl.v:370]
+INFO: [Synth 8-155] case statement is not full and has no default [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/AddrDataCtrl.v:420]
+INFO: [Synth 8-155] case statement is not full and has no default [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/AddrDataCtrl.v:444]
+INFO: [Synth 8-6157] synthesizing module 'ReadAddrCtrl' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/ReadAddrCtrl.v:1]
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter DATA_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter FILTER_STRIDE_WIDTH bound to: 2 - type: integer 
+	Parameter FILTER_SIZE_WIDTH bound to: 6 - type: integer 
+	Parameter CHANEL_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter LOAD bound to: 1 - type: integer 
+	Parameter CONV bound to: 2 - type: integer 
+	Parameter MAXP bound to: 3 - type: integer 
+	Parameter DENS bound to: 4 - type: integer 
+	Parameter SOFT bound to: 5 - type: integer 
+	Parameter W2BM bound to: 1 - type: integer 
+	Parameter BM2C bound to: 2 - type: integer 
+	Parameter RELO bound to: 3 - type: integer 
+	Parameter PEND bound to: 4 - type: integer 
+	Parameter FILTER_COUNTER_WIDTH bound to: 6 - type: integer 
+	Parameter COUNTER_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ReadAddrCtrl' (5#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/ReadAddrCtrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AddrDataCtrl' (6#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/AddrDataCtrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AddrWeightCtrl' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/AddrWeightCtrl.v:1]
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter DATA_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter FILTER_STRIDE_WIDTH bound to: 2 - type: integer 
+	Parameter CHANEL_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter LAYER_STATE_WIDTH bound to: 4 - type: integer 
+	Parameter LAYER_TYPE_WIDTH bound to: 3 - type: integer 
+	Parameter ADDR_STATE_WIDTH bound to: 3 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter LOAD bound to: 1 - type: integer 
+	Parameter CONV bound to: 2 - type: integer 
+	Parameter MAXP bound to: 3 - type: integer 
+	Parameter OUTP bound to: 4 - type: integer 
+	Parameter W2BM bound to: 1 - type: integer 
+	Parameter BM2C bound to: 2 - type: integer 
+	Parameter RELO bound to: 3 - type: integer 
+	Parameter HOLD bound to: 4 - type: integer 
+	Parameter PEND bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AddrWeightCtrl' (7#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/AddrWeightCtrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AddrCtrl' (8#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/AddrCtrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DataCtrl' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/DataCtrl.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter FILTER_STRIDE_WIDTH bound to: 2 - type: integer 
+	Parameter CHANEL_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter LAYER_STATE_WIDTH bound to: 4 - type: integer 
+	Parameter LAYER_TYPE_WIDTH bound to: 3 - type: integer 
+	Parameter ADDR_STATE_WIDTH bound to: 3 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter CONV bound to: 1 - type: integer 
+	Parameter MAXP bound to: 2 - type: integer 
+	Parameter UPSM bound to: 3 - type: integer 
+	Parameter CCAT bound to: 4 - type: integer 
+	Parameter YOLO bound to: 5 - type: integer 
+	Parameter DATA_W2BM bound to: 1 - type: integer 
+	Parameter DATA_BM2C bound to: 3 - type: integer 
+	Parameter DATA_RELO bound to: 4 - type: integer 
+	Parameter WEIGHT_W2BM bound to: 1 - type: integer 
+	Parameter WEIGHT_BM2C bound to: 2 - type: integer 
+	Parameter WEIGHT_RELO bound to: 3 - type: integer 
+	Parameter WEIGHT_HOLD bound to: 4 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/DataCtrl.v:150]
+INFO: [Synth 8-6157] synthesizing module 'BufferCtrl' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/BufferCtrl.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 16 - type: integer 
+	Parameter COUNTER_WIDTH bound to: 5 - type: integer 
+	Parameter COUNTER_LAST bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BufferCtrl' (9#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/BufferCtrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DataCtrl' (10#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/DataCtrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DataProcessor' (11#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/DataProcessor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/ALU.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter CHANEL_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter DATA_SIZE_WIDTH bound to: 7 - type: integer 
+	Parameter STATE_NUM bound to: 7 - type: integer 
+	Parameter LAYER_STATE_WIDTH bound to: 4 - type: integer 
+	Parameter LAYER_TYPE_WIDTH bound to: 3 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter LOAD bound to: 1 - type: integer 
+	Parameter CONV bound to: 2 - type: integer 
+	Parameter MAXP bound to: 3 - type: integer 
+	Parameter OUTP bound to: 4 - type: integer 
+	Parameter DATA_W2BN bound to: 1 - type: integer 
+	Parameter DATA_BM2C bound to: 2 - type: integer 
+	Parameter DATA_RELO bound to: 3 - type: integer 
+	Parameter DATA_PEND bound to: 4 - type: integer 
+	Parameter WEIGHT_W2BM bound to: 1 - type: integer 
+	Parameter WEIGHT_BM2C bound to: 2 - type: integer 
+	Parameter WEIGHT_RELO bound to: 3 - type: integer 
+	Parameter WEIGHT_HOLD bound to: 4 - type: integer 
+	Parameter WEIGHT_PEND bound to: 5 - type: integer 
+	Parameter CHL_COUNTER_WIDTH bound to: 6 - type: integer 
+	Parameter DATA_COUNTER_WIDTH bound to: 10 - type: integer 
+	Parameter DENS_MAX_CHL bound to: 16 - type: integer 
+	Parameter DENS_OUT_CHL bound to: 4 - type: integer 
+	Parameter ADDR_STATE_WIDTH bound to: 3 - type: integer 
+	Parameter INPUT_DIM bound to: 16 - type: integer 
+	Parameter OUTPUT_DIM bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ConvLayerCtrl' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/ConvLayerCtrl.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter LAYER_STATE_WIDTH bound to: 4 - type: integer 
+	Parameter LAYER_TYPE_WIDTH bound to: 3 - type: integer 
+	Parameter CONV_FILTER_NUM bound to: 9 - type: integer 
+	Parameter FILTER_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter FILTER_COUNT_LAST bound to: 9 - type: integer 
+	Parameter WEIGHT_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter WEIGHT_COUNT_LAST bound to: 10 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter LOAD bound to: 1 - type: integer 
+	Parameter CONV bound to: 2 - type: integer 
+	Parameter MAXP bound to: 3 - type: integer 
+	Parameter DENS bound to: 4 - type: integer 
+	Parameter SOFT bound to: 5 - type: integer 
+	Parameter WEIGHT_W2BM bound to: 1 - type: integer 
+	Parameter WEIGHT_BM2C bound to: 2 - type: integer 
+	Parameter WEIGHT_RELO bound to: 3 - type: integer 
+	Parameter WEIGHT_HOLD bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/ConvLayerCtrl.v:120]
+INFO: [Synth 8-6157] synthesizing module 'Conv' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/Conv.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter COUNTER_LAST bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multiplier' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/multiplier.v:1]
+	Parameter NUM_WIDTH bound to: 32 - type: integer 
+	Parameter NUM_WIDTH_2M bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'multiplier' (12#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/multiplier.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/adder.v:1]
+	Parameter NUM_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (13#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Conv' (14#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/Conv.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ConvLayerCtrl' (15#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/ConvLayerCtrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MaxpLayerCtrl' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/MaxpLayerCtrl.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_STATE_WIDTH bound to: 3 - type: integer 
+	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
+	Parameter MAXP_FILTER_NUM bound to: 4 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter WO2B bound to: 1 - type: integer 
+	Parameter WI2B bound to: 2 - type: integer 
+	Parameter BM2C bound to: 3 - type: integer 
+	Parameter RELO bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'compare' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/compare.v:1]
+	Parameter NUM_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'compare' (16#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/compare.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MaxpLayerCtrl' (17#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/MaxpLayerCtrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (18#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BramCtrl' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/BramCtrl.v:1]
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter LAYER_STATE_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_STATE_WIDTH bound to: 3 - type: integer 
+	Parameter DATA_W2BM bound to: 1 - type: integer 
+	Parameter DATA_BM2C bound to: 2 - type: integer 
+	Parameter DATA_RELO bound to: 3 - type: integer 
+	Parameter DATA_PEND bound to: 4 - type: integer 
+	Parameter WEIGHT_W2BM bound to: 1 - type: integer 
+	Parameter WEIGHT_BM2C bound to: 2 - type: integer 
+	Parameter WEIGHT_RELO bound to: 3 - type: integer 
+	Parameter WEIGHT_HOLD bound to: 4 - type: integer 
+	Parameter WEIGHT_PEND bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BramCtrl' (19#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/BramCtrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top' (20#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/cnn_top.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'base_cnn_top_0_0' (21#1) [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_cnn_top_0_0/synth/base_cnn_top_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1250.930 ; gain = 105.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1250.930 ; gain = 105.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1250.930 ; gain = 105.332
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1250.930 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1360.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1361.434 ; gain = 1.012
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1361.434 ; gain = 215.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1361.434 ; gain = 215.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1361.434 ; gain = 215.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'AddrWeightCtrl'
+WARNING: [Synth 8-327] inferring latch for variable 'Bram_Read_Filter_reg' [e:/GT/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/4e24/source_code/ReadAddrCtrl.v:254]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+                    W2BM |                           000010 |                              001
+                    PEND |                           000100 |                              101
+                    RELO |                           001000 |                              011
+                    BM2C |                           010000 |                              010
+                    HOLD |                           100000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'one-hot' in module 'AddrWeightCtrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1361.434 ; gain = 215.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 9     
+	   2 Input   11 Bit       Adders := 10    
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 36    
+	               11 Bit    Registers := 9     
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 65    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 50    
+	   4 Input   32 Bit        Muxes := 7     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 16    
+	   6 Input   11 Bit        Muxes := 1     
+	   4 Input   11 Bit        Muxes := 2     
+	   5 Input   11 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 6     
+	   2 Input    6 Bit        Muxes := 15    
+	   6 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   8 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	   3 Input    2 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 110   
+	   4 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 19    
+	  11 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP Conv1/m0/tmp_num, operation Mode is: A*B.
+DSP Report: operator Conv1/m0/tmp_num is absorbed into DSP Conv1/m0/tmp_num.
+DSP Report: operator Conv1/m0/tmp_num is absorbed into DSP Conv1/m0/tmp_num.
+DSP Report: Generating DSP Conv1/m0/tmp_num, operation Mode is: A*B.
+DSP Report: operator Conv1/m0/tmp_num is absorbed into DSP Conv1/m0/tmp_num.
+DSP Report: operator Conv1/m0/tmp_num is absorbed into DSP Conv1/m0/tmp_num.
+DSP Report: Generating DSP Conv1/m0/tmp_num, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Conv1/m0/tmp_num is absorbed into DSP Conv1/m0/tmp_num.
+DSP Report: operator Conv1/m0/tmp_num is absorbed into DSP Conv1/m0/tmp_num.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1361.434 ; gain = 215.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|multiplier  | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier  | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1382.332 ; gain = 236.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1385.586 ; gain = 239.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1419.215 ; gain = 273.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1434.039 ; gain = 288.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1434.039 ; gain = 288.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1434.039 ; gain = 288.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1434.039 ; gain = 288.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1434.039 ; gain = 288.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1434.039 ; gain = 288.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    83|
+|2     |DSP48E1 |     3|
+|3     |LUT1    |    65|
+|4     |LUT2    |   112|
+|5     |LUT3    |   566|
+|6     |LUT4    |   233|
+|7     |LUT5    |   321|
+|8     |LUT6    |   576|
+|9     |FDCE    |  1213|
+|10    |FDPE    |    17|
+|11    |FDRE    |   173|
+|12    |FDSE    |     1|
+|13    |LD      |    11|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1434.039 ; gain = 288.441
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1434.039 ; gain = 177.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1434.039 ; gain = 288.441
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1446.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 11 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1446.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  LD => LDCE (inverted pins: G): 11 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1446.125 ; gain = 300.527
+INFO: [Common 17-1381] The checkpoint 'E:/GT/base/project_1/project_1.runs/base_cnn_top_0_0_synth_1/base_cnn_top_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP base_cnn_top_0_0, cache-ID = 1db73cc147716b1e
+INFO: [Coretcl 2-1174] Renamed 19 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/GT/base/project_1/project_1.runs/base_cnn_top_0_0_synth_1/base_cnn_top_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_cnn_top_0_0_utilization_synth.rpt -pb base_cnn_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 26 17:53:44 2021...

@@ -1,0 +1,18 @@
+
+*** Running vivado
+    with args -log base_axis_register_slice_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_axis_register_slice_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source base_axis_register_slice_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP base_axis_register_slice_0_0, cache-ID = 3f1936bc134dccfc.
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 24 03:57:04 2022...

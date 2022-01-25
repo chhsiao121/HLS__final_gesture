@@ -1,0 +1,1341 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 24 04:02:09 2022
+# Process ID: 340
+# Current directory: D:/vivado_prj/base/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log base_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source base_wrapper.tcl -notrace
+# Log file: D:/vivado_prj/base/project_1/project_1.runs/impl_1/base_wrapper.vdi
+# Journal file: D:/vivado_prj/base/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source base_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+Command: link_design -top base_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0.dcp' for cell 'base_i/btns_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.dcp' for cell 'base_i/clk_wiz_10MHz'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_leds_gpio_0/base_leds_gpio_0.dcp' for cell 'base_i/leds_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0.dcp' for cell 'base_i/ps7_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0.dcp' for cell 'base_i/rst_ps7_0_fclk0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0.dcp' for cell 'base_i/rst_ps7_0_fclk1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0.dcp' for cell 'base_i/switches_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0.dcp' for cell 'base_i/system_interrupts'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.dcp' for cell 'base_i/gesture/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.dcp' for cell 'base_i/gesture/axi_dma_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_cnn_top_0_0/base_cnn_top_0_0.dcp' for cell 'base_i/gesture/cnn_top_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_gesture_top_0_bram_1/base_gesture_top_0_bram_1.dcp' for cell 'base_i/gesture/gesture_top_0_bram'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_xbar_14/base_xbar_14.dcp' for cell 'base_i/gesture/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_14/base_auto_pc_14.dcp' for cell 'base_i/gesture/axi_interconnect_0/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1.dcp' for cell 'base_i/gesture/axi_interconnect_0/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2.dcp' for cell 'base_i/gesture/axi_interconnect_0/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_3/base_auto_us_3.dcp' for cell 'base_i/gesture/axi_interconnect_0/s02_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_dilation_accel_0_0/base_dilation_accel_0_0.dcp' for cell 'base_i/img_processing/dilation_accel_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_resize_accel_0_0/base_resize_accel_0_0.dcp' for cell 'base_i/img_processing/resize_accel_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_threshold_accel_0_0/base_threshold_accel_0_0.dcp' for cell 'base_i/img_processing/threshold_accel_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_xbar_15/base_xbar_15.dcp' for cell 'base_i/img_processing/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_15/base_auto_pc_15.dcp' for cell 'base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_4/base_auto_us_4.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_5/base_auto_us_5.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_6/base_auto_us_6.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s02_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_7/base_auto_us_7.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s03_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_8/base_auto_us_8.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s04_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_9/base_auto_us_9.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s05_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_10/base_auto_us_10.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s06_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_xbar_13/base_xbar_13.dcp' for cell 'base_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2.dcp' for cell 'base_i/ps7_0_axi_periph/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_19/base_m00_regslice_19.dcp' for cell 'base_i/ps7_0_axi_periph/m00_couplers/m00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_19/base_m01_regslice_19.dcp' for cell 'base_i/ps7_0_axi_periph/m01_couplers/m01_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3.dcp' for cell 'base_i/ps7_0_axi_periph/m02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_19/base_m02_regslice_19.dcp' for cell 'base_i/ps7_0_axi_periph/m02_couplers/m02_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4.dcp' for cell 'base_i/ps7_0_axi_periph/m03_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_19/base_m03_regslice_19.dcp' for cell 'base_i/ps7_0_axi_periph/m03_couplers/m03_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5.dcp' for cell 'base_i/ps7_0_axi_periph/m04_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_19/base_m04_regslice_19.dcp' for cell 'base_i/ps7_0_axi_periph/m04_couplers/m04_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_6/base_auto_pc_6.dcp' for cell 'base_i/ps7_0_axi_periph/m05_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_19/base_m05_regslice_19.dcp' for cell 'base_i/ps7_0_axi_periph/m05_couplers/m05_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_7/base_auto_pc_7.dcp' for cell 'base_i/ps7_0_axi_periph/m06_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_19/base_m06_regslice_19.dcp' for cell 'base_i/ps7_0_axi_periph/m06_couplers/m06_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_8/base_auto_pc_8.dcp' for cell 'base_i/ps7_0_axi_periph/m07_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_19/base_m07_regslice_19.dcp' for cell 'base_i/ps7_0_axi_periph/m07_couplers/m07_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_9/base_auto_pc_9.dcp' for cell 'base_i/ps7_0_axi_periph/m08_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_17/base_m08_regslice_17.dcp' for cell 'base_i/ps7_0_axi_periph/m08_couplers/m08_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_10/base_auto_pc_10.dcp' for cell 'base_i/ps7_0_axi_periph/m09_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_17/base_m09_regslice_17.dcp' for cell 'base_i/ps7_0_axi_periph/m09_couplers/m09_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_11/base_auto_pc_11.dcp' for cell 'base_i/ps7_0_axi_periph/m10_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_12/base_auto_pc_12.dcp' for cell 'base_i/ps7_0_axi_periph/m11_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_13/base_auto_pc_13.dcp' for cell 'base_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_19/base_s00_regslice_19.dcp' for cell 'base_i/ps7_0_axi_periph/s00_couplers/s00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.dcp' for cell 'base_i/video/axi_vdma'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0.dcp' for cell 'base_i/video/proc_sys_reset_pixelclk'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_xbar_11/base_xbar_11.dcp' for cell 'base_i/video/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_20/base_m00_regslice_20.dcp' for cell 'base_i/video/axi_interconnect_0/m00_couplers/m00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0.dcp' for cell 'base_i/video/axi_interconnect_0/m01_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_20/base_m01_regslice_20.dcp' for cell 'base_i/video/axi_interconnect_0/m01_couplers/m01_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1.dcp' for cell 'base_i/video/axi_interconnect_0/m02_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_20/base_m02_regslice_20.dcp' for cell 'base_i/video/axi_interconnect_0/m02_couplers/m02_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_20/base_m03_regslice_20.dcp' for cell 'base_i/video/axi_interconnect_0/m03_couplers/m03_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_20/base_m04_regslice_20.dcp' for cell 'base_i/video/axi_interconnect_0/m04_couplers/m04_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_20/base_m05_regslice_20.dcp' for cell 'base_i/video/axi_interconnect_0/m05_couplers/m05_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2.dcp' for cell 'base_i/video/axi_interconnect_0/m06_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_20/base_m06_regslice_20.dcp' for cell 'base_i/video/axi_interconnect_0/m06_couplers/m06_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3.dcp' for cell 'base_i/video/axi_interconnect_0/m07_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_20/base_m07_regslice_20.dcp' for cell 'base_i/video/axi_interconnect_0/m07_couplers/m07_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_18/base_m08_regslice_18.dcp' for cell 'base_i/video/axi_interconnect_0/m08_couplers/m08_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_18/base_m09_regslice_18.dcp' for cell 'base_i/video/axi_interconnect_0/m09_couplers/m09_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0.dcp' for cell 'base_i/video/axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_20/base_s00_regslice_20.dcp' for cell 'base_i/video/axi_interconnect_0/s00_couplers/s00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_xbar_12/base_xbar_12.dcp' for cell 'base_i/video/axi_mem_intercon/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1.dcp' for cell 'base_i/video/axi_mem_intercon/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0.dcp' for cell 'base_i/video/axi_mem_intercon/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_0/base_axis_register_slice_0_0.dcp' for cell 'base_i/video/hdmi_in/axis_register_slice_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_color_convert_0/base_color_convert_0.dcp' for cell 'base_i/video/hdmi_in/color_convert'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_pixel_pack_0/base_pixel_pack_0.dcp' for cell 'base_i/video/hdmi_in/pixel_pack'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0.dcp' for cell 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_color_swap_0_0/base_color_swap_0_0.dcp' for cell 'base_i/video/hdmi_in/frontend/color_swap_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0.dcp' for cell 'base_i/video/hdmi_in/frontend/dvi2rgb_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_vid_in_axi4s_0_0/base_v_vid_in_axi4s_0_0.dcp' for cell 'base_i/video/hdmi_in/frontend/v_vid_in_axi4s_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_in_0/base_vtc_in_0.dcp' for cell 'base_i/video/hdmi_in/frontend/vtc_in'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_1/base_axis_register_slice_0_1.dcp' for cell 'base_i/video/hdmi_out/axis_register_slice_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_color_convert_1/base_color_convert_1.dcp' for cell 'base_i/video/hdmi_out/color_convert'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_pixel_unpack_0/base_pixel_unpack_0.dcp' for cell 'base_i/video/hdmi_out/pixel_unpack'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dynclk_0/base_axi_dynclk_0.dcp' for cell 'base_i/video/hdmi_out/frontend/axi_dynclk'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_color_swap_0_1/base_color_swap_0_1.dcp' for cell 'base_i/video/hdmi_out/frontend/color_swap_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0.dcp' for cell 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0.dcp' for cell 'base_i/video/hdmi_out/frontend/rgb2dvi_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_axi4s_vid_out_0_0/base_v_axi4s_vid_out_0_0.dcp' for cell 'base_i/video/hdmi_out/frontend/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_out_0/base_vtc_out_0.dcp' for cell 'base_i/video/hdmi_out/frontend/vtc_out'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1361.355 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2960 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. base_i/clk_wiz_10MHz/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'base_i/clk_wiz_10MHz/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0_board.xdc] for cell 'base_i/btns_gpio/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0_board.xdc] for cell 'base_i/btns_gpio/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0.xdc] for cell 'base_i/btns_gpio/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0.xdc] for cell 'base_i/btns_gpio/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0_board.xdc] for cell 'base_i/clk_wiz_10MHz/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0_board.xdc] for cell 'base_i/clk_wiz_10MHz/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.xdc] for cell 'base_i/clk_wiz_10MHz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2275.098 ; gain = 670.070
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.xdc] for cell 'base_i/clk_wiz_10MHz/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_leds_gpio_0/base_leds_gpio_0_board.xdc] for cell 'base_i/leds_gpio/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_leds_gpio_0/base_leds_gpio_0_board.xdc] for cell 'base_i/leds_gpio/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_leds_gpio_0/base_leds_gpio_0.xdc] for cell 'base_i/leds_gpio/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_leds_gpio_0/base_leds_gpio_0.xdc] for cell 'base_i/leds_gpio/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0.xdc] for cell 'base_i/ps7_0/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0.xdc] for cell 'base_i/ps7_0/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0_board.xdc] for cell 'base_i/rst_ps7_0_fclk0/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0_board.xdc] for cell 'base_i/rst_ps7_0_fclk0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0.xdc] for cell 'base_i/rst_ps7_0_fclk0/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0.xdc] for cell 'base_i/rst_ps7_0_fclk0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0_board.xdc] for cell 'base_i/rst_ps7_0_fclk1/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0_board.xdc] for cell 'base_i/rst_ps7_0_fclk1/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0.xdc] for cell 'base_i/rst_ps7_0_fclk1/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0.xdc] for cell 'base_i/rst_ps7_0_fclk1/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0_board.xdc] for cell 'base_i/switches_gpio/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0_board.xdc] for cell 'base_i/switches_gpio/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0.xdc] for cell 'base_i/switches_gpio/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0.xdc] for cell 'base_i/switches_gpio/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0.xdc] for cell 'base_i/system_interrupts/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0.xdc] for cell 'base_i/system_interrupts/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc] for cell 'base_i/video/axi_vdma/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:68]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:72]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:80]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:84]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:96]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:108]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:220]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc] for cell 'base_i/video/axi_vdma/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0_board.xdc] for cell 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0_board.xdc] for cell 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0.xdc] for cell 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0.xdc] for cell 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'base_i/video/hdmi_in/frontend/dvi2rgb_0/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'base_i/video/hdmi_in/frontend/dvi2rgb_0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0_board.xdc] for cell 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0_board.xdc] for cell 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0.xdc] for cell 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0.xdc] for cell 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'base_i/video/hdmi_out/frontend/rgb2dvi_0/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'base_i/video/hdmi_out/frontend/rgb2dvi_0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0_board.xdc] for cell 'base_i/video/proc_sys_reset_pixelclk/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0_board.xdc] for cell 'base_i/video/proc_sys_reset_pixelclk/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0.xdc] for cell 'base_i/video/proc_sys_reset_pixelclk/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0.xdc] for cell 'base_i/video/proc_sys_reset_pixelclk/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.xdc] for cell 'base_i/gesture/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.xdc:61]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.xdc] for cell 'base_i/gesture/axi_dma_0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.xdc] for cell 'base_i/gesture/axi_dma_1/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.xdc:61]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.xdc] for cell 'base_i/gesture/axi_dma_1/U0'
+Parsing XDC File [D:/vivado_prj/base/project_1/project_1.srcs/constrs_1/imports/constraints/base.xdc]
+Finished Parsing XDC File [D:/vivado_prj/base/project_1/project_1.srcs/constrs_1/imports/constraints/base.xdc]
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0_clocks.xdc] for cell 'base_i/system_interrupts/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0_clocks.xdc] for cell 'base_i/system_interrupts/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0_clocks.xdc] for cell 'base_i/video/axi_vdma/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0_clocks.xdc] for cell 'base_i/video/axi_vdma/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_0/base_axis_register_slice_0_0_clocks.xdc] for cell 'base_i/video/hdmi_in/axis_register_slice_0/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_0/base_axis_register_slice_0_0_clocks.xdc] for cell 'base_i/video/hdmi_in/axis_register_slice_0/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_vid_in_axi4s_0_0/base_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'base_i/video/hdmi_in/frontend/v_vid_in_axi4s_0/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_vid_in_axi4s_0_0/base_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'base_i/video/hdmi_in/frontend/v_vid_in_axi4s_0/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_in_0/base_vtc_in_0_clocks.xdc] for cell 'base_i/video/hdmi_in/frontend/vtc_in/U0'
+INFO: [Timing 38-2] Deriving generated clocks [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_in_0/base_vtc_in_0_clocks.xdc:2]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_in_0/base_vtc_in_0_clocks.xdc] for cell 'base_i/video/hdmi_in/frontend/vtc_in/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_1/base_axis_register_slice_0_1_clocks.xdc] for cell 'base_i/video/hdmi_out/axis_register_slice_0/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_1/base_axis_register_slice_0_1_clocks.xdc] for cell 'base_i/video/hdmi_out/axis_register_slice_0/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'base_i/video/hdmi_out/frontend/rgb2dvi_0/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'base_i/video/hdmi_out/frontend/rgb2dvi_0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_axi4s_vid_out_0_0/base_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'base_i/video/hdmi_out/frontend/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_axi4s_vid_out_0_0/base_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'base_i/video/hdmi_out/frontend/v_axi4s_vid_out_0/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_out_0/base_vtc_out_0_clocks.xdc] for cell 'base_i/video/hdmi_out/frontend/vtc_out/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_out_0/base_vtc_out_0_clocks.xdc] for cell 'base_i/video/hdmi_out/frontend/vtc_out/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0_clocks.xdc] for cell 'base_i/gesture/axi_dma_0/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0_clocks.xdc] for cell 'base_i/gesture/axi_dma_0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0_clocks.xdc] for cell 'base_i/gesture/axi_dma_1/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0_clocks.xdc] for cell 'base_i/gesture/axi_dma_1/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_20/base_s00_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/s00_couplers/s00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_20/base_s00_regslice_20_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_20/base_s00_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/s00_couplers/s00_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_20/base_m00_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m00_couplers/m00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_20/base_m00_regslice_20_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_20/base_m00_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m00_couplers/m00_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_20/base_m01_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m01_couplers/m01_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_20/base_m01_regslice_20_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_20/base_m01_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m01_couplers/m01_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m01_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc:17]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m01_couplers/auto_cc/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_20/base_m02_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m02_couplers/m02_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_20/base_m02_regslice_20_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_20/base_m02_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m02_couplers/m02_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m02_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc:17]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m02_couplers/auto_cc/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_20/base_m03_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m03_couplers/m03_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_20/base_m03_regslice_20_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_20/base_m03_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m03_couplers/m03_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_20/base_m04_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m04_couplers/m04_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_20/base_m04_regslice_20_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_20/base_m04_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m04_couplers/m04_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_20/base_m05_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m05_couplers/m05_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_20/base_m05_regslice_20_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_20/base_m05_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m05_couplers/m05_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_20/base_m06_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m06_couplers/m06_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_20/base_m06_regslice_20_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_20/base_m06_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m06_couplers/m06_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m06_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc:17]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m06_couplers/auto_cc/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_20/base_m07_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m07_couplers/m07_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_20/base_m07_regslice_20_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_20/base_m07_regslice_20_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m07_couplers/m07_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m07_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc:17]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m07_couplers/auto_cc/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_18/base_m08_regslice_18_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m08_couplers/m08_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_18/base_m08_regslice_18_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_18/base_m08_regslice_18_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m08_couplers/m08_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_18/base_m09_regslice_18_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m09_couplers/m09_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_18/base_m09_regslice_18_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_18/base_m09_regslice_18_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m09_couplers/m09_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_clocks.xdc] for cell 'base_i/video/axi_mem_intercon/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_clocks.xdc] for cell 'base_i/video/axi_mem_intercon/s01_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_19/base_s00_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/s00_couplers/s00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_19/base_s00_regslice_19_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_19/base_s00_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/s00_couplers/s00_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_19/base_m00_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m00_couplers/m00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_19/base_m00_regslice_19_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_19/base_m00_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m00_couplers/m00_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_19/base_m01_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m01_couplers/m01_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_19/base_m01_regslice_19_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_19/base_m01_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m01_couplers/m01_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_19/base_m02_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m02_couplers/m02_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_19/base_m02_regslice_19_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_19/base_m02_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m02_couplers/m02_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_19/base_m03_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m03_couplers/m03_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_19/base_m03_regslice_19_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_19/base_m03_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m03_couplers/m03_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_19/base_m04_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m04_couplers/m04_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_19/base_m04_regslice_19_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_19/base_m04_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m04_couplers/m04_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_19/base_m05_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m05_couplers/m05_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_19/base_m05_regslice_19_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_19/base_m05_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m05_couplers/m05_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_19/base_m06_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m06_couplers/m06_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_19/base_m06_regslice_19_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_19/base_m06_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m06_couplers/m06_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_19/base_m07_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m07_couplers/m07_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_19/base_m07_regslice_19_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_19/base_m07_regslice_19_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m07_couplers/m07_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_17/base_m08_regslice_17_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m08_couplers/m08_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_17/base_m08_regslice_17_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_17/base_m08_regslice_17_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m08_couplers/m08_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_17/base_m09_regslice_17_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m09_couplers/m09_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_17/base_m09_regslice_17_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_17/base_m09_regslice_17_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m09_couplers/m09_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1_clocks.xdc] for cell 'base_i/gesture/axi_interconnect_0/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1_clocks.xdc] for cell 'base_i/gesture/axi_interconnect_0/s00_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2_clocks.xdc] for cell 'base_i/gesture/axi_interconnect_0/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2_clocks.xdc] for cell 'base_i/gesture/axi_interconnect_0/s01_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_3/base_auto_us_3_clocks.xdc] for cell 'base_i/gesture/axi_interconnect_0/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_3/base_auto_us_3_clocks.xdc] for cell 'base_i/gesture/axi_interconnect_0/s02_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_4/base_auto_us_4_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_4/base_auto_us_4_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s00_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_5/base_auto_us_5_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_5/base_auto_us_5_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s01_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_6/base_auto_us_6_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_6/base_auto_us_6_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s02_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_7/base_auto_us_7_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s03_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_7/base_auto_us_7_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s03_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_8/base_auto_us_8_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s04_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_8/base_auto_us_8_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s04_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_9/base_auto_us_9_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s05_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_9/base_auto_us_9_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s05_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_10/base_auto_us_10_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s06_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_10/base_auto_us_10_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s06_couplers/auto_us/inst'
+INFO: [Project 1-1715] 7 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 52 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2292.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 17 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 3 instances
+
+108 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2292.828 ; gain = 1147.195
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.843 . Memory (MB): peak = 2292.828 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: d5a78ff0
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2292.828 ; gain = 0.000
+
+Starting Logic Optimization Task
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 10 inverter(s) to 43 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 16ebcaeff
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2466.090 ; gain = 4.230
+INFO: [Opt 31-389] Phase Retarget created 783 cells and removed 1207 cells
+INFO: [Opt 31-1021] In phase Retarget, 161 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 24 inverter(s) to 67 load pin(s).
+Phase 2 Constant propagation | Checksum: d23b5e6a
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2466.090 ; gain = 4.230
+INFO: [Opt 31-389] Phase Constant propagation created 2104 cells and removed 10529 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 876 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 15392203d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2466.090 ; gain = 4.230
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 6760 cells
+INFO: [Opt 31-1021] In phase Sweep, 352 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 15392203d
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2466.090 ; gain = 4.230
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 15392203d
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2466.090 ; gain = 4.230
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 15392203d
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2466.090 ; gain = 4.230
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 99 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             783  |            1207  |                                            161  |
+|  Constant propagation         |            2104  |           10529  |                                            876  |
+|  Sweep                        |               0  |            6760  |                                            352  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             99  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 2466.090 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1c7ff93ae
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2466.090 ; gain = 4.230
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 34 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 19 newly gated: 3 Total Ports: 68
+Ending PowerOpt Patch Enables Task | Checksum: 6b6191cd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.243 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 6b6191cd
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 3026.285 ; gain = 560.195
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+Ending Logic Optimization Task | Checksum: 16c3f9bb7
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 16c3f9bb7
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 16c3f9bb7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 3026.285 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+135 Infos, 65 Warnings, 3 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 3026.285 ; gain = 733.457
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 3026.285 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_prj/base/project_1/project_1.runs/impl_1/base_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 3026.285 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file base_wrapper_drc_opted.rpt -pb base_wrapper_drc_opted.pb -rpx base_wrapper_drc_opted.rpx
+Command: report_drc -file base_wrapper_drc_opted.rpt -pb base_wrapper_drc_opted.pb -rpx base_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/vivado_prj/base/project_1/project_1.runs/impl_1/base_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+CRITICAL WARNING: [DRC AVAL-46] v7v8_mmcm_fvco_rule1: The current computed target frequency, FVCO, is out of range for cell base_i/video/hdmi_in/frontend/dvi2rgb_0/U0/TMDS_ClockingX/DVI_ClkGenerator. The computed FVCO is 599.952 MHz. The valid FVCO range for speed grade -1 is 600MHz to 1200MHz. The cell attribute values used to compute FVCO are CLKFBOUT_MULT_F = 5.000, CLKIN1_PERIOD = 8.33400, and DIVCLK_DIVIDE = 1 (FVCO = 1000 * CLKFBOUT_MULT_F/(CLKIN1_PERIOD * DIVCLK_DIVIDE)).
+This violation may be corrected by:
+  1. The timer uses timing constraints for clock period or clock frequency that affect CLKIN1 to set cell attribute CLKIN1_PERIOD, over-riding any previous value. This may already be in place and, if so this violation will be resolved once Timing is run.  Otherwise, consider modifying timing constraints to adjust the CLKIN1_PERIOD and bring FVCO into the allowed range.
+  2. In the absence of timing constraints that affect CLKIN1, consider modifying the cell CLKIN1_PERIOD to bring FVCO into the allowed range.
+  3. If CLKIN1_PERIOD is satisfactory, modify the CLKFBOUT_MULT_F or DIVCLK_DIVIDE cell attributes to bring FVCO into the allowed range.
+  4. The MMCM configuration may be dynamically modified by use of DRP which is recognized by an ACTIVE signal on DCLK pin.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[10] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[7]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/Bram_Read_Addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[10] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[7]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/Bram_Write_Addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[10] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[7]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/present_state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[10] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[7]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/present_state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[10] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[7]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/present_state_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[8]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/Bram_Read_Addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[8]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/Bram_Write_Addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[8]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/present_state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[8]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/present_state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[8]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/present_state_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/Bram_Read_Addr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/Bram_Write_Addr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/present_state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/present_state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/present_state_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/Bram_Read_Addr_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/Bram_Write_Addr_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/present_state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/present_state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram has an input control pin base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/present_state_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[10] (net: base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[5]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[11] (net: base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[6]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[12] (net: base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[7]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[5] (net: base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[0]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[6] (net: base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[1]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[7] (net: base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[2]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[8] (net: base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[3]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[9] (net: base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[4]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[10] (net: base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[5]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[11] (net: base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[6]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[12] (net: base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[7]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[5] (net: base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[0]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[6] (net: base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[1]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[7] (net: base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[2]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[8] (net: base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[3]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[9] (net: base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[4]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[10] (net: base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[5]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[11] (net: base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[6]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[12] (net: base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[7]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg has an input control pin base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg/ADDRARDADDR[9] (net: base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/rnext[4]) which is driven by a register (base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Critical Warnings, 42 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 89e9abcd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d3a46052
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+Phase 1.3 Build Placer Netlist Model | Checksum: cc40b68b
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: cc40b68b
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: cc40b68b
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 165065389
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: db207334
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 2.3 Global Placement Core
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 64 LUTNM shape to break, 2619 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 34, two critical 30, total 64, new lutff created 8
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1056 nets or cells. Created 64 new cells, deleted 992 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[11] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[11]_INST_0_i_1 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[5] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[5]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[1] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[1]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[7] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[7]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[3] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[3]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[4] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[4]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[6] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[6]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[10] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[10]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[2] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[2]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[1] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[1]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[0] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[0]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[2] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[2]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[5] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[5]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[3] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[3]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[10] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[10]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[7] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[7]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[4] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[4]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[9] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrDataCtrl/addra[9]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[9] could not be optimized because driver base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_AddrCtrl/u_AddrWeightCtrl/addrb[9]_INST_0 could not be replicated
+INFO: [Physopt 32-46] Identified 3 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-81] Processed net base_i/gesture/cnn_top_0/inst/u_BramCtrl/enb_reg_0. Replicated 1 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 1 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 1 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 3026.285 ; gain = 0.000
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           64  |            992  |                  1056  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                                    |            1  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           65  |            992  |                  1057  |           0  |           9  |  00:00:02  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 12fded212
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:41 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Phase 2.3 Global Placement Core | Checksum: 18ff4ce1d
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:42 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 18ff4ce1d
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:42 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 173474e91
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:44 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 13c428d94
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:48 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1a2e8daf7
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:48 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 15d41ffde
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:48 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1af4af3af
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:54 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 7ef80092
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:08 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 122b40aa0
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:01:11 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: de91b53a
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:01:11 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 12c11347a
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:01:22 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 12c11347a
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:01:22 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 229b04ba5
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.497 | TNS=-715.474 |
+Phase 1 Physical Synthesis Initialization | Checksum: 22a9970a3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3026.285 ; gain = 0.000
+INFO: [Place 46-33] Processed net base_i/img_processing/dilation_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net base_i/img_processing/resize_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net base_i/img_processing/threshold_accel_0/inst/gmem2_m_axi_U/bus_write/buff_wdata/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net base_i/gesture/cnn_top_0/inst/u_DataProcessor/u_DataCtrl/BC1/resetn_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net base_i/video/hdmi_out/frontend/vtc_out/U0/U_VIDEO_CTRL/GEN_HAS_IRQ.irq_i_1_n_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 5 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 5, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+Ending Physical Synthesis Task | Checksum: 29f29f4e5
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 229b04ba5
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:33 . Memory (MB): peak = 3026.285 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-7.769. For the most accurate timing information please run report_timing.
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:57 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 21caf7fd9
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:57 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 21caf7fd9
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:57 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                4x4|
+|___________|___________________|___________________|
+|      South|                1x1|                4x4|
+|___________|___________________|___________________|
+|       East|                1x1|                2x2|
+|___________|___________________|___________________|
+|       West|                1x1|                2x2|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 21caf7fd9
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:58 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 21caf7fd9
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:58 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:58 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 15e9825ae
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:58 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Ending Placer Task | Checksum: 10c8b7405
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:58 . Memory (MB): peak = 3026.285 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+203 Infos, 107 Warnings, 10 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:47 ; elapsed = 00:02:00 . Memory (MB): peak = 3026.285 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3026.285 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_prj/base/project_1/project_1.runs/impl_1/base_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 3026.285 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file base_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 3026.285 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file base_wrapper_utilization_placed.rpt -pb base_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file base_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 3026.285 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.769 | TNS=-621.422 |
+Phase 1 Physical Synthesis Initialization | Checksum: 23568ea4e
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 3026.285 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.769 | TNS=-621.422 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 23568ea4e
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 3026.285 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.769 | TNS=-621.422 |
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/Addi_Tmp_reg[31]_0[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Addi_Tmp_reg[27]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Addi_Tmp[27]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Mult_Res_out0[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Addi_Tmp_reg[27]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/p_0_in_0[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__2[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_carry_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.525 | TNS=-615.837 |
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/Addi_Tmp_reg[31]_0[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Addi_Tmp[31]_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Mult_Res_out0[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Addi_Tmp_reg[31]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/p_0_in_0[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__2[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_carry__0_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.360 | TNS=-615.285 |
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/out[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/p_1_in[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_2[15].  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_2
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_2[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_20[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_35_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_40_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_94_n_0.  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_94
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_94_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_50_n_0.  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_50
+INFO: [Physopt 32-710] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_94_n_0. Critical path length was reduced through logic transformation on cell base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_94_comp.
+INFO: [Physopt 32-735] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_50_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.321 | TNS=-614.037 |
+INFO: [Physopt 32-572] Net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_1[14] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_1[14].  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_5
+INFO: [Physopt 32-572] Net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_1[14] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_1[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_10[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_24_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41_n_0.  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41
+INFO: [Physopt 32-735] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.189 | TNS=-609.813 |
+INFO: [Physopt 32-663] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_98_n_0.  Re-placed instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_49
+INFO: [Physopt 32-735] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_98_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.158 | TNS=-608.821 |
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_98_n_0.  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_49
+INFO: [Physopt 32-572] Net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_98_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_98_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.086 | TNS=-606.517 |
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_82_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_44_n_0.  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_44
+INFO: [Physopt 32-710] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_82_n_0. Critical path length was reduced through logic transformation on cell base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_82_comp.
+INFO: [Physopt 32-735] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_44_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.066 | TNS=-605.877 |
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_95_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_45_n_0.  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_45
+INFO: [Physopt 32-710] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_95_n_0. Critical path length was reduced through logic transformation on cell base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_95_comp.
+INFO: [Physopt 32-735] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_i_45_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.871 | TNS=-599.637 |
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41_n_0.  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_n_106. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/douta[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/Addi_Tmp_reg[31]_0[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Addi_Tmp[27]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Mult_Res_out0[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/p_0_in_0[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__2[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/out[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/p_1_in[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_1[14].  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_5
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_1[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_10[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41_n_0.  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/douta[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.871 | TNS=-599.637 |
+Phase 3 Critical Path Optimization | Checksum: 23568ea4e
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 3032.574 ; gain = 6.289
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.871 | TNS=-599.637 |
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/Addi_Tmp_reg[31]_0[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Addi_Tmp_reg[27]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Addi_Tmp[27]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Mult_Res_out0[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Addi_Tmp_reg[27]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/p_0_in_0[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__2[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/out[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/p_1_in[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_1[14] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_1[14].  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_5
+INFO: [Physopt 32-572] Net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_1[14] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_1[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_10[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_24_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41_n_0.  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_n_106. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/douta[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/Addi_Tmp_reg[31]_0[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Addi_Tmp[27]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/Mult_Res_out0[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/p_0_in_0[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__2[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/out[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/p_1_in[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_1[14].  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_5
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_1[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num_10[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41_n_0.  Did not re-place instance base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41
+INFO: [Physopt 32-702] Processed net base_i/gesture/cnn_top_0/inst/u_ALU/u_ConvLayerCtrl/Conv1/m0/tmp_num__0_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net base_i/gesture/gesture_top_0_bram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/douta[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.871 | TNS=-599.637 |
+Phase 4 Critical Path Optimization | Checksum: 23568ea4e
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 3032.574 ; gain = 6.289
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3032.574 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-6.871 | TNS=-599.637 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.898  |         21.785  |            0  |              0  |                     8  |           0  |           2  |  00:00:02  |
+|  Total          |          0.898  |         21.785  |            0  |              0  |                     8  |           0  |           3  |  00:00:03  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 3032.574 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+Ending Physical Synthesis Task | Checksum: 123d47e5f
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 3032.574 ; gain = 6.289
+INFO: [Common 17-83] Releasing license: Implementation
+337 Infos, 107 Warnings, 13 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:15 . Memory (MB): peak = 3032.574 ; gain = 6.289
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3032.574 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_prj/base/project_1/project_1.runs/impl_1/base_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 3032.574 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 62a462b5 ConstDB: 0 ShapeSum: 59ec91bd RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 18f6f32f9
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 3114.301 ; gain = 27.445
+Post Restoration Checksum: NetGraph: 954d930e NumContArr: fa219feb Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 18f6f32f9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 3114.301 ; gain = 27.445
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 18f6f32f9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 3119.703 ; gain = 32.848
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 18f6f32f9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 3119.703 ; gain = 32.848
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1e9a3e7ae
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 3172.801 ; gain = 85.945
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.861 | TNS=-410.296| WHS=-0.323 | THS=-912.934|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 175d2e264
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:33 . Memory (MB): peak = 3368.051 ; gain = 281.195
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.861 | TNS=-392.605| WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 222e308f8
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:33 . Memory (MB): peak = 3368.051 ; gain = 281.195
+Phase 2 Router Initialization | Checksum: 192c4d342
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:33 . Memory (MB): peak = 3368.051 ; gain = 281.195
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00460806 %
+  Global Horizontal Routing Utilization  = 0.00473293 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 71873
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 71864
+  Number of Partially Routed Nets     = 9
+  Number of Node Overlaps             = 8
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 192c4d342
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:33 . Memory (MB): peak = 3368.051 ; gain = 281.195
+Phase 3 Initial Routing | Checksum: ed74b86d
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:37 . Memory (MB): peak = 3368.051 ; gain = 281.195
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 6410
+ Number of Nodes with overlaps = 761
+ Number of Nodes with overlaps = 178
+ Number of Nodes with overlaps = 66
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.205 | TNS=-3635.890| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2214b4abd
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:07 . Memory (MB): peak = 3368.051 ; gain = 281.195
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 350
+ Number of Nodes with overlaps = 80
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.081 | TNS=-3634.632| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 23fdcac3d
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:18 . Memory (MB): peak = 3368.051 ; gain = 281.195
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 350
+ Number of Nodes with overlaps = 104
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.192 | TNS=-3639.199| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 8060883e
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:29 . Memory (MB): peak = 3368.051 ; gain = 281.195
+Phase 4 Rip-up And Reroute | Checksum: 8060883e
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:29 . Memory (MB): peak = 3368.051 ; gain = 281.195
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 15da6905d
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:32 . Memory (MB): peak = 3368.051 ; gain = 281.195
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.966 | TNS=-3446.009| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 6c6e6339
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:01:33 . Memory (MB): peak = 3368.051 ; gain = 281.195
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 6c6e6339
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:33 . Memory (MB): peak = 3368.051 ; gain = 281.195
+Phase 5 Delay and Skew Optimization | Checksum: 6c6e6339
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:33 . Memory (MB): peak = 3368.051 ; gain = 281.195
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 7bcb4885
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:36 . Memory (MB): peak = 3368.051 ; gain = 281.195
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.966 | TNS=-2892.230| WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: fd35dc91
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:36 . Memory (MB): peak = 3368.051 ; gain = 281.195
+Phase 6 Post Hold Fix | Checksum: fd35dc91
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:36 . Memory (MB): peak = 3368.051 ; gain = 281.195
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 15.1349 %
+  Global Horizontal Routing Utilization  = 17.7879 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 87.3874%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X19Y66 -> INT_R_X19Y66
+South Dir 2x2 Area, Max Cong = 90.0901%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X18Y48 -> INT_R_X19Y49
+East Dir 1x1 Area, Max Cong = 86.7647%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X17Y49 -> INT_R_X17Y49
+West Dir 2x2 Area, Max Cong = 87.1324%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X18Y48 -> INT_R_X19Y49
+   INT_L_X20Y48 -> INT_R_X21Y49
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.666667 Sparse Ratio: 1
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.5 Sparse Ratio: 0.5
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 2 Aspect Ratio: 0.8 Sparse Ratio: 0.6875
+
+Phase 7 Route finalize | Checksum: bf7ec587
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:37 . Memory (MB): peak = 3368.051 ; gain = 281.195
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: bf7ec587
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:37 . Memory (MB): peak = 3368.051 ; gain = 281.195
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 10b0e564c
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:40 . Memory (MB): peak = 3368.051 ; gain = 281.195
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-6.966 | TNS=-2892.230| WHS=0.010  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 10b0e564c
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:40 . Memory (MB): peak = 3368.051 ; gain = 281.195
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:40 . Memory (MB): peak = 3368.051 ; gain = 281.195
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+357 Infos, 108 Warnings, 15 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:29 ; elapsed = 00:01:48 . Memory (MB): peak = 3368.051 ; gain = 335.477
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 3368.051 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_prj/base/project_1/project_1.runs/impl_1/base_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 3368.051 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file base_wrapper_drc_routed.rpt -pb base_wrapper_drc_routed.pb -rpx base_wrapper_drc_routed.rpx
+Command: report_drc -file base_wrapper_drc_routed.rpt -pb base_wrapper_drc_routed.pb -rpx base_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/vivado_prj/base/project_1/project_1.runs/impl_1/base_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 3451.824 ; gain = 83.773
+INFO: [runtcl-4] Executing : report_methodology -file base_wrapper_methodology_drc_routed.rpt -pb base_wrapper_methodology_drc_routed.pb -rpx base_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file base_wrapper_methodology_drc_routed.rpt -pb base_wrapper_methodology_drc_routed.pb -rpx base_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/vivado_prj/base/project_1/project_1.runs/impl_1/base_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 3451.824 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file base_wrapper_power_routed.rpt -pb base_wrapper_power_summary_routed.pb -rpx base_wrapper_power_routed.rpx
+Command: report_power -file base_wrapper_power_routed.rpt -pb base_wrapper_power_summary_routed.pb -rpx base_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+Running Vector-less Activity Propagation...
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+369 Infos, 109 Warnings, 19 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 3453.945 ; gain = 2.121
+INFO: [runtcl-4] Executing : report_route_status -file base_wrapper_route_status.rpt -pb base_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file base_wrapper_timing_summary_routed.rpt -pb base_wrapper_timing_summary_routed.pb -rpx base_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file base_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file base_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file base_wrapper_bus_skew_routed.rpt -pb base_wrapper_bus_skew_routed.pb -rpx base_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-249] Generated clock base_i/video/hdmi_out/frontend/rgb2dvi_0/U0/SerialClk has no logical paths from master clock axi_dynclk_0_PXL_CLK_O.
+Resolution: Review the path between the master clock and the generated clock with the schematic viewer and correct the -source option. If it is correct and the master clock does not have a timing path to the generated clock, define the generated clock as a primary clock by using create_clock.
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 24 04:09:05 2022...

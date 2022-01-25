@@ -1,0 +1,1007 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 24 05:10:03 2022
+# Process ID: 2472
+# Current directory: D:/vivado_prj/base/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6800 D:\vivado_prj\base\project_1\project_1.xpr
+# Log file: D:/vivado_prj/base/project_1/vivado.log
+# Journal file: D:/vivado_prj/base/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_prj/base/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1217.121 ; gain = 73.656
+update_compile_order -fileset sources_1
+open_bd_design {D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd}
+Reading block design file <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - ps7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk1
+Adding component instance block -- xilinx.com:hls:color_convert:1.0 - color_convert
+Adding component instance block -- xilinx.com:user:color_swap:1.1 - color_swap_0
+Adding component instance block -- digilentinc.com:ip:dvi2rgb:1.7 - dvi2rgb_0
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_hdmiin
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - vtc_in
+Adding component instance block -- xilinx.com:hls:pixel_pack:1.0 - pixel_pack
+Adding component instance block -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+Adding component instance block -- xilinx.com:hls:color_convert:1.0 - color_convert
+Adding component instance block -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk
+Adding component instance block -- xilinx.com:user:color_swap:1.1 - color_swap_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.2 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - hdmi_out_hpd_video
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - vtc_out
+Adding component instance block -- xilinx.com:hls:pixel_unpack:1.0 - pixel_unpack
+Adding component instance block -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_pixelclk
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - btns_gpio
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_10MHz
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concat_interrupts
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - leds_gpio
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - switches_gpio
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - system_interrupts
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_1
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - gesture_top_0_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:user:cnn_top:1.0 - cnn_top_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:hls:dilation_accel:1.0 - dilation_accel_0
+Adding component instance block -- xilinx.com:hls:resize_accel:1.0 - resize_accel_0
+Adding component instance block -- xilinx.com:hls:threshold_accel:1.0 - threshold_accel_0
+Adding component instance block -- xilinx.com:hls:median_blur_accel:1.0 - median_blur_accel_0
+Adding component instance block -- xilinx.com:hls:arithm_accel:1.0 - arithm_accel_0
+Successfully read diagram <base> from block design file <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd>
+launch_runs synth_1 -jobs 20
+INFO: [BD 41-1662] The design 'base.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:\vivado_prj\base\project_1\project_1.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/video/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/video/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gesture/axi_interconnect_0/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/gesture/axi_interconnect_0/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gesture/axi_interconnect_0/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/gesture/axi_interconnect_0/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s02_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s02_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s02_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s02_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s03_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s03_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s03_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s03_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s04_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s04_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s04_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s04_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s05_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s05_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s05_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s05_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s06_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s06_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s06_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s06_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s07_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s07_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s07_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s07_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s08_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s08_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s08_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s08_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s09_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s09_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s09_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s09_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s10_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s10_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s10_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s10_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s11_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s11_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s11_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s11_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/m00_couplers/auto_pc/m_axi_rid'(4) to pin: '/img_processing/axi_interconnect_0/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/m00_couplers/auto_pc/m_axi_bid'(4) to pin: '/img_processing/axi_interconnect_0/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_WID'(6) to pin: '/img_processing/M00_AXI_wid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_ARID'(6) to pin: '/img_processing/M00_AXI_arid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_AWID'(6) to pin: '/img_processing/M00_AXI_awid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to pin: '/video/M_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to pin: '/video/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to pin: '/video/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_AWID'(6) to pin: '/gesture/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_ARID'(6) to pin: '/gesture/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_WID'(6) to pin: '/gesture/M00_AXI_wid'(2) - Only lower order bits will be connected.
+VHDL Output written to : D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/synth/base.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/video/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/video/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gesture/axi_interconnect_0/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/gesture/axi_interconnect_0/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/gesture/axi_interconnect_0/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/gesture/axi_interconnect_0/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s02_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s02_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s02_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s02_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s03_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s03_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s03_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s03_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s04_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s04_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s04_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s04_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s05_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s05_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s05_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s05_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s06_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s06_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s06_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s06_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s07_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s07_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s07_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s07_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s08_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s08_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s08_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s08_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s09_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s09_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s09_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s09_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s10_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s10_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s10_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s10_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s11_couplers/auto_us/s_axi_arlock'(1) to pin: '/img_processing/axi_interconnect_0/s11_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/s11_couplers/auto_us/s_axi_awlock'(1) to pin: '/img_processing/axi_interconnect_0/s11_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/m00_couplers/auto_pc/m_axi_rid'(4) to pin: '/img_processing/axi_interconnect_0/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/img_processing/axi_interconnect_0/m00_couplers/auto_pc/m_axi_bid'(4) to pin: '/img_processing/axi_interconnect_0/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_WID'(6) to pin: '/img_processing/M00_AXI_wid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_ARID'(6) to pin: '/img_processing/M00_AXI_arid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_AWID'(6) to pin: '/img_processing/M00_AXI_awid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to pin: '/video/M_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to pin: '/video/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to pin: '/video/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_AWID'(6) to pin: '/gesture/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_ARID'(6) to pin: '/gesture/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP1_WID'(6) to pin: '/gesture/M00_AXI_wid'(2) - Only lower order bits will be connected.
+VHDL Output written to : D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/sim/base.v
+VHDL Output written to : D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/hdl/base_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m00_couplers/m00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m01_couplers/m01_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m01_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m02_couplers/m02_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m02_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m03_couplers/m03_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m04_couplers/m04_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m05_couplers/m05_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m06_couplers/m06_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m06_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m07_couplers/m07_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m07_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m08_couplers/m08_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m09_couplers/m09_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_mem_intercon/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_17/base_auto_pc_17_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/m00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m01_couplers/m01_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/m02_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m03_couplers/m03_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m03_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m04_couplers/m04_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m04_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m05_couplers/m05_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_6/base_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m05_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m06_couplers/m06_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_7/base_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m06_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m07_couplers/m07_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_8/base_auto_pc_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m07_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m08_couplers/m08_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_9/base_auto_pc_9_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m08_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m09_couplers/m09_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_10/base_auto_pc_10_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m09_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_11/base_auto_pc_11_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m10_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_12/base_auto_pc_12_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m11_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_13/base_auto_pc_13_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m12_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_14/base_auto_pc_14_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m13_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_15/base_auto_pc_15_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m14_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_16/base_auto_pc_16_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m15_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture/axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture/axi_interconnect_0/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_3/base_auto_us_3_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture/axi_interconnect_0/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_18/base_auto_pc_18_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture/axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_4/base_auto_us_4_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_5/base_auto_us_5_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_6/base_auto_us_6_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_7/base_auto_us_7_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s03_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_8/base_auto_us_8_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s04_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_9/base_auto_us_9_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s05_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_10/base_auto_us_10_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s06_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_11/base_auto_us_11_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s07_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_12/base_auto_us_12_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s08_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_13/base_auto_us_13_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s09_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_14/base_auto_us_14_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s10_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_15/base_auto_us_15_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/s11_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_19/base_auto_pc_19_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/axi_interconnect_0/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/median_blur_accel_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block img_processing/arithm_accel_0 .
+Exporting to file D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/hw_handoff/base.hwh
+Generated Block Design Tcl file D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/hw_handoff/base_bd.tcl
+Generated Hardware Definition File D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/synth/base.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_arithm_accel_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_cc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_cc_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_10
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_11
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_12
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_13
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_14
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_15
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_16
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_17
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_18
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_19
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_5
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_6
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_7
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_8
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_9
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_10
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_11
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_12
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_13
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_14
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_15
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_5
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_6
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_7
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_8
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_us_9
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m00_regslice_23
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m00_regslice_24
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m01_regslice_23
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m01_regslice_24
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m02_regslice_23
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m02_regslice_24
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m03_regslice_23
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m03_regslice_24
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m04_regslice_23
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m04_regslice_24
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m05_regslice_23
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m05_regslice_24
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m06_regslice_23
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m06_regslice_24
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m07_regslice_23
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m07_regslice_24
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m08_regslice_21
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m08_regslice_22
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m09_regslice_21
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_m09_regslice_22
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_median_blur_accel_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_s00_regslice_23
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_s00_regslice_24
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_xbar_13
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_xbar_15
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_0, cache-ID = 6c2c67141b64852c; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_16, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_7, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_2, cache-ID = d6153f96ea5e6ed5; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m00_regslice_24, cache-ID = c9d6103aab7710cd; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m05_regslice_24, cache-ID = c9d6103aab7710cd; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_regslice_23, cache-ID = b9c148b8b2f9cd99; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_14, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_0, cache-ID = 1058a2f1158680ce; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_4, cache-ID = 9868352cad277d61; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m01_regslice_24, cache-ID = c6b8275a9ed11865; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m06_regslice_24, cache-ID = b7a92716c9ed09f7; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_1, cache-ID = 5a503b878e4ed479; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_13, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_2, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_15, cache-ID = 9868352cad277d61; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m01_regslice_23, cache-ID = 3cab0d2f89a875e2; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m06_regslice_23, cache-ID = 017d81e175331dfa; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_2, cache-ID = 5a503b878e4ed479; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_15, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_6, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_3, cache-ID = d6153f96ea5e6ed5; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m02_regslice_23, cache-ID = c9d6103aab7710cd; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m07_regslice_23, cache-ID = 95c8705edb8b4bfb; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_3, cache-ID = 6c2c67141b64852c; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_17, cache-ID = 97203cdcf25f1777; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_8, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_13, cache-ID = 9868352cad277d61; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m00_regslice_23, cache-ID = c9d6103aab7710cd; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m04_regslice_24, cache-ID = c9d6103aab7710cd; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m09_regslice_22, cache-ID = c9d6103aab7710cd; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_0, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_5, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_12, cache-ID = 9868352cad277d61; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_8, cache-ID = 9868352cad277d61; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m04_regslice_23, cache-ID = c9d6103aab7710cd; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m09_regslice_21, cache-ID = e4d970128cb75a69; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_1, cache-ID = 138b69d87b0c6445; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_18, cache-ID = 5ae4b1cd1750ecc1; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_1, cache-ID = db19ee11e5e97337; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_5, cache-ID = 9868352cad277d61; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m02_regslice_24, cache-ID = b7a92716c9ed09f7; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m07_regslice_24, cache-ID = c6b8275a9ed11865; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_10, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_9, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_14, cache-ID = 9868352cad277d61; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_9, cache-ID = 9868352cad277d61; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m05_regslice_23, cache-ID = 017d81e175331dfa; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_regslice_24, cache-ID = 3cab0d2f89a875e2; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_11, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_3, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_10, cache-ID = 9868352cad277d61; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_6, cache-ID = 9868352cad277d61; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m03_regslice_23, cache-ID = c9d6103aab7710cd; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m08_regslice_21, cache-ID = dc51f034a72952a0; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_12, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_4, cache-ID = 7f74f7314f4007cb; cache size = 230.631 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_11, cache-ID = 9868352cad277d61; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_7, cache-ID = 9868352cad277d61; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m03_regslice_24, cache-ID = ad40f078f0154332; cache size = 230.632 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m08_regslice_22, cache-ID = c9d6103aab7710cd; cache size = 230.632 MB.
+[Mon Jan 24 05:10:55 2022] Launched base_xbar_13_synth_1, base_xbar_15_synth_1, base_auto_pc_19_synth_1, base_median_blur_accel_0_0_synth_1, base_arithm_accel_0_0_synth_1...
+Run output will be captured here:
+base_xbar_13_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_xbar_13_synth_1/runme.log
+base_xbar_15_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_xbar_15_synth_1/runme.log
+base_auto_pc_19_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_auto_pc_19_synth_1/runme.log
+base_median_blur_accel_0_0_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_median_blur_accel_0_0_synth_1/runme.log
+base_arithm_accel_0_0_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_arithm_accel_0_0_synth_1/runme.log
+[Mon Jan 24 05:10:55 2022] Launched synth_1...
+Run output will be captured here: D:/vivado_prj/base/project_1/project_1.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1830.820 ; gain = 186.074
+launch_runs impl_1 -jobs 20
+[Mon Jan 24 05:13:15 2022] Launched impl_1...
+Run output will be captured here: D:/vivado_prj/base/project_1/project_1.runs/impl_1/runme.log
+open_bd_design {D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd}
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+set_property location {0.5 -326 842} [get_bd_cells rst_ps7_0_fclk0]
+set_property location {1.5 268 720} [get_bd_cells ps7_0_axi_periph]
+set_property location {2 359 1420} [get_bd_cells concat_interrupts]
+set_property location {3 712 1451} [get_bd_cells concat_interrupts]
+set_property location {3 818 1373} [get_bd_cells concat_interrupts]
+set_property location {3 867 1578} [get_bd_cells system_interrupts]
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0.dcp' for cell 'base_i/btns_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.dcp' for cell 'base_i/clk_wiz_10MHz'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_leds_gpio_0/base_leds_gpio_0.dcp' for cell 'base_i/leds_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0.dcp' for cell 'base_i/ps7_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0.dcp' for cell 'base_i/rst_ps7_0_fclk0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0.dcp' for cell 'base_i/rst_ps7_0_fclk1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0.dcp' for cell 'base_i/switches_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0.dcp' for cell 'base_i/system_interrupts'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.dcp' for cell 'base_i/gesture/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.dcp' for cell 'base_i/gesture/axi_dma_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_cnn_top_0_0/base_cnn_top_0_0.dcp' for cell 'base_i/gesture/cnn_top_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_gesture_top_0_bram_1/base_gesture_top_0_bram_1.dcp' for cell 'base_i/gesture/gesture_top_0_bram'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_xbar_14/base_xbar_14.dcp' for cell 'base_i/gesture/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_18/base_auto_pc_18.dcp' for cell 'base_i/gesture/axi_interconnect_0/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1.dcp' for cell 'base_i/gesture/axi_interconnect_0/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2.dcp' for cell 'base_i/gesture/axi_interconnect_0/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_3/base_auto_us_3.dcp' for cell 'base_i/gesture/axi_interconnect_0/s02_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_arithm_accel_0_0/base_arithm_accel_0_0.dcp' for cell 'base_i/img_processing/arithm_accel_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_dilation_accel_0_0/base_dilation_accel_0_0.dcp' for cell 'base_i/img_processing/dilation_accel_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_median_blur_accel_0_0/base_median_blur_accel_0_0.dcp' for cell 'base_i/img_processing/median_blur_accel_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_resize_accel_0_0/base_resize_accel_0_0.dcp' for cell 'base_i/img_processing/resize_accel_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_threshold_accel_0_0/base_threshold_accel_0_0.dcp' for cell 'base_i/img_processing/threshold_accel_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_xbar_15/base_xbar_15.dcp' for cell 'base_i/img_processing/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_19/base_auto_pc_19.dcp' for cell 'base_i/img_processing/axi_interconnect_0/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_4/base_auto_us_4.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_5/base_auto_us_5.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_6/base_auto_us_6.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s02_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_7/base_auto_us_7.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s03_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_8/base_auto_us_8.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s04_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_9/base_auto_us_9.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s05_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_10/base_auto_us_10.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s06_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_11/base_auto_us_11.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s07_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_12/base_auto_us_12.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s08_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_13/base_auto_us_13.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s09_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_14/base_auto_us_14.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s10_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_15/base_auto_us_15.dcp' for cell 'base_i/img_processing/axi_interconnect_0/s11_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_xbar_13/base_xbar_13.dcp' for cell 'base_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2.dcp' for cell 'base_i/ps7_0_axi_periph/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_23/base_m00_regslice_23.dcp' for cell 'base_i/ps7_0_axi_periph/m00_couplers/m00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_23/base_m01_regslice_23.dcp' for cell 'base_i/ps7_0_axi_periph/m01_couplers/m01_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3.dcp' for cell 'base_i/ps7_0_axi_periph/m02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_23/base_m02_regslice_23.dcp' for cell 'base_i/ps7_0_axi_periph/m02_couplers/m02_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4.dcp' for cell 'base_i/ps7_0_axi_periph/m03_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_23/base_m03_regslice_23.dcp' for cell 'base_i/ps7_0_axi_periph/m03_couplers/m03_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5.dcp' for cell 'base_i/ps7_0_axi_periph/m04_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_23/base_m04_regslice_23.dcp' for cell 'base_i/ps7_0_axi_periph/m04_couplers/m04_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_6/base_auto_pc_6.dcp' for cell 'base_i/ps7_0_axi_periph/m05_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_23/base_m05_regslice_23.dcp' for cell 'base_i/ps7_0_axi_periph/m05_couplers/m05_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_7/base_auto_pc_7.dcp' for cell 'base_i/ps7_0_axi_periph/m06_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_23/base_m06_regslice_23.dcp' for cell 'base_i/ps7_0_axi_periph/m06_couplers/m06_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_8/base_auto_pc_8.dcp' for cell 'base_i/ps7_0_axi_periph/m07_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_23/base_m07_regslice_23.dcp' for cell 'base_i/ps7_0_axi_periph/m07_couplers/m07_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_9/base_auto_pc_9.dcp' for cell 'base_i/ps7_0_axi_periph/m08_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_21/base_m08_regslice_21.dcp' for cell 'base_i/ps7_0_axi_periph/m08_couplers/m08_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_10/base_auto_pc_10.dcp' for cell 'base_i/ps7_0_axi_periph/m09_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_21/base_m09_regslice_21.dcp' for cell 'base_i/ps7_0_axi_periph/m09_couplers/m09_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_11/base_auto_pc_11.dcp' for cell 'base_i/ps7_0_axi_periph/m10_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_12/base_auto_pc_12.dcp' for cell 'base_i/ps7_0_axi_periph/m11_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_13/base_auto_pc_13.dcp' for cell 'base_i/ps7_0_axi_periph/m12_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_14/base_auto_pc_14.dcp' for cell 'base_i/ps7_0_axi_periph/m13_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_15/base_auto_pc_15.dcp' for cell 'base_i/ps7_0_axi_periph/m14_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_16/base_auto_pc_16.dcp' for cell 'base_i/ps7_0_axi_periph/m15_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_17/base_auto_pc_17.dcp' for cell 'base_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_23/base_s00_regslice_23.dcp' for cell 'base_i/ps7_0_axi_periph/s00_couplers/s00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.dcp' for cell 'base_i/video/axi_vdma'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0.dcp' for cell 'base_i/video/proc_sys_reset_pixelclk'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_xbar_11/base_xbar_11.dcp' for cell 'base_i/video/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_24/base_m00_regslice_24.dcp' for cell 'base_i/video/axi_interconnect_0/m00_couplers/m00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0.dcp' for cell 'base_i/video/axi_interconnect_0/m01_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_24/base_m01_regslice_24.dcp' for cell 'base_i/video/axi_interconnect_0/m01_couplers/m01_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1.dcp' for cell 'base_i/video/axi_interconnect_0/m02_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_24/base_m02_regslice_24.dcp' for cell 'base_i/video/axi_interconnect_0/m02_couplers/m02_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_24/base_m03_regslice_24.dcp' for cell 'base_i/video/axi_interconnect_0/m03_couplers/m03_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_24/base_m04_regslice_24.dcp' for cell 'base_i/video/axi_interconnect_0/m04_couplers/m04_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_24/base_m05_regslice_24.dcp' for cell 'base_i/video/axi_interconnect_0/m05_couplers/m05_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2.dcp' for cell 'base_i/video/axi_interconnect_0/m06_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_24/base_m06_regslice_24.dcp' for cell 'base_i/video/axi_interconnect_0/m06_couplers/m06_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3.dcp' for cell 'base_i/video/axi_interconnect_0/m07_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_24/base_m07_regslice_24.dcp' for cell 'base_i/video/axi_interconnect_0/m07_couplers/m07_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_22/base_m08_regslice_22.dcp' for cell 'base_i/video/axi_interconnect_0/m08_couplers/m08_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_22/base_m09_regslice_22.dcp' for cell 'base_i/video/axi_interconnect_0/m09_couplers/m09_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0.dcp' for cell 'base_i/video/axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_24/base_s00_regslice_24.dcp' for cell 'base_i/video/axi_interconnect_0/s00_couplers/s00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_xbar_12/base_xbar_12.dcp' for cell 'base_i/video/axi_mem_intercon/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1.dcp' for cell 'base_i/video/axi_mem_intercon/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0.dcp' for cell 'base_i/video/axi_mem_intercon/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_0/base_axis_register_slice_0_0.dcp' for cell 'base_i/video/hdmi_in/axis_register_slice_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_color_convert_0/base_color_convert_0.dcp' for cell 'base_i/video/hdmi_in/color_convert'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_pixel_pack_0/base_pixel_pack_0.dcp' for cell 'base_i/video/hdmi_in/pixel_pack'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0.dcp' for cell 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_color_swap_0_0/base_color_swap_0_0.dcp' for cell 'base_i/video/hdmi_in/frontend/color_swap_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0.dcp' for cell 'base_i/video/hdmi_in/frontend/dvi2rgb_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_vid_in_axi4s_0_0/base_v_vid_in_axi4s_0_0.dcp' for cell 'base_i/video/hdmi_in/frontend/v_vid_in_axi4s_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_in_0/base_vtc_in_0.dcp' for cell 'base_i/video/hdmi_in/frontend/vtc_in'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_1/base_axis_register_slice_0_1.dcp' for cell 'base_i/video/hdmi_out/axis_register_slice_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_color_convert_1/base_color_convert_1.dcp' for cell 'base_i/video/hdmi_out/color_convert'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_pixel_unpack_0/base_pixel_unpack_0.dcp' for cell 'base_i/video/hdmi_out/pixel_unpack'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dynclk_0/base_axi_dynclk_0.dcp' for cell 'base_i/video/hdmi_out/frontend/axi_dynclk'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_color_swap_0_1/base_color_swap_0_1.dcp' for cell 'base_i/video/hdmi_out/frontend/color_swap_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0.dcp' for cell 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video'
+INFO: [Common 17-14] Message 'Project 1-454' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2562.559 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4373 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. base_i/clk_wiz_10MHz/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'base_i/clk_wiz_10MHz/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_btns_gpio_0' for instance 'base_i/btns_gpio'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0_board.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_btns_gpio_0' for instance 'base_i/btns_gpio'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_clk_wiz_10MHz_0' for instance 'base_i/clk_wiz_10MHz'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0_board.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_clk_wiz_10MHz_0' for instance 'base_i/clk_wiz_10MHz'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_leds_gpio_0' for instance 'base_i/leds_gpio'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_leds_gpio_0/base_leds_gpio_0_board.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_leds_gpio_0' for instance 'base_i/leds_gpio'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_leds_gpio_0/base_leds_gpio_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_ps7_0_0' for instance 'base_i/ps7_0'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_rst_ps7_0_fclk0_0' for instance 'base_i/rst_ps7_0_fclk0'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0_board.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_rst_ps7_0_fclk0_0' for instance 'base_i/rst_ps7_0_fclk0'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_rst_ps7_0_fclk1_0' for instance 'base_i/rst_ps7_0_fclk1'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0_board.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_rst_ps7_0_fclk1_0' for instance 'base_i/rst_ps7_0_fclk1'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_switches_gpio_0' for instance 'base_i/switches_gpio'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0_board.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_switches_gpio_0' for instance 'base_i/switches_gpio'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_system_interrupts_0' for instance 'base_i/system_interrupts'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_axi_vdma_0' for instance 'base_i/video/axi_vdma'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_axi_gpio_hdmiin_0' for instance 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0_board.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_axi_gpio_hdmiin_0' for instance 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_dvi2rgb_0_0' for instance 'base_i/video/hdmi_in/frontend/dvi2rgb_0'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/src/dvi2rgb.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_hdmi_out_hpd_video_0' for instance 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0_board.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_hdmi_out_hpd_video_0' for instance 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_rgb2dvi_0_0' for instance 'base_i/video/hdmi_out/frontend/rgb2dvi_0'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_proc_sys_reset_pixelclk_0' for instance 'base_i/video/proc_sys_reset_pixelclk'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0_board.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_proc_sys_reset_pixelclk_0' for instance 'base_i/video/proc_sys_reset_pixelclk'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_axi_dma_0_0' for instance 'base_i/gesture/axi_dma_0'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_axi_dma_1_0' for instance 'base_i/gesture/axi_dma_1'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.xdc will not be read for this cell.
+Parsing XDC File [D:/vivado_prj/base/project_1/project_1.srcs/constrs_1/imports/constraints/base.xdc]
+Finished Parsing XDC File [D:/vivado_prj/base/project_1/project_1.srcs/constrs_1/imports/constraints/base.xdc]
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_system_interrupts_0' for instance 'base_i/system_interrupts'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_axi_vdma_0' for instance 'base_i/video/axi_vdma'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_axis_register_slice_0_0' for instance 'base_i/video/hdmi_in/axis_register_slice_0'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_0/base_axis_register_slice_0_0_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_v_vid_in_axi4s_0_0' for instance 'base_i/video/hdmi_in/frontend/v_vid_in_axi4s_0'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_vid_in_axi4s_0_0/base_v_vid_in_axi4s_0_0_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_vtc_in_0' for instance 'base_i/video/hdmi_in/frontend/vtc_in'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_in_0/base_vtc_in_0_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_axis_register_slice_0_1' for instance 'base_i/video/hdmi_out/axis_register_slice_0'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_1/base_axis_register_slice_0_1_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_rgb2dvi_0_0' for instance 'base_i/video/hdmi_out/frontend/rgb2dvi_0'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_v_axi4s_vid_out_0_0' for instance 'base_i/video/hdmi_out/frontend/v_axi4s_vid_out_0'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_axi4s_vid_out_0_0/base_v_axi4s_vid_out_0_0_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_vtc_out_0' for instance 'base_i/video/hdmi_out/frontend/vtc_out'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_out_0/base_vtc_out_0_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_axi_dma_0_0' for instance 'base_i/gesture/axi_dma_0'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'U0' within module 'base_axi_dma_1_0' for instance 'base_i/gesture/axi_dma_1'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_s00_regslice_24' for instance 'base_i/video/axi_interconnect_0/s00_couplers/s00_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_24/base_s00_regslice_24_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m00_regslice_24' for instance 'base_i/video/axi_interconnect_0/m00_couplers/m00_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_24/base_m00_regslice_24_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m01_regslice_24' for instance 'base_i/video/axi_interconnect_0/m01_couplers/m01_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_24/base_m01_regslice_24_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_cc_0' for instance 'base_i/video/axi_interconnect_0/m01_couplers/auto_cc'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m02_regslice_24' for instance 'base_i/video/axi_interconnect_0/m02_couplers/m02_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_24/base_m02_regslice_24_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_cc_1' for instance 'base_i/video/axi_interconnect_0/m02_couplers/auto_cc'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m03_regslice_24' for instance 'base_i/video/axi_interconnect_0/m03_couplers/m03_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_24/base_m03_regslice_24_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m04_regslice_24' for instance 'base_i/video/axi_interconnect_0/m04_couplers/m04_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_24/base_m04_regslice_24_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m05_regslice_24' for instance 'base_i/video/axi_interconnect_0/m05_couplers/m05_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_24/base_m05_regslice_24_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m06_regslice_24' for instance 'base_i/video/axi_interconnect_0/m06_couplers/m06_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_24/base_m06_regslice_24_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_cc_2' for instance 'base_i/video/axi_interconnect_0/m06_couplers/auto_cc'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m07_regslice_24' for instance 'base_i/video/axi_interconnect_0/m07_couplers/m07_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_24/base_m07_regslice_24_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_cc_3' for instance 'base_i/video/axi_interconnect_0/m07_couplers/auto_cc'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m08_regslice_22' for instance 'base_i/video/axi_interconnect_0/m08_couplers/m08_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_22/base_m08_regslice_22_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m09_regslice_22' for instance 'base_i/video/axi_interconnect_0/m09_couplers/m09_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_22/base_m09_regslice_22_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_0' for instance 'base_i/video/axi_mem_intercon/s01_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_s00_regslice_23' for instance 'base_i/ps7_0_axi_periph/s00_couplers/s00_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_23/base_s00_regslice_23_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m00_regslice_23' for instance 'base_i/ps7_0_axi_periph/m00_couplers/m00_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_23/base_m00_regslice_23_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m01_regslice_23' for instance 'base_i/ps7_0_axi_periph/m01_couplers/m01_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_23/base_m01_regslice_23_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m02_regslice_23' for instance 'base_i/ps7_0_axi_periph/m02_couplers/m02_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_23/base_m02_regslice_23_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m03_regslice_23' for instance 'base_i/ps7_0_axi_periph/m03_couplers/m03_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_23/base_m03_regslice_23_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m04_regslice_23' for instance 'base_i/ps7_0_axi_periph/m04_couplers/m04_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_23/base_m04_regslice_23_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m05_regslice_23' for instance 'base_i/ps7_0_axi_periph/m05_couplers/m05_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_23/base_m05_regslice_23_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m06_regslice_23' for instance 'base_i/ps7_0_axi_periph/m06_couplers/m06_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_23/base_m06_regslice_23_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m07_regslice_23' for instance 'base_i/ps7_0_axi_periph/m07_couplers/m07_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_23/base_m07_regslice_23_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m08_regslice_21' for instance 'base_i/ps7_0_axi_periph/m08_couplers/m08_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_21/base_m08_regslice_21_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_m09_regslice_21' for instance 'base_i/ps7_0_axi_periph/m09_couplers/m09_regslice'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_21/base_m09_regslice_21_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_1' for instance 'base_i/gesture/axi_interconnect_0/s00_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_2' for instance 'base_i/gesture/axi_interconnect_0/s01_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_3' for instance 'base_i/gesture/axi_interconnect_0/s02_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_3/base_auto_us_3_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_4' for instance 'base_i/img_processing/axi_interconnect_0/s00_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_4/base_auto_us_4_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_5' for instance 'base_i/img_processing/axi_interconnect_0/s01_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_5/base_auto_us_5_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_6' for instance 'base_i/img_processing/axi_interconnect_0/s02_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_6/base_auto_us_6_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_7' for instance 'base_i/img_processing/axi_interconnect_0/s03_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_7/base_auto_us_7_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_8' for instance 'base_i/img_processing/axi_interconnect_0/s04_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_8/base_auto_us_8_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_9' for instance 'base_i/img_processing/axi_interconnect_0/s05_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_9/base_auto_us_9_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_10' for instance 'base_i/img_processing/axi_interconnect_0/s06_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_10/base_auto_us_10_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_11' for instance 'base_i/img_processing/axi_interconnect_0/s07_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_11/base_auto_us_11_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_12' for instance 'base_i/img_processing/axi_interconnect_0/s08_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_12/base_auto_us_12_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_13' for instance 'base_i/img_processing/axi_interconnect_0/s09_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_13/base_auto_us_13_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_14' for instance 'base_i/img_processing/axi_interconnect_0/s10_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_14/base_auto_us_14_clocks.xdc will not be read for this cell.
+CRITICAL WARNING: [Designutils 20-1275] Could not find cell 'inst' within module 'base_auto_us_15' for instance 'base_i/img_processing/axi_interconnect_0/s11_couplers/auto_us'. The XDC file d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_15/base_auto_us_15_clocks.xdc will not be read for this cell.
+INFO: [Project 1-1715] 7 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+open_run: Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 2845.215 ; gain = 862.387
+INFO: [Common 17-344] 'open_run' was cancelled
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_run' was cancelled
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Mon Jan 24 10:16:14 2022] Launched impl_1...
+Run output will be captured here: D:/vivado_prj/base/project_1/project_1.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2845.215 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4373 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. base_i/clk_wiz_10MHz/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'base_i/clk_wiz_10MHz/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0_board.xdc] for cell 'base_i/btns_gpio/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0_board.xdc] for cell 'base_i/btns_gpio/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0.xdc] for cell 'base_i/btns_gpio/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0.xdc] for cell 'base_i/btns_gpio/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0_board.xdc] for cell 'base_i/clk_wiz_10MHz/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0_board.xdc] for cell 'base_i/clk_wiz_10MHz/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.xdc] for cell 'base_i/clk_wiz_10MHz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.xdc:57]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.xdc] for cell 'base_i/clk_wiz_10MHz/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_leds_gpio_0/base_leds_gpio_0_board.xdc] for cell 'base_i/leds_gpio/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_leds_gpio_0/base_leds_gpio_0_board.xdc] for cell 'base_i/leds_gpio/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_leds_gpio_0/base_leds_gpio_0.xdc] for cell 'base_i/leds_gpio/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_leds_gpio_0/base_leds_gpio_0.xdc] for cell 'base_i/leds_gpio/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0.xdc] for cell 'base_i/ps7_0/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0.xdc] for cell 'base_i/ps7_0/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0_board.xdc] for cell 'base_i/rst_ps7_0_fclk0/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0_board.xdc] for cell 'base_i/rst_ps7_0_fclk0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0.xdc] for cell 'base_i/rst_ps7_0_fclk0/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0.xdc] for cell 'base_i/rst_ps7_0_fclk0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0_board.xdc] for cell 'base_i/rst_ps7_0_fclk1/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0_board.xdc] for cell 'base_i/rst_ps7_0_fclk1/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0.xdc] for cell 'base_i/rst_ps7_0_fclk1/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0.xdc] for cell 'base_i/rst_ps7_0_fclk1/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0_board.xdc] for cell 'base_i/switches_gpio/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0_board.xdc] for cell 'base_i/switches_gpio/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0.xdc] for cell 'base_i/switches_gpio/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0.xdc] for cell 'base_i/switches_gpio/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0.xdc] for cell 'base_i/system_interrupts/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0.xdc] for cell 'base_i/system_interrupts/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc] for cell 'base_i/video/axi_vdma/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:68]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:72]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:80]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:84]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:96]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:108]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc:220]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0.xdc] for cell 'base_i/video/axi_vdma/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0_board.xdc] for cell 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0_board.xdc] for cell 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0.xdc] for cell 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0.xdc] for cell 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'base_i/video/hdmi_in/frontend/dvi2rgb_0/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'base_i/video/hdmi_in/frontend/dvi2rgb_0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0_board.xdc] for cell 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0_board.xdc] for cell 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0.xdc] for cell 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0.xdc] for cell 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'base_i/video/hdmi_out/frontend/rgb2dvi_0/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'base_i/video/hdmi_out/frontend/rgb2dvi_0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0_board.xdc] for cell 'base_i/video/proc_sys_reset_pixelclk/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0_board.xdc] for cell 'base_i/video/proc_sys_reset_pixelclk/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0.xdc] for cell 'base_i/video/proc_sys_reset_pixelclk/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0.xdc] for cell 'base_i/video/proc_sys_reset_pixelclk/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.xdc] for cell 'base_i/gesture/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.xdc:61]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.xdc] for cell 'base_i/gesture/axi_dma_0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.xdc] for cell 'base_i/gesture/axi_dma_1/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.xdc:61]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0.xdc] for cell 'base_i/gesture/axi_dma_1/U0'
+Parsing XDC File [D:/vivado_prj/base/project_1/project_1.srcs/constrs_1/imports/constraints/base.xdc]
+Finished Parsing XDC File [D:/vivado_prj/base/project_1/project_1.srcs/constrs_1/imports/constraints/base.xdc]
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0_clocks.xdc] for cell 'base_i/system_interrupts/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0_clocks.xdc] for cell 'base_i/system_interrupts/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0_clocks.xdc] for cell 'base_i/video/axi_vdma/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0_clocks.xdc] for cell 'base_i/video/axi_vdma/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_0/base_axis_register_slice_0_0_clocks.xdc] for cell 'base_i/video/hdmi_in/axis_register_slice_0/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_0/base_axis_register_slice_0_0_clocks.xdc] for cell 'base_i/video/hdmi_in/axis_register_slice_0/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_vid_in_axi4s_0_0/base_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'base_i/video/hdmi_in/frontend/v_vid_in_axi4s_0/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_vid_in_axi4s_0_0/base_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'base_i/video/hdmi_in/frontend/v_vid_in_axi4s_0/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_in_0/base_vtc_in_0_clocks.xdc] for cell 'base_i/video/hdmi_in/frontend/vtc_in/U0'
+INFO: [Timing 38-2] Deriving generated clocks [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_in_0/base_vtc_in_0_clocks.xdc:2]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_in_0/base_vtc_in_0_clocks.xdc] for cell 'base_i/video/hdmi_in/frontend/vtc_in/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_1/base_axis_register_slice_0_1_clocks.xdc] for cell 'base_i/video/hdmi_out/axis_register_slice_0/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_1/base_axis_register_slice_0_1_clocks.xdc] for cell 'base_i/video/hdmi_out/axis_register_slice_0/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'base_i/video/hdmi_out/frontend/rgb2dvi_0/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'base_i/video/hdmi_out/frontend/rgb2dvi_0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_axi4s_vid_out_0_0/base_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'base_i/video/hdmi_out/frontend/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_v_axi4s_vid_out_0_0/base_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'base_i/video/hdmi_out/frontend/v_axi4s_vid_out_0/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_out_0/base_vtc_out_0_clocks.xdc] for cell 'base_i/video/hdmi_out/frontend/vtc_out/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_vtc_out_0/base_vtc_out_0_clocks.xdc] for cell 'base_i/video/hdmi_out/frontend/vtc_out/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0_clocks.xdc] for cell 'base_i/gesture/axi_dma_0/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0_clocks.xdc] for cell 'base_i/gesture/axi_dma_0/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0_clocks.xdc] for cell 'base_i/gesture/axi_dma_1/U0'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_axi_dma_1_0/base_axi_dma_1_0_clocks.xdc] for cell 'base_i/gesture/axi_dma_1/U0'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_24/base_s00_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/s00_couplers/s00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_24/base_s00_regslice_24_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_24/base_s00_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/s00_couplers/s00_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_24/base_m00_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m00_couplers/m00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_24/base_m00_regslice_24_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_24/base_m00_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m00_couplers/m00_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_24/base_m01_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m01_couplers/m01_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_24/base_m01_regslice_24_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_24/base_m01_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m01_couplers/m01_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m01_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc:17]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m01_couplers/auto_cc/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_24/base_m02_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m02_couplers/m02_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_24/base_m02_regslice_24_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_24/base_m02_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m02_couplers/m02_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m02_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc:17]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m02_couplers/auto_cc/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_24/base_m03_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m03_couplers/m03_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_24/base_m03_regslice_24_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_24/base_m03_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m03_couplers/m03_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_24/base_m04_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m04_couplers/m04_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_24/base_m04_regslice_24_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_24/base_m04_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m04_couplers/m04_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_24/base_m05_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m05_couplers/m05_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_24/base_m05_regslice_24_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_24/base_m05_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m05_couplers/m05_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_24/base_m06_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m06_couplers/m06_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_24/base_m06_regslice_24_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_24/base_m06_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m06_couplers/m06_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m06_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc:17]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m06_couplers/auto_cc/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_24/base_m07_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m07_couplers/m07_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_24/base_m07_regslice_24_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_24/base_m07_regslice_24_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m07_couplers/m07_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m07_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc:17]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m07_couplers/auto_cc/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_22/base_m08_regslice_22_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m08_couplers/m08_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_22/base_m08_regslice_22_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_22/base_m08_regslice_22_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m08_couplers/m08_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_22/base_m09_regslice_22_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m09_couplers/m09_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_22/base_m09_regslice_22_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_22/base_m09_regslice_22_clocks.xdc] for cell 'base_i/video/axi_interconnect_0/m09_couplers/m09_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_clocks.xdc] for cell 'base_i/video/axi_mem_intercon/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_clocks.xdc] for cell 'base_i/video/axi_mem_intercon/s01_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_23/base_s00_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/s00_couplers/s00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_23/base_s00_regslice_23_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_23/base_s00_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/s00_couplers/s00_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_23/base_m00_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m00_couplers/m00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_23/base_m00_regslice_23_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m00_regslice_23/base_m00_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m00_couplers/m00_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_23/base_m01_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m01_couplers/m01_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_23/base_m01_regslice_23_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m01_regslice_23/base_m01_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m01_couplers/m01_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_23/base_m02_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m02_couplers/m02_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_23/base_m02_regslice_23_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m02_regslice_23/base_m02_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m02_couplers/m02_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_23/base_m03_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m03_couplers/m03_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_23/base_m03_regslice_23_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m03_regslice_23/base_m03_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m03_couplers/m03_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_23/base_m04_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m04_couplers/m04_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_23/base_m04_regslice_23_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m04_regslice_23/base_m04_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m04_couplers/m04_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_23/base_m05_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m05_couplers/m05_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_23/base_m05_regslice_23_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m05_regslice_23/base_m05_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m05_couplers/m05_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_23/base_m06_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m06_couplers/m06_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_23/base_m06_regslice_23_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m06_regslice_23/base_m06_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m06_couplers/m06_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_23/base_m07_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m07_couplers/m07_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_23/base_m07_regslice_23_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m07_regslice_23/base_m07_regslice_23_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m07_couplers/m07_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_21/base_m08_regslice_21_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m08_couplers/m08_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_21/base_m08_regslice_21_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m08_regslice_21/base_m08_regslice_21_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m08_couplers/m08_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_21/base_m09_regslice_21_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m09_couplers/m09_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_21/base_m09_regslice_21_clocks.xdc:10]
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_m09_regslice_21/base_m09_regslice_21_clocks.xdc] for cell 'base_i/ps7_0_axi_periph/m09_couplers/m09_regslice/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1_clocks.xdc] for cell 'base_i/gesture/axi_interconnect_0/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1_clocks.xdc] for cell 'base_i/gesture/axi_interconnect_0/s00_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2_clocks.xdc] for cell 'base_i/gesture/axi_interconnect_0/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2_clocks.xdc] for cell 'base_i/gesture/axi_interconnect_0/s01_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_3/base_auto_us_3_clocks.xdc] for cell 'base_i/gesture/axi_interconnect_0/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_3/base_auto_us_3_clocks.xdc] for cell 'base_i/gesture/axi_interconnect_0/s02_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_4/base_auto_us_4_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_4/base_auto_us_4_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s00_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_5/base_auto_us_5_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_5/base_auto_us_5_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s01_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_6/base_auto_us_6_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_6/base_auto_us_6_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s02_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_7/base_auto_us_7_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s03_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_7/base_auto_us_7_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s03_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_8/base_auto_us_8_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s04_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_8/base_auto_us_8_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s04_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_9/base_auto_us_9_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s05_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_9/base_auto_us_9_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s05_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_10/base_auto_us_10_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s06_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_10/base_auto_us_10_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s06_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_11/base_auto_us_11_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s07_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_11/base_auto_us_11_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s07_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_12/base_auto_us_12_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s08_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_12/base_auto_us_12_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s08_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_13/base_auto_us_13_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s09_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_13/base_auto_us_13_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s09_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_14/base_auto_us_14_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s10_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_14/base_auto_us_14_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s10_couplers/auto_us/inst'
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_15/base_auto_us_15_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s11_couplers/auto_us/inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_us_15/base_auto_us_15_clocks.xdc] for cell 'base_i/img_processing/axi_interconnect_0/s11_couplers/auto_us/inst'
+INFO: [Project 1-1715] 7 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 52 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.035 . Memory (MB): peak = 3825.699 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 17 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 3 instances
+
+open_run: Time (s): cpu = 00:00:58 ; elapsed = 00:00:48 . Memory (MB): peak = 3825.699 ; gain = 980.484
+reset_run impl_1
+launch_runs impl_1 -jobs 20
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.195 . Memory (MB): peak = 3852.914 ; gain = 10.348
+[Mon Jan 24 10:23:26 2022] Launched impl_1...
+Run output will be captured here: D:/vivado_prj/base/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 3891.402 ; gain = 48.836

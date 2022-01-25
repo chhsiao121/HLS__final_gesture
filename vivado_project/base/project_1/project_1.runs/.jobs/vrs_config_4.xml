@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="base_ps7_0_0_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_ps7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xbar_12_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_xbar_12_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xbar_13_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_xbar_13_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axi_dma_0_0_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_axi_dma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_gesture_top_0_1_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_gesture_top_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xbar_14_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_xbar_14_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_gesture_top_0_bram_1_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_gesture_top_0_bram_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axi_dma_1_0_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_axi_dma_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_s00_mmu_1_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_s00_mmu_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_auto_pc_9_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_auto_pc_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_s02_mmu_0_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_s02_mmu_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m05_regslice_1_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_m05_regslice_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_auto_us_2_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_auto_us_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_auto_us_1_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_auto_us_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m06_regslice_1_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_m06_regslice_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m05_regslice_1_synth_1"/>
+	</Run>
+	<Run Id="base_s00_mmu_0_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_s00_mmu_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_auto_us_3_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_auto_us_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_auto_us_2_synth_1"/>
+	</Run>
+	<Run Id="base_s01_mmu_0_synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/base_s01_mmu_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_s02_mmu_0_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="E:/GT/base/project_1/project_1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="base_ps7_0_0_synth_1"/>
+		<Parent Id="base_xbar_12_synth_1"/>
+		<Parent Id="base_xbar_13_synth_1"/>
+		<Parent Id="base_axi_dma_0_0_synth_1"/>
+		<Parent Id="base_gesture_top_0_1_synth_1"/>
+		<Parent Id="base_xbar_14_synth_1"/>
+		<Parent Id="base_gesture_top_0_bram_1_synth_1"/>
+		<Parent Id="base_axi_dma_1_0_synth_1"/>
+		<Parent Id="base_s00_mmu_1_synth_1"/>
+		<Parent Id="base_auto_pc_9_synth_1"/>
+		<Parent Id="base_s02_mmu_0_synth_1"/>
+		<Parent Id="base_m05_regslice_1_synth_1"/>
+		<Parent Id="base_auto_us_2_synth_1"/>
+		<Parent Id="base_auto_us_1_synth_1"/>
+		<Parent Id="base_m06_regslice_1_synth_1"/>
+		<Parent Id="base_s00_mmu_0_synth_1"/>
+		<Parent Id="base_auto_us_3_synth_1"/>
+		<Parent Id="base_s01_mmu_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

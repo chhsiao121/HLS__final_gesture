@@ -1,0 +1,1525 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 24 03:54:49 2022
+# Process ID: 12192
+# Current directory: D:/vivado_prj/base/project_1/project_1.runs/base_resize_accel_0_0_synth_1
+# Command line: vivado.exe -log base_resize_accel_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_resize_accel_0_0.tcl
+# Log file: D:/vivado_prj/base/project_1/project_1.runs/base_resize_accel_0_0_synth_1/base_resize_accel_0_0.vds
+# Journal file: D:/vivado_prj/base/project_1/project_1.runs/base_resize_accel_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_resize_accel_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top base_resize_accel_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13140
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1180.582 ; gain = 36.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'base_resize_accel_0_0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_resize_accel_0_0/synth/base_resize_accel_0_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel.v:12]
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_GMEM1_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_GMEM1_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_GMEM1_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_GMEM1_PROT_VALUE bound to: 3'b000 
+	Parameter C_M_AXI_GMEM1_CACHE_VALUE bound to: 4'b0011 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM2_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM2_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_GMEM2_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_GMEM2_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM2_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM2_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM2_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM2_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM2_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_GMEM2_PROT_VALUE bound to: 3'b000 
+	Parameter C_M_AXI_GMEM2_CACHE_VALUE bound to: 4'b0011 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_GMEM1_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_GMEM2_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_control_s_axi' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 7'b0000000 
+	Parameter ADDR_GIE bound to: 7'b0000100 
+	Parameter ADDR_IER bound to: 7'b0001000 
+	Parameter ADDR_ISR bound to: 7'b0001100 
+	Parameter ADDR_IMG_INP_DATA_0 bound to: 7'b0010000 
+	Parameter ADDR_IMG_INP_DATA_1 bound to: 7'b0010100 
+	Parameter ADDR_IMG_INP_CTRL bound to: 7'b0011000 
+	Parameter ADDR_IMG_OUT_DATA_0 bound to: 7'b0011100 
+	Parameter ADDR_IMG_OUT_DATA_1 bound to: 7'b0100000 
+	Parameter ADDR_IMG_OUT_CTRL bound to: 7'b0100100 
+	Parameter ADDR_ROWS_IN_DATA_0 bound to: 7'b0101000 
+	Parameter ADDR_ROWS_IN_CTRL bound to: 7'b0101100 
+	Parameter ADDR_COLS_IN_DATA_0 bound to: 7'b0110000 
+	Parameter ADDR_COLS_IN_CTRL bound to: 7'b0110100 
+	Parameter ADDR_ROWS_OUT_DATA_0 bound to: 7'b0111000 
+	Parameter ADDR_ROWS_OUT_CTRL bound to: 7'b0111100 
+	Parameter ADDR_COLS_OUT_DATA_0 bound to: 7'b1000000 
+	Parameter ADDR_COLS_OUT_CTRL bound to: 7'b1000100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 7 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_control_s_axi.v:233]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_control_s_axi' (1#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem1_m_axi' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:8]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem1_m_axi_write' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:1729]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_WRITE_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem1_m_axi_fifo' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:418]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem1_m_axi_fifo' (2#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem1_m_axi_reg_slice' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:314]
+	Parameter N bound to: 96 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem1_m_axi_reg_slice' (3#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem1_m_axi_fifo__parameterized0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:418]
+	Parameter DATA_BITS bound to: 96 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem1_m_axi_fifo__parameterized0' (3#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem1_m_axi_buffer' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem1_m_axi_buffer' (4#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem1_m_axi_fifo__parameterized1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem1_m_axi_fifo__parameterized1' (4#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem1_m_axi_fifo__parameterized2' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem1_m_axi_fifo__parameterized2' (4#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem1_m_axi_write' (5#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem1_m_axi_read' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:932]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_READ_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem1_m_axi_buffer__parameterized0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem1_m_axi_buffer__parameterized0' (5#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem1_m_axi_reg_slice__parameterized0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:314]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem1_m_axi_reg_slice__parameterized0' (5#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem1_m_axi_read' (6#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:932]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem1_m_axi_throttle' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:710]
+	Parameter USED_FIX bound to: 0 - type: integer 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem1_m_axi_throttle' (7#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem1_m_axi' (8#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem1_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem2_m_axi' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:8]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem2_m_axi_write' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:1729]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_WRITE_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem2_m_axi_fifo' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:418]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem2_m_axi_fifo' (9#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem2_m_axi_reg_slice' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:314]
+	Parameter N bound to: 96 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem2_m_axi_reg_slice' (10#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem2_m_axi_fifo__parameterized0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:418]
+	Parameter DATA_BITS bound to: 96 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem2_m_axi_fifo__parameterized0' (10#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem2_m_axi_buffer' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem2_m_axi_buffer' (11#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem2_m_axi_fifo__parameterized1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem2_m_axi_fifo__parameterized1' (11#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem2_m_axi_fifo__parameterized2' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem2_m_axi_fifo__parameterized2' (11#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem2_m_axi_write' (12#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem2_m_axi_read' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:932]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_READ_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem2_m_axi_buffer__parameterized0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem2_m_axi_buffer__parameterized0' (12#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem2_m_axi_reg_slice__parameterized0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:314]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem2_m_axi_reg_slice__parameterized0' (12#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem2_m_axi_read' (13#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:932]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_gmem2_m_axi_throttle' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:710]
+	Parameter USED_FIX bound to: 0 - type: integer 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem2_m_axi_throttle' (14#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_gmem2_m_axi' (15#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_gmem2_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_Block_split1_proc22' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Block_split1_proc22.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_Block_split1_proc22' (16#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Block_split1_proc22.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_Array2xfMat_32_0_128_128_1_s' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Array2xfMat_32_0_128_128_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_Axi2Mat' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Axi2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_Axi2Mat_entry3' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Axi2Mat_entry3.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_Axi2Mat_entry3' (17#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Axi2Mat_entry3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_Axi2Mat_entry8' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Axi2Mat_entry8.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_Axi2Mat_entry8' (18#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Axi2Mat_entry8.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_last_blk_pxl_width' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_last_blk_pxl_width.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_last_blk_pxl_width' (19#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_last_blk_pxl_width.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_addrbound_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_addrbound_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_mul_15s_15s_15_4_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_15s_15s_15_4_1.v:32]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 15 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter dout_WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_15s_15s_15_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0' (20#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_15s_15s_15_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_mul_15s_15s_15_4_1' (21#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_15s_15s_15_4_1.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_addrbound_1' (22#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_addrbound_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_Axi2Mat_Block_split37_proc' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Axi2Mat_Block_split37_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_Axi2Mat_Block_split37_proc' (23#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Axi2Mat_Block_split37_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_Axi2AxiStream' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Axi2AxiStream.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 10'b0000000001 
+	Parameter ap_ST_fsm_state2 bound to: 10'b0000000010 
+	Parameter ap_ST_fsm_state3 bound to: 10'b0000000100 
+	Parameter ap_ST_fsm_state4 bound to: 10'b0000001000 
+	Parameter ap_ST_fsm_state5 bound to: 10'b0000010000 
+	Parameter ap_ST_fsm_state6 bound to: 10'b0000100000 
+	Parameter ap_ST_fsm_state7 bound to: 10'b0001000000 
+	Parameter ap_ST_fsm_state8 bound to: 10'b0010000000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 10'b0100000000 
+	Parameter ap_ST_fsm_state12 bound to: 10'b1000000000 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_Axi2AxiStream' (24#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Axi2AxiStream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_AxiStream2MatStream' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_AxiStream2MatStream.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state9 bound to: 5'b10000 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_32s_32s_32_2_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_32s_32s_32_2_1.v:25]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_32s_32s_32_2_1_Multiplier_0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_32s_32s_32_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_32s_32s_32_2_1_Multiplier_0' (25#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_32s_32s_32_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_32s_32s_32_2_1' (26#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_32s_32s_32_2_1.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_AxiStream2MatStream' (27#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_AxiStream2MatStream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w64_d2_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w64_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w64_d2_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w64_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w64_d2_S_shiftReg' (28#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w64_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w64_d2_S' (29#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w64_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w32_d2_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w32_d2_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w32_d2_S_shiftReg' (30#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w32_d2_S' (31#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w64_d4_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w64_d4_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w64_d4_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w64_d4_S.v:8]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w64_d4_S_shiftReg' (32#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w64_d4_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w64_d4_S' (33#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w64_d4_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w4_d6_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w4_d6_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w4_d6_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w4_d6_S.v:8]
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w4_d6_S_shiftReg' (34#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w4_d6_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w4_d6_S' (35#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w4_d6_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w13_d2_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w13_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 13 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w13_d2_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w13_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 13 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w13_d2_S_shiftReg' (36#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w13_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w13_d2_S' (37#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w13_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w32_d4_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d4_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w32_d4_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d4_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w32_d4_S_shiftReg' (38#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d4_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w32_d4_S' (39#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d4_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_start_for_Axi2Mat_entry8_U0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_Axi2Mat_entry8_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_start_for_Axi2Mat_entry8_U0_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_Axi2Mat_entry8_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_start_for_Axi2Mat_entry8_U0_shiftReg' (40#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_Axi2Mat_entry8_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_start_for_Axi2Mat_entry8_U0' (41#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_Axi2Mat_entry8_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_start_for_addrbound_1_U0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_addrbound_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_start_for_addrbound_1_U0_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_addrbound_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_start_for_addrbound_1_U0_shiftReg' (42#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_addrbound_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_start_for_addrbound_1_U0' (43#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_addrbound_1_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_start_for_AxiStream2MatStream_U0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_AxiStream2MatStream_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_start_for_AxiStream2MatStream_U0_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_AxiStream2MatStream_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_start_for_AxiStream2MatStream_U0_shiftReg' (44#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_AxiStream2MatStream_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_start_for_AxiStream2MatStream_U0' (45#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_AxiStream2MatStream_U0.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_Axi2Mat' (46#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Axi2Mat.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_Array2xfMat_32_0_128_128_1_s' (47#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Array2xfMat_32_0_128_128_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_resize_1_0_128_128_32_32_1_2_s' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_resize_1_0_128_128_32_32_1_2_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 18'b000000000000000001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 18'b000000000000000010 
+	Parameter ap_ST_fsm_state4 bound to: 18'b000000000000000100 
+	Parameter ap_ST_fsm_state5 bound to: 18'b000000000000001000 
+	Parameter ap_ST_fsm_state6 bound to: 18'b000000000000010000 
+	Parameter ap_ST_fsm_state7 bound to: 18'b000000000000100000 
+	Parameter ap_ST_fsm_state8 bound to: 18'b000000000001000000 
+	Parameter ap_ST_fsm_state9 bound to: 18'b000000000010000000 
+	Parameter ap_ST_fsm_state10 bound to: 18'b000000000100000000 
+	Parameter ap_ST_fsm_state11 bound to: 18'b000000001000000000 
+	Parameter ap_ST_fsm_state12 bound to: 18'b000000010000000000 
+	Parameter ap_ST_fsm_state13 bound to: 18'b000000100000000000 
+	Parameter ap_ST_fsm_state14 bound to: 18'b000001000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 18'b000010000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 18'b000100000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 18'b001000000000000000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 18'b010000000000000000 
+	Parameter ap_ST_fsm_state36 bound to: 18'b100000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0.v:65]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0.v:6]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 128 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram' (48#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0' (49#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0.v:65]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_xfUDivResize' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_xfUDivResize.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 68'b00000000000000000000000000000000000000000000000000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 68'b00000000000000000000000000000000000000000000000000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 68'b00000000000000000000000000000000000000000000000000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 68'b00000000000000000000000000000000000000000000000000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 68'b00000000000000000000000000000000000000000000000000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 68'b00000000000000000000000000000000000000000000000000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 68'b00000000000000000000000000000000000000000000000000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 68'b00000000000000000000000000000000000000000000000000000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 68'b00000000000000000000000000000000000000000000000000000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 68'b00000000000000000000000000000000000000000000000000000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 68'b00000000000000000000000000000000000000000000000000000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 68'b00000000000000000000000000000000000000000000000000000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 68'b00000000000000000000000000000000000000000000000000000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 68'b00000000000000000000000000000000000000000000000000001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 68'b00000000000000000000000000000000000000000000000000010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 68'b00000000000000000000000000000000000000000000000000100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 68'b00000000000000000000000000000000000000000000000001000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 68'b00000000000000000000000000000000000000000000000010000000000000000000 
+	Parameter ap_ST_fsm_state21 bound to: 68'b00000000000000000000000000000000000000000000000100000000000000000000 
+	Parameter ap_ST_fsm_state22 bound to: 68'b00000000000000000000000000000000000000000000001000000000000000000000 
+	Parameter ap_ST_fsm_state23 bound to: 68'b00000000000000000000000000000000000000000000010000000000000000000000 
+	Parameter ap_ST_fsm_state24 bound to: 68'b00000000000000000000000000000000000000000000100000000000000000000000 
+	Parameter ap_ST_fsm_state25 bound to: 68'b00000000000000000000000000000000000000000001000000000000000000000000 
+	Parameter ap_ST_fsm_state26 bound to: 68'b00000000000000000000000000000000000000000010000000000000000000000000 
+	Parameter ap_ST_fsm_state27 bound to: 68'b00000000000000000000000000000000000000000100000000000000000000000000 
+	Parameter ap_ST_fsm_state28 bound to: 68'b00000000000000000000000000000000000000001000000000000000000000000000 
+	Parameter ap_ST_fsm_state29 bound to: 68'b00000000000000000000000000000000000000010000000000000000000000000000 
+	Parameter ap_ST_fsm_state30 bound to: 68'b00000000000000000000000000000000000000100000000000000000000000000000 
+	Parameter ap_ST_fsm_state31 bound to: 68'b00000000000000000000000000000000000001000000000000000000000000000000 
+	Parameter ap_ST_fsm_state32 bound to: 68'b00000000000000000000000000000000000010000000000000000000000000000000 
+	Parameter ap_ST_fsm_state33 bound to: 68'b00000000000000000000000000000000000100000000000000000000000000000000 
+	Parameter ap_ST_fsm_state34 bound to: 68'b00000000000000000000000000000000001000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state35 bound to: 68'b00000000000000000000000000000000010000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state36 bound to: 68'b00000000000000000000000000000000100000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state37 bound to: 68'b00000000000000000000000000000001000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state38 bound to: 68'b00000000000000000000000000000010000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state39 bound to: 68'b00000000000000000000000000000100000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state40 bound to: 68'b00000000000000000000000000001000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state41 bound to: 68'b00000000000000000000000000010000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state42 bound to: 68'b00000000000000000000000000100000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state43 bound to: 68'b00000000000000000000000001000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state44 bound to: 68'b00000000000000000000000010000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state45 bound to: 68'b00000000000000000000000100000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state46 bound to: 68'b00000000000000000000001000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state47 bound to: 68'b00000000000000000000010000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state48 bound to: 68'b00000000000000000000100000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state49 bound to: 68'b00000000000000000001000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state50 bound to: 68'b00000000000000000010000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state51 bound to: 68'b00000000000000000100000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state52 bound to: 68'b00000000000000001000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state53 bound to: 68'b00000000000000010000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state54 bound to: 68'b00000000000000100000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state55 bound to: 68'b00000000000001000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state56 bound to: 68'b00000000000010000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state57 bound to: 68'b00000000000100000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state58 bound to: 68'b00000000001000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state59 bound to: 68'b00000000010000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state60 bound to: 68'b00000000100000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state61 bound to: 68'b00000001000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state62 bound to: 68'b00000010000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state63 bound to: 68'b00000100000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state64 bound to: 68'b00001000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state65 bound to: 68'b00010000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state66 bound to: 68'b00100000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state67 bound to: 68'b01000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state68 bound to: 68'b10000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_udiv_64ns_16ns_64_68_seq_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_udiv_64ns_16ns_64_68_seq_1.v:154]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 68 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_udiv_64ns_16ns_64_68_seq_1_div' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_udiv_64ns_16ns_64_68_seq_1.v:82]
+	Parameter in0_WIDTH bound to: 64 - type: integer 
+	Parameter in1_WIDTH bound to: 16 - type: integer 
+	Parameter out_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_udiv_64ns_16ns_64_68_seq_1_div_u' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_udiv_64ns_16ns_64_68_seq_1.v:7]
+	Parameter in0_WIDTH bound to: 64 - type: integer 
+	Parameter in1_WIDTH bound to: 16 - type: integer 
+	Parameter out_WIDTH bound to: 64 - type: integer 
+	Parameter cal_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_udiv_64ns_16ns_64_68_seq_1_div_u' (50#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_udiv_64ns_16ns_64_68_seq_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_udiv_64ns_16ns_64_68_seq_1_div' (51#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_udiv_64ns_16ns_64_68_seq_1.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_udiv_64ns_16ns_64_68_seq_1' (52#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_udiv_64ns_16ns_64_68_seq_1.v:154]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_xfUDivResize' (53#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_xfUDivResize.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_scaleCompute_17_42_20_48_16_1_s' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_scaleCompute_17_42_20_48_16_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_48ns_42s_74_5_0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_48ns_42s_74_5_0.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 48 - type: integer 
+	Parameter din1_WIDTH bound to: 42 - type: integer 
+	Parameter dout_WIDTH bound to: 74 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_48ns_42s_74_5_0_Multiplier_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_48ns_42s_74_5_0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_48ns_42s_74_5_0_Multiplier_1' (54#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_48ns_42s_74_5_0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_48ns_42s_74_5_0' (55#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_48ns_42s_74_5_0.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_scaleCompute_17_42_20_48_16_1_s' (56#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_scaleCompute_17_42_20_48_16_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_mul_12ns_12ns_24_4_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_12ns_12ns_24_4_1.v:32]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter dout_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_12ns_12ns_24_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1' (57#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_12ns_12ns_24_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_mul_12ns_12ns_24_4_1' (58#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_12ns_12ns_24_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_mul_12ns_9s_21_4_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_12ns_9s_21_4_1.v:32]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter din1_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 21 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_12ns_9s_21_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2' (59#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_12ns_9s_21_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_mul_12ns_9s_21_4_1' (60#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_12ns_9s_21_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mac_muladd_12ns_9s_21s_22_4_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mac_muladd_12ns_9s_21s_22_4_1.v:46]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter din1_WIDTH bound to: 9 - type: integer 
+	Parameter din2_WIDTH bound to: 21 - type: integer 
+	Parameter dout_WIDTH bound to: 22 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mac_muladd_12ns_9s_21s_22_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3' (61#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mac_muladd_12ns_9s_21s_22_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mac_muladd_12ns_9s_21s_22_4_1' (62#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mac_muladd_12ns_9s_21s_22_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mac_muladd_12ns_10s_22s_23_4_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mac_muladd_12ns_10s_22s_23_4_1.v:46]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 22 - type: integer 
+	Parameter dout_WIDTH bound to: 23 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mac_muladd_12ns_10s_22s_23_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4' (63#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mac_muladd_12ns_10s_22s_23_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mac_muladd_12ns_10s_22s_23_4_1' (64#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mac_muladd_12ns_10s_22s_23_4_1.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s' (65#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_resize_1_0_128_128_32_32_1_2_s' (66#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_resize_1_0_128_128_32_32_1_2_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_xfMat2Array_32_0_32_32_1_1_s' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_xfMat2Array_32_0_32_32_1_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_Mat2Axi' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Mat2Axi.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_Mat2Axi_entry17' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Mat2Axi_entry17.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_Mat2Axi_entry17' (67#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Mat2Axi_entry17.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_addrbound' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_addrbound.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_mul_11s_11s_11_4_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_11s_11s_11_4_1.v:32]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_11s_11s_11_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5' (68#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_11s_11s_11_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_mul_11s_11s_11_4_1' (69#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_mul_11s_11s_11_4_1.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_addrbound' (70#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_addrbound.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_Mat2Axi_Block_split35_proc' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Mat2Axi_Block_split35_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_Mat2Axi_Block_split35_proc' (71#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Mat2Axi_Block_split35_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_Mat2AxiStream' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Mat2AxiStream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_last_blk_pxl_width14' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_last_blk_pxl_width14.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_last_blk_pxl_width14' (72#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_last_blk_pxl_width14.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_MatStream2AxiStream' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_MatStream2AxiStream.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_32ns_32ns_64_2_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_32ns_32ns_64_2_1.v:25]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_32ns_32ns_64_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2' (73#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_32ns_32ns_64_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_mul_32ns_32ns_64_2_1' (74#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_mul_32ns_32ns_64_2_1.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_MatStream2AxiStream' (75#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_MatStream2AxiStream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w4_d2_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w4_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w4_d2_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w4_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w4_d2_S_shiftReg' (76#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w4_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w4_d2_S' (77#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w4_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w32_d2_S_x' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d2_S_x.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w32_d2_S_x_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d2_S_x.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w32_d2_S_x_shiftReg' (78#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d2_S_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w32_d2_S_x' (79#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d2_S_x.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_Mat2AxiStream' (80#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_Mat2AxiStream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_AxiStream2Axi' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_AxiStream2Axi.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state6 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state10 bound to: 8'b10000000 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_AxiStream2Axi' (81#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_AxiStream2Axi.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w64_d4_S_x' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w64_d4_S_x.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w64_d4_S_x_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w64_d4_S_x.v:8]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w64_d4_S_x_shiftReg' (82#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w64_d4_S_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w64_d4_S_x' (83#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w64_d4_S_x.v:42]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w11_d2_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w11_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w11_d2_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w11_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w11_d2_S_shiftReg' (84#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w11_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w11_d2_S' (85#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w11_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'resize_accel_fifo_w32_d2_S_x0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d2_S_x0.v:42]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w32_d2_S_x0_shiftReg' (86#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d2_S_x0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w32_d2_S_x0' (87#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w32_d2_S_x0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w9_d2_S_shiftReg' (88#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w9_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_fifo_w9_d2_S' (89#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_fifo_w9_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'resize_accel_start_for_addrbound_U0_shiftReg' (90#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/a1d3/hdl/verilog/resize_accel_start_for_addrbound_U0.v:8]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1335.438 ; gain = 191.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1335.438 ; gain = 191.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1335.438 ; gain = 191.766
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.441 . Memory (MB): peak = 1335.438 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_resize_accel_0_0/constraints/resize_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_resize_accel_0_0/constraints/resize_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/vivado_prj/base/project_1/project_1.runs/base_resize_accel_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/vivado_prj/base/project_1/project_1.runs/base_resize_accel_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1479.387 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.370 . Memory (MB): peak = 1495.312 ; gain = 15.926
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1495.312 ; gain = 351.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1495.312 ; gain = 351.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/vivado_prj/base/project_1/project_1.runs/base_resize_accel_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1495.312 ; gain = 351.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'resize_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'resize_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'resize_accel_gmem1_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'resize_accel_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'resize_accel_gmem2_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'resize_accel_gmem2_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'resize_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'resize_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'resize_accel_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'resize_accel_gmem1_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'resize_accel_gmem2_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'resize_accel_gmem2_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 1495.312 ; gain = 351.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   74 Bit       Adders := 1     
+	   3 Input   65 Bit       Adders := 1     
+	   2 Input   64 Bit       Adders := 8     
+	   2 Input   52 Bit       Adders := 4     
+	   2 Input   43 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 16    
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input   24 Bit       Adders := 1     
+	   3 Input   24 Bit       Adders := 2     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 3     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 4     
+	   5 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 7     
+	   3 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 15    
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 12    
+	   3 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 10    
+	   2 Input    3 Bit       Adders := 25    
+	   2 Input    2 Bit       Adders := 32    
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               96 Bit    Registers := 12    
+	               74 Bit    Registers := 4     
+	               68 Bit    Registers := 1     
+	               65 Bit    Registers := 1     
+	               64 Bit    Registers := 38    
+	               63 Bit    Registers := 2     
+	               52 Bit    Registers := 4     
+	               48 Bit    Registers := 4     
+	               42 Bit    Registers := 3     
+	               39 Bit    Registers := 1     
+	               38 Bit    Registers := 2     
+	               36 Bit    Registers := 6     
+	               35 Bit    Registers := 6     
+	               34 Bit    Registers := 4     
+	               32 Bit    Registers := 87    
+	               31 Bit    Registers := 1     
+	               24 Bit    Registers := 3     
+	               22 Bit    Registers := 3     
+	               20 Bit    Registers := 3     
+	               18 Bit    Registers := 3     
+	               17 Bit    Registers := 20    
+	               16 Bit    Registers := 4     
+	               15 Bit    Registers := 1     
+	               13 Bit    Registers := 6     
+	               12 Bit    Registers := 6     
+	               11 Bit    Registers := 5     
+	               10 Bit    Registers := 11    
+	                9 Bit    Registers := 11    
+	                8 Bit    Registers := 57    
+	                7 Bit    Registers := 10    
+	                6 Bit    Registers := 14    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 18    
+	                3 Bit    Registers := 18    
+	                2 Bit    Registers := 62    
+	                1 Bit    Registers := 413   
++---Multipliers : 
+	              42x49  Multipliers := 1     
+	              32x32  Multipliers := 2     
++---RAMs : 
+	               9K Bit	(256 X 36 bit)          RAMs := 2     
+	               8K Bit	(256 X 35 bit)          RAMs := 2     
+	             1024 Bit	(128 X 8 bit)          RAMs := 6     
++---Muxes : 
+	   2 Input   96 Bit        Muxes := 4     
+	  69 Input   68 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 24    
+	   2 Input   63 Bit        Muxes := 1     
+	   2 Input   52 Bit        Muxes := 4     
+	   2 Input   48 Bit        Muxes := 1     
+	   2 Input   42 Bit        Muxes := 3     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input   35 Bit        Muxes := 2     
+	   2 Input   34 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 28    
+	   3 Input   32 Bit        Muxes := 1     
+	   3 Input   31 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 3     
+	  19 Input   18 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 5     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 6     
+	   4 Input   12 Bit        Muxes := 4     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 9     
+	   3 Input   10 Bit        Muxes := 1     
+	  11 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 9     
+	   2 Input    8 Bit        Muxes := 44    
+	   4 Input    8 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 11    
+	   2 Input    5 Bit        Muxes := 6     
+	   6 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 12    
+	   5 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 14    
+	   2 Input    2 Bit        Muxes := 99    
+	   3 Input    2 Bit        Muxes := 18    
+	   5 Input    2 Bit        Muxes := 6     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 372   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_mul_15s_15s_15_4_1_U26/resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mul_mul_15s_15s_15_4_1_U26/resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_15s_15s_15_4_1_U26/resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_15s_15s_15_4_1_U26/resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_15s_15s_15_4_1_U26/resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_15s_15s_15_4_1_U26/resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_15s_15s_15_4_1_U26/resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_15s_15s_15_4_1_U26/resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_15s_15s_15_4_1_U26/resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_15s_15s_15_4_1_U26/resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0_U/p_reg_tmp0 is absorbed into DSP mul_mul_15s_15s_15_4_1_U26/resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: register mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U38/resize_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: Generating DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg, operation Mode is: (A''*B2)'.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg.
+DSP Report: operator mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg.
+DSP Report: operator mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg.
+DSP Report: Generating DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B'')'.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/b_reg0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg.
+DSP Report: operator mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg.
+DSP Report: operator mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg.
+DSP Report: Generating DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product, operation Mode is: PCIN+(A''*B'')'.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: operator mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: operator mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: Generating DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg, operation Mode is: (PCIN>>17)+(A''*B'')'.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/b_reg0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg.
+DSP Report: operator mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg.
+DSP Report: operator mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg.
+DSP Report: Generating DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product, operation Mode is: PCIN+(A''*B'')'.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: operator mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: operator mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product.
+DSP Report: Generating DSP r_V_1_reg_91_reg, operation Mode is: (PCIN>>17)+(A''*B'')'.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP r_V_1_reg_91_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff0_reg is absorbed into DSP r_V_1_reg_91_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg is absorbed into DSP r_V_1_reg_91_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff1_reg is absorbed into DSP r_V_1_reg_91_reg.
+DSP Report: register r_V_1_reg_91_reg is absorbed into DSP r_V_1_reg_91_reg.
+DSP Report: register mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/buff2_reg is absorbed into DSP r_V_1_reg_91_reg.
+DSP Report: operator mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP r_V_1_reg_91_reg.
+DSP Report: operator mul_48ns_42s_74_5_0_U76/resize_accel_mul_48ns_42s_74_5_0_Multiplier_1_U/tmp_product is absorbed into DSP r_V_1_reg_91_reg.
+DSP Report: Generating DSP mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (A''*B2)'.
+DSP Report: register mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/p_reg_tmp_reg is absorbed into DSP mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/p_reg_tmp0 is absorbed into DSP mul_mul_12ns_9s_21_4_1_U81/resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg, operation Mode is: (C+(A''*B'')')'.
+DSP Report: register mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg is absorbed into DSP mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg is absorbed into DSP mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg is absorbed into DSP mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg is absorbed into DSP mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg is absorbed into DSP mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/m_reg_reg is absorbed into DSP mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: operator mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p is absorbed into DSP mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: operator mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/m is absorbed into DSP mac_muladd_12ns_9s_21s_22_4_1_U82/resize_accel_mac_muladd_12ns_9s_21s_22_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_12ns_12ns_24_4_1_U80/resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (A''*B2)'.
+DSP Report: register mul_mul_12ns_12ns_24_4_1_U80/resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1_U/b_reg_reg is absorbed into DSP mul_mul_12ns_12ns_24_4_1_U80/resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register Wx_V_reg_2001_pp1_iter9_reg_reg is absorbed into DSP mul_mul_12ns_12ns_24_4_1_U80/resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mul_mul_12ns_12ns_24_4_1_U80/resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1_U/a_reg_reg is absorbed into DSP mul_mul_12ns_12ns_24_4_1_U80/resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mul_mul_12ns_12ns_24_4_1_U80/resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mul_mul_12ns_12ns_24_4_1_U80/resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mul_mul_12ns_12ns_24_4_1_U80/resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1_U/p_reg_tmp_reg is absorbed into DSP mul_mul_12ns_12ns_24_4_1_U80/resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mul_mul_12ns_12ns_24_4_1_U80/resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1_U/p_reg_tmp0 is absorbed into DSP mul_mul_12ns_12ns_24_4_1_U80/resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/p_reg_reg, operation Mode is: (C+(A2*B'')')'.
+DSP Report: register mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/p_reg_reg is absorbed into DSP mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/p_reg_reg.
+DSP Report: register mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/p_reg_reg is absorbed into DSP mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/p_reg_reg.
+DSP Report: register mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/a_reg_reg is absorbed into DSP mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/p_reg_reg.
+DSP Report: register mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/p_reg_reg is absorbed into DSP mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/p_reg_reg.
+DSP Report: register mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/m_reg_reg is absorbed into DSP mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/p_reg_reg.
+DSP Report: operator mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/p is absorbed into DSP mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/p_reg_reg.
+DSP Report: operator mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/m is absorbed into DSP mac_muladd_12ns_10s_22s_23_4_1_U83/resize_accel_mac_muladd_12ns_10s_22s_23_4_1_DSP48_4_U/p_reg_reg.
+DSP Report: Generating DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product, operation Mode is: A2*B2.
+DSP Report: register grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/rows_read_reg_372_reg is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product.
+DSP Report: register grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product.
+DSP Report: operator grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product.
+DSP Report: operator grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product.
+DSP Report: Generating DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/cols_bound_per_npc_read_reg_377_reg is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg.
+DSP Report: register grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/rows_read_reg_372_reg is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg.
+DSP Report: register grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg.
+DSP Report: operator grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg.
+DSP Report: operator grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg.
+DSP Report: Generating DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product, operation Mode is: A2*B2.
+DSP Report: register grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product.
+DSP Report: register grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product.
+DSP Report: operator grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product.
+DSP Report: operator grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product.
+DSP Report: Generating DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/cols_bound_per_npc_read_reg_377_reg is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg.
+DSP Report: register grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg.
+DSP Report: register grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg.
+DSP Report: operator grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg.
+DSP Report: operator grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/tmp_product is absorbed into DSP grp_Mat2Axi_fu_60/Mat2AxiStream_U0/MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U122/resize_accel_mul_32ns_32ns_64_2_1_Multiplier_2_U/p_reg.
+DSP Report: Generating DSP grp_Mat2Axi_fu_60/addrbound_U0/mul_mul_11s_11s_11_4_1_U111/resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5_U/p_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register grp_Mat2Axi_fu_60/addrbound_U0/mul_mul_11s_11s_11_4_1_U111/resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5_U/b_reg_reg is absorbed into DSP grp_Mat2Axi_fu_60/addrbound_U0/mul_mul_11s_11s_11_4_1_U111/resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5_U/p_reg_reg.
+DSP Report: register grp_Mat2Axi_fu_60/addrbound_U0/mul_mul_11s_11s_11_4_1_U111/resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5_U/a_reg_reg is absorbed into DSP grp_Mat2Axi_fu_60/addrbound_U0/mul_mul_11s_11s_11_4_1_U111/resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5_U/p_reg_reg.
+DSP Report: register grp_Mat2Axi_fu_60/addrbound_U0/mul_mul_11s_11s_11_4_1_U111/resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5_U/p_reg_reg is absorbed into DSP grp_Mat2Axi_fu_60/addrbound_U0/mul_mul_11s_11s_11_4_1_U111/resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5_U/p_reg_reg.
+DSP Report: register grp_Mat2Axi_fu_60/addrbound_U0/mul_mul_11s_11s_11_4_1_U111/resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5_U/p_reg_tmp_reg is absorbed into DSP grp_Mat2Axi_fu_60/addrbound_U0/mul_mul_11s_11s_11_4_1_U111/resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5_U/p_reg_reg.
+DSP Report: operator grp_Mat2Axi_fu_60/addrbound_U0/mul_mul_11s_11s_11_4_1_U111/resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5_U/p_reg_tmp0 is absorbed into DSP grp_Mat2Axi_fu_60/addrbound_U0/mul_mul_11s_11s_11_4_1_U111/resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5_U/p_reg_reg.
+warning: Removed RAM bus_write/buff_wdata/mem_reg due to inactive write enable
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:20 . Memory (MB): peak = 1495.312 ; gain = 351.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                             | RTL Object                                                                                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/gmem1_m_axi_U                                                                      | bus_read/buff_rdata/mem_reg                                                                                | 256 x 35(READ_FIRST)   | W |   | 256 x 35(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/gmem2_m_axi_U                                                                      | bus_write/buff_wdata/mem_reg                                                                               | 256 x 36(READ_FIRST)   | W |   | 256 x 36(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80 | line_buffer_V_0_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram0_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80 | line_buffer_V_0_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram1_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80 | line_buffer_V_1_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram0_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80 | line_buffer_V_1_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram1_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80 | line_buffer_V_2_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram0_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80 | line_buffer_V_2_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram1_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping	Report (see note below)
++------------------------------------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                           | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|resize_accel_mul_mul_15s_15s_15_4_1_DSP48_0           | (A2*B2)'              | 15     | 15     | -      | -      | 30     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|resize_accel_AxiStream2MatStream                      | A2*B                  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|resize_accel_AxiStream2MatStream                      | (PCIN>>17)+A*B        | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|resize_accel_AxiStream2MatStream                      | A2*B2                 | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|resize_accel_AxiStream2MatStream                      | (PCIN>>17)+A2*B       | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|resize_accel_scaleCompute_17_42_20_48_16_1_s          | (A''*B2)'             | 18     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|resize_accel_scaleCompute_17_42_20_48_16_1_s          | (PCIN>>17)+(A2*B'')'  | 25     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|resize_accel_scaleCompute_17_42_20_48_16_1_s          | PCIN+(A''*B'')'       | 18     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|resize_accel_scaleCompute_17_42_20_48_16_1_s          | (PCIN>>17)+(A''*B'')' | 25     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|resize_accel_scaleCompute_17_42_20_48_16_1_s          | PCIN+(A''*B'')'       | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|resize_accel_scaleCompute_17_42_20_48_16_1_s          | (PCIN>>17)+(A''*B'')' | 25     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|resize_accel_mul_mul_12ns_9s_21_4_1_DSP48_2           | (A''*B2)'             | 13     | 9      | -      | -      | 22     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s | (C+(A''*B'')')'       | 22     | 10     | 21     | -      | 22     | 2    | 2    | 0    | -    | -     | 1    | 1    | 
+|resize_accel_mul_mul_12ns_12ns_24_4_1_DSP48_1         | (A''*B2)'             | 12     | 12     | -      | -      | 22     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s | (C+(A2*B'')')'        | 23     | 11     | 22     | -      | 23     | 1    | 2    | 0    | -    | -     | 1    | 1    | 
+|resize_accel_xfMat2Array_32_0_32_32_1_1_s             | A2*B2                 | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|resize_accel_xfMat2Array_32_0_32_32_1_1_s             | (PCIN>>17)+A2*B2      | 16     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|resize_accel_xfMat2Array_32_0_32_32_1_1_s             | A2*B2                 | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|resize_accel_xfMat2Array_32_0_32_32_1_1_s             | (PCIN>>17)+A2*B2      | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|resize_accel_mul_mul_11s_11s_11_4_1_DSP48_5           | (A2*B2)'              | 11     | 11     | -      | -      | 22     | 1    | 1    | -    | -    | -     | 1    | 1    | 
++------------------------------------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:36 . Memory (MB): peak = 1495.312 ; gain = 351.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:43 . Memory (MB): peak = 1572.105 ; gain = 428.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                             | RTL Object                                                                                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/gmem1_m_axi_U                                                                      | bus_read/buff_rdata/mem_reg                                                                                | 256 x 35(READ_FIRST)   | W |   | 256 x 35(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/gmem2_m_axi_U                                                                      | bus_write/buff_wdata/mem_reg                                                                               | 256 x 36(READ_FIRST)   | W |   | 256 x 36(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80 | line_buffer_V_0_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram0_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80 | line_buffer_V_0_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram1_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80 | line_buffer_V_1_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram0_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80 | line_buffer_V_1_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram1_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80 | line_buffer_V_2_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram0_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80 | line_buffer_V_2_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram1_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_read/buff_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem2_m_axi_U/bus_write/buff_wdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/line_buffer_V_0_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/line_buffer_V_0_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/line_buffer_V_1_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/line_buffer_V_1_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/line_buffer_V_2_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/line_buffer_V_2_0_U/resize_accel_resizeNNBilinear_0_128_128_1_32_32_1_2_s_line_buffer_V_0_0_ram_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:46 . Memory (MB): peak = 1594.801 ; gain = 451.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:52 . Memory (MB): peak = 1609.168 ; gain = 465.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:52 . Memory (MB): peak = 1609.168 ; gain = 465.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:53 . Memory (MB): peak = 1609.168 ; gain = 465.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:53 . Memory (MB): peak = 1609.168 ; gain = 465.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:53 . Memory (MB): peak = 1609.168 ; gain = 465.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:53 . Memory (MB): peak = 1609.168 ; gain = 465.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                                                                                                                                                                                                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/icmp_ln389_reg_1943_pp1_iter6_reg_reg[0]                                                                                                                             | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/and_ln406_reg_1947_pp1_iter6_reg_reg[0]                                                                                                                              | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/icmp_ln389_reg_1943_pp1_iter16_reg_reg[0]                                                                                                                            | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/ret_V_16_reg_1961_pp1_iter16_reg_reg[16]                                                                                                                             | 15     | 17    | NO           | NO                 | NO                | 17     | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/and_ln487_reg_1977_pp1_iter7_reg_reg[0]                                                                                                                              | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/and_ln487_reg_1977_pp1_iter15_reg_reg[0]                                                                                                                             | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/and_ln486_reg_1981_pp1_iter7_reg_reg[0]                                                                                                                              | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/and_ln486_reg_1981_pp1_iter15_reg_reg[0]                                                                                                                             | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/icmp_ln489_reg_1951_pp1_iter7_reg_reg[0]                                                                                                                             | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/icmp_ln489_reg_1951_pp1_iter15_reg_reg[0]                                                                                                                            | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/icmp_ln870_2_reg_1971_pp1_iter8_reg_reg[0]                                                                                                                           | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/p_Val2_s_reg_2082_pp1_iter15_reg_reg[7]                                                                                                                              | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/trunc_ln728_reg_1966_pp1_iter9_reg_reg[1]                                                                                                                            | 8      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/j_1_reg_451_pp1_iter7_reg_reg[6]                                                                                                                                     | 6      | 7     | NO           | NO                 | YES               | 7      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/grp_xfUDivResize_fu_563/udiv_64ns_16ns_64_68_seq_1_U72/resize_accel_udiv_64ns_16ns_64_68_seq_1_div_U/resize_accel_udiv_64ns_16ns_64_68_seq_1_div_u_0/r_stage_reg[64] | 64     | 1     | YES          | NO                 | YES               | 0      | 2       | 
+|resize_accel | xfMat2Array_32_0_32_32_1_1_U0/grp_Mat2Axi_fu_60/AxiStream2Axi_U0/ap_CS_fsm_reg[6]                                                                                                                                                                       | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/ap_enable_reg_pp1_iter7_reg                                                                                                                                          | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|resize_accel | resize_1_0_128_128_32_32_1_2_U0/grp_resizeNNBilinear_0_128_128_1_32_32_1_2_s_fu_80/ap_enable_reg_pp1_iter16_reg                                                                                                                                         | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[4]     | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[4]     | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[14]    | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[4]     | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[4]     | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[4]     | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__6     | mem_reg[14]    | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__7     | mem_reg[4]     | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__8     | SRL_SIG_reg[3] | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
+|dsrl__9     | SRL_SIG_reg[5] | 4      | 4          | 4      | 0       | 0      | 0      | 0      | 
+|dsrl__10    | SRL_SIG_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__11    | SRL_SIG_reg[5] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__12    | SRL_SIG_reg[3] | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
+|dsrl__13    | SRL_SIG_reg[2] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__14    | SRL_SIG_reg[3] | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
+|dsrl__15    | SRL_SIG_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__16    | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   543|
+|2     |DSP48E1  |    19|
+|13    |LUT1     |   389|
+|14    |LUT2     |   573|
+|15    |LUT3     |  1350|
+|16    |LUT4     |  1666|
+|17    |LUT5     |   418|
+|18    |LUT6     |  1053|
+|19    |MUXF7    |     3|
+|20    |RAMB18E1 |     8|
+|22    |SRL16E   |   514|
+|23    |SRLC32E  |     2|
+|24    |FDRE     |  6757|
+|25    |FDSE     |   111|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:53 . Memory (MB): peak = 1609.168 ; gain = 465.496
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:05 ; elapsed = 00:01:45 . Memory (MB): peak = 1609.168 ; gain = 305.621
+Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:53 . Memory (MB): peak = 1609.168 ; gain = 465.496
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.199 . Memory (MB): peak = 1621.254 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 573 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1621.254 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+257 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:03:13 . Memory (MB): peak = 1621.254 ; gain = 477.582
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_prj/base/project_1/project_1.runs/base_resize_accel_0_0_synth_1/base_resize_accel_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP base_resize_accel_0_0, cache-ID = 49acf9973d5cbb2b
+INFO: [Coretcl 2-1174] Renamed 148 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_prj/base/project_1/project_1.runs/base_resize_accel_0_0_synth_1/base_resize_accel_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_resize_accel_0_0_utilization_synth.rpt -pb base_resize_accel_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 24 03:58:18 2022...

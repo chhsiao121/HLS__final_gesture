@@ -1,0 +1,340 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 24 03:59:42 2022
+# Process ID: 4088
+# Current directory: D:/vivado_prj/base/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13416 D:\vivado_prj\base\project_1\project_1.xpr
+# Log file: D:/vivado_prj/base/project_1/vivado.log
+# Journal file: D:/vivado_prj/base/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_prj/base/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'base_s00_regslice_19' generated file not found 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_19/base_s00_regslice_19.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s00_regslice_19' generated file not found 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_19/base_s00_regslice_19_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s00_regslice_19' generated file not found 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_19/base_s00_regslice_19_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s00_regslice_19' generated file not found 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_19/base_s00_regslice_19_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s00_regslice_19' generated file not found 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_s00_regslice_19/base_s00_regslice_19_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_pc_15' generated file not found 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_15/base_auto_pc_15.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_pc_15' generated file not found 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_15/base_auto_pc_15_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_pc_15' generated file not found 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_15/base_auto_pc_15_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_pc_15' generated file not found 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_15/base_auto_pc_15_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_pc_15' generated file not found 'd:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_auto_pc_15/base_auto_pc_15_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1307.082 ; gain = 162.531
+update_compile_order -fileset sources_1
+open_bd_design {D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd}
+Reading block design file <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - ps7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk1
+Adding component instance block -- xilinx.com:hls:color_convert:1.0 - color_convert
+Adding component instance block -- xilinx.com:user:color_swap:1.1 - color_swap_0
+Adding component instance block -- digilentinc.com:ip:dvi2rgb:1.7 - dvi2rgb_0
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_hdmiin
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - vtc_in
+Adding component instance block -- xilinx.com:hls:pixel_pack:1.0 - pixel_pack
+Adding component instance block -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+Adding component instance block -- xilinx.com:hls:color_convert:1.0 - color_convert
+Adding component instance block -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk
+Adding component instance block -- xilinx.com:user:color_swap:1.1 - color_swap_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.2 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - hdmi_out_hpd_video
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - vtc_out
+Adding component instance block -- xilinx.com:hls:pixel_unpack:1.0 - pixel_unpack
+Adding component instance block -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_pixelclk
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - btns_gpio
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_10MHz
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concat_interrupts
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - leds_gpio
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - switches_gpio
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - system_interrupts
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_1
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - gesture_top_0_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:user:cnn_top:1.0 - cnn_top_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:hls:dilation_accel:1.0 - dilation_accel_0
+Adding component instance block -- xilinx.com:hls:resize_accel:1.0 - resize_accel_0
+Adding component instance block -- xilinx.com:hls:threshold_accel:1.0 - threshold_accel_0
+Successfully read diagram <base> from block design file <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1886.879 ; gain = 449.117
+launch_runs synth_1 -jobs 20
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_15
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_s00_regslice_19
+[Mon Jan 24 04:00:45 2022] Launched base_auto_pc_15_synth_1, base_auto_us_10_synth_1, base_s00_regslice_19_synth_1...
+Run output will be captured here:
+base_auto_pc_15_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_auto_pc_15_synth_1/runme.log
+base_auto_us_10_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_auto_us_10_synth_1/runme.log
+base_s00_regslice_19_synth_1: D:/vivado_prj/base/project_1/project_1.runs/base_s00_regslice_19_synth_1/runme.log
+[Mon Jan 24 04:00:46 2022] Launched synth_1...
+Run output will be captured here: D:/vivado_prj/base/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 20
+[Mon Jan 24 04:02:02 2022] Launched impl_1...
+Run output will be captured here: D:/vivado_prj/base/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Mon Jan 24 04:11:40 2022] Launched impl_1...
+Run output will be captured here: D:/vivado_prj/base/project_1/project_1.runs/impl_1/runme.log
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:median_blur_accel:1.0 median_blur_accel_0
+endgroup
+move_bd_cells [get_bd_cells img_processing] [get_bd_cells median_blur_accel_0]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:arithm_accel:1.0 img_processing/arithm_accel_0
+endgroup
+connect_bd_net [get_bd_pins img_processing/ACLK] [get_bd_pins img_processing/arithm_accel_0/ap_clk]
+connect_bd_net [get_bd_pins img_processing/ACLK] [get_bd_pins img_processing/median_blur_accel_0/ap_clk]
+connect_bd_net [get_bd_pins img_processing/arithm_accel_0/ap_rst_n] [get_bd_pins img_processing/median_blur_accel_0/ap_rst_n]
+connect_bd_net [get_bd_pins img_processing/ARESETN] [get_bd_pins img_processing/median_blur_accel_0/ap_rst_n]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {16}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins img_processing/arithm_accel_0/s_axi_control] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M12_AXI]
+connect_bd_intf_net [get_bd_intf_pins img_processing/arithm_accel_0/s_axi_control_r] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M13_AXI]
+connect_bd_intf_net [get_bd_intf_pins img_processing/median_blur_accel_0/s_axi_control] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M14_AXI]
+connect_bd_intf_net [get_bd_intf_pins img_processing/median_blur_accel_0/s_axi_control_r] -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M15_AXI]
+startgroup
+set_property -dict [list CONFIG.NUM_SI {12} CONFIG.NUM_MI {1}] [get_bd_cells img_processing/axi_interconnect_0]
+endgroup
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S07_AXI] [get_bd_intf_pins img_processing/arithm_accel_0/m_axi_gmem0]
+connect_bd_intf_net [get_bd_intf_pins img_processing/arithm_accel_0/m_axi_gmem1] -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S08_AXI]
+connect_bd_intf_net [get_bd_intf_pins img_processing/arithm_accel_0/m_axi_gmem2] -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S09_AXI]
+connect_bd_intf_net [get_bd_intf_pins img_processing/median_blur_accel_0/m_axi_gmem0] -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S10_AXI]
+connect_bd_intf_net [get_bd_intf_pins img_processing/median_blur_accel_0/m_axi_gmem1] -boundary_type upper [get_bd_intf_pins img_processing/axi_interconnect_0/S11_AXI]
+connect_bd_net [get_bd_pins img_processing/axi_interconnect_0/S07_ACLK] [get_bd_pins img_processing/axi_interconnect_0/S08_ACLK] -boundary_type upper
+connect_bd_net [get_bd_pins img_processing/axi_interconnect_0/S09_ACLK] [get_bd_pins img_processing/axi_interconnect_0/S08_ACLK] -boundary_type upper
+connect_bd_net [get_bd_pins img_processing/axi_interconnect_0/S09_ARESETN] [get_bd_pins img_processing/axi_interconnect_0/S08_ARESETN] -boundary_type upper
+connect_bd_net [get_bd_pins img_processing/axi_interconnect_0/S08_ARESETN] [get_bd_pins img_processing/axi_interconnect_0/S07_ARESETN] -boundary_type upper
+connect_bd_net [get_bd_pins img_processing/ARESETN] [get_bd_pins img_processing/axi_interconnect_0/S07_ARESETN]
+connect_bd_net [get_bd_pins img_processing/axi_interconnect_0/S10_ACLK] [get_bd_pins img_processing/axi_interconnect_0/S09_ACLK] -boundary_type upper
+connect_bd_net [get_bd_pins img_processing/axi_interconnect_0/S11_ACLK] [get_bd_pins img_processing/axi_interconnect_0/S10_ACLK] -boundary_type upper
+connect_bd_net [get_bd_pins img_processing/ACLK] [get_bd_pins img_processing/axi_interconnect_0/S07_ACLK]
+connect_bd_net [get_bd_pins img_processing/axi_interconnect_0/S11_ARESETN] [get_bd_pins img_processing/axi_interconnect_0/S10_ARESETN] -boundary_type upper
+connect_bd_net [get_bd_pins img_processing/ARESETN] [get_bd_pins img_processing/axi_interconnect_0/S10_ARESETN]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M12_ACLK] [get_bd_pins ps7_0_axi_periph/M13_ACLK] -boundary_type upper
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M13_ACLK] [get_bd_pins ps7_0_axi_periph/M14_ACLK] -boundary_type upper
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M14_ACLK] [get_bd_pins ps7_0_axi_periph/M15_ACLK] -boundary_type upper
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M12_ACLK] [get_bd_pins ps7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M12_ARESETN] [get_bd_pins rst_ps7_0_fclk0/peripheral_aresetn]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M13_ARESETN] [get_bd_pins rst_ps7_0_fclk0/peripheral_aresetn]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M14_ARESETN] [get_bd_pins rst_ps7_0_fclk0/peripheral_aresetn]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M15_ARESETN] [get_bd_pins rst_ps7_0_fclk0/peripheral_aresetn]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+connect_bd_net [get_bd_pins img_processing/arithm_accel_0/height] [get_bd_pins img_processing/xlconstant_0/dout]
+connect_bd_net [get_bd_pins img_processing/arithm_accel_0/width] [get_bd_pins img_processing/xlconstant_0/dout]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+validate_bd_design
+CRITICAL WARNING: [BD 41-1356] Slave segment </img_processing/arithm_accel_0/s_axi_control/Reg> is not assigned into address space </ps7_0/Data>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </img_processing/arithm_accel_0/s_axi_control_r/Reg> is not assigned into address space </ps7_0/Data>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </img_processing/median_blur_accel_0/s_axi_control/Reg> is not assigned into address space </ps7_0/Data>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </img_processing/median_blur_accel_0/s_axi_control_r/Reg> is not assigned into address space </ps7_0/Data>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is not assigned into address space </img_processing/median_blur_accel_0/Data_m_axi_gmem0>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is not assigned into address space </img_processing/median_blur_accel_0/Data_m_axi_gmem1>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is not assigned into address space </img_processing/arithm_accel_0/Data_m_axi_gmem0>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is not assigned into address space </img_processing/arithm_accel_0/Data_m_axi_gmem1>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is not assigned into address space </img_processing/arithm_accel_0/Data_m_axi_gmem2>. Please use Address Editor to either assign or exclude it.
+INFO: [Common 17-365] Interrupt caught but 'validate_bd_design' cannot be canceled. Please wait for command to finish.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_10MHz clk_wiz propagate
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (15) does not match property SENSITIVITY (12 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+WARNING: [BD 41-926] Following properties on interface pin /img_processing/dilation_accel_0/s_axi_control have been updated from connected ip, but BD cell '/img_processing/dilation_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	MAX_BURST_LENGTH = 1
+
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/dilation_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-926] Following properties on interface pin /img_processing/resize_accel_0/s_axi_control have been updated from connected ip, but BD cell '/img_processing/resize_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	SUPPORTS_NARROW_BURST = 0
+	MAX_BURST_LENGTH = 1
+
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/resize_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-926] Following properties on interface pin /img_processing/threshold_accel_0/s_axi_control have been updated from connected ip, but BD cell '/img_processing/threshold_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	SUPPORTS_NARROW_BURST = 0
+	MAX_BURST_LENGTH = 1
+
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/threshold_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-926] Following properties on interface pin /img_processing/threshold_accel_0/s_axi_control_r have been updated from connected ip, but BD cell '/img_processing/threshold_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	MAX_BURST_LENGTH = 1
+
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/threshold_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/RefClk have been updated from connected ip, but BD cell '/video/hdmi_in/frontend/dvi2rgb_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 2e+08 
+Please resolve any mismatches by directly setting properties on BD cell </video/hdmi_in/frontend/dvi2rgb_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/REF_CLK_I have been updated from connected ip, but BD cell '/video/hdmi_out/frontend/axi_dynclk' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </video/hdmi_out/frontend/axi_dynclk> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/s00_axi_aclk have been updated from connected ip, but BD cell '/video/hdmi_out/frontend/axi_dynclk' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </video/hdmi_out/frontend/axi_dynclk> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /gesture/cnn_top_0/clk have been updated from connected ip, but BD cell '/gesture/cnn_top_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </gesture/cnn_top_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /img_processing/dilation_accel_0/ap_clk have been updated from connected ip, but BD cell '/img_processing/dilation_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/dilation_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /img_processing/resize_accel_0/ap_clk have been updated from connected ip, but BD cell '/img_processing/resize_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/resize_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /img_processing/threshold_accel_0/ap_clk have been updated from connected ip, but BD cell '/img_processing/threshold_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/threshold_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /img_processing/median_blur_accel_0/ap_clk have been updated from connected ip, but BD cell '/img_processing/median_blur_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/median_blur_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /img_processing/arithm_accel_0/ap_clk have been updated from connected ip, but BD cell '/img_processing/arithm_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/arithm_accel_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:02:33 ; elapsed = 00:02:35 . Memory (MB): peak = 2540.238 ; gain = 210.289
+INFO: [Common 17-681] Processing pending cancel.
+assign_bd_address
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/arithm_accel_0/Data_m_axi_gmem0' at <0x0000_0000 [ 512M ]>.
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/arithm_accel_0/Data_m_axi_gmem1' at <0x0000_0000 [ 512M ]>.
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/arithm_accel_0/Data_m_axi_gmem2' at <0x0000_0000 [ 512M ]>.
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/median_blur_accel_0/Data_m_axi_gmem0' at <0x0000_0000 [ 512M ]>.
+Slave segment '/ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM' is being assigned into address space '/img_processing/median_blur_accel_0/Data_m_axi_gmem1' at <0x0000_0000 [ 512M ]>.
+Slave segment '/img_processing/arithm_accel_0/s_axi_control/Reg' is being assigned into address space '/ps7_0/Data' at <0x4004_0000 [ 64K ]>.
+Slave segment '/img_processing/arithm_accel_0/s_axi_control_r/Reg' is being assigned into address space '/ps7_0/Data' at <0x4005_0000 [ 64K ]>.
+Slave segment '/img_processing/median_blur_accel_0/s_axi_control/Reg' is being assigned into address space '/ps7_0/Data' at <0x4006_0000 [ 64K ]>.
+Slave segment '/img_processing/median_blur_accel_0/s_axi_control_r/Reg' is being assigned into address space '/ps7_0/Data' at <0x4007_0000 [ 64K ]>.
+validate_bd_design
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_10MHz clk_wiz propagate
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (15) does not match property SENSITIVITY (12 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+WARNING: [BD 41-926] Following properties on interface pin /img_processing/dilation_accel_0/s_axi_control have been updated from connected ip, but BD cell '/img_processing/dilation_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	MAX_BURST_LENGTH = 1
+
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/dilation_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-926] Following properties on interface pin /img_processing/resize_accel_0/s_axi_control have been updated from connected ip, but BD cell '/img_processing/resize_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	SUPPORTS_NARROW_BURST = 0
+	MAX_BURST_LENGTH = 1
+
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/resize_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-926] Following properties on interface pin /img_processing/threshold_accel_0/s_axi_control have been updated from connected ip, but BD cell '/img_processing/threshold_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	SUPPORTS_NARROW_BURST = 0
+	MAX_BURST_LENGTH = 1
+
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/threshold_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-926] Following properties on interface pin /img_processing/threshold_accel_0/s_axi_control_r have been updated from connected ip, but BD cell '/img_processing/threshold_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	MAX_BURST_LENGTH = 1
+
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/threshold_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/RefClk have been updated from connected ip, but BD cell '/video/hdmi_in/frontend/dvi2rgb_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 2e+08 
+Please resolve any mismatches by directly setting properties on BD cell </video/hdmi_in/frontend/dvi2rgb_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/REF_CLK_I have been updated from connected ip, but BD cell '/video/hdmi_out/frontend/axi_dynclk' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </video/hdmi_out/frontend/axi_dynclk> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/s00_axi_aclk have been updated from connected ip, but BD cell '/video/hdmi_out/frontend/axi_dynclk' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </video/hdmi_out/frontend/axi_dynclk> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /gesture/cnn_top_0/clk have been updated from connected ip, but BD cell '/gesture/cnn_top_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </gesture/cnn_top_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /img_processing/dilation_accel_0/ap_clk have been updated from connected ip, but BD cell '/img_processing/dilation_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/dilation_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /img_processing/resize_accel_0/ap_clk have been updated from connected ip, but BD cell '/img_processing/resize_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/resize_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /img_processing/threshold_accel_0/ap_clk have been updated from connected ip, but BD cell '/img_processing/threshold_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/threshold_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /img_processing/median_blur_accel_0/ap_clk have been updated from connected ip, but BD cell '/img_processing/median_blur_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/median_blur_accel_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /img_processing/arithm_accel_0/ap_clk have been updated from connected ip, but BD cell '/img_processing/arithm_accel_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1e+08 
+Please resolve any mismatches by directly setting properties on BD cell </img_processing/arithm_accel_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:02:12 ; elapsed = 00:02:16 . Memory (MB): peak = 2601.113 ; gain = 25.910
+reset_run base_xbar_13_synth_1
+reset_run base_xbar_15_synth_1
+save_bd_design
+Wrote  : <D:\vivado_prj\base\project_1\project_1.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+INFO: [BD 41-1662] The design 'base.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 

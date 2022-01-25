@@ -1,0 +1,1328 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 24 05:10:57 2022
+# Process ID: 10400
+# Current directory: D:/vivado_prj/base/project_1/project_1.runs/base_median_blur_accel_0_0_synth_1
+# Command line: vivado.exe -log base_median_blur_accel_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_median_blur_accel_0_0.tcl
+# Log file: D:/vivado_prj/base/project_1/project_1.runs/base_median_blur_accel_0_0_synth_1/base_median_blur_accel_0_0.vds
+# Journal file: D:/vivado_prj/base/project_1/project_1.runs/base_median_blur_accel_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_median_blur_accel_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_prj/base/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/Vitis_Libraries-2020.2_update1/vision/L1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top base_median_blur_accel_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 328
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1182.504 ; gain = 37.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'base_median_blur_accel_0_0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_median_blur_accel_0_0/synth/base_median_blur_accel_0_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel.v:12]
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_R_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_R_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_M_AXI_GMEM0_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM0_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_GMEM0_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_GMEM0_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM0_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM0_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM0_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM0_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM0_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_GMEM0_PROT_VALUE bound to: 3'b000 
+	Parameter C_M_AXI_GMEM0_CACHE_VALUE bound to: 4'b0011 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_GMEM1_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_GMEM1_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_GMEM1_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_GMEM1_PROT_VALUE bound to: 3'b000 
+	Parameter C_M_AXI_GMEM1_CACHE_VALUE bound to: 4'b0011 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_CONTROL_R_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_GMEM0_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_GMEM1_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_control_s_axi' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 5'b00000 
+	Parameter ADDR_GIE bound to: 5'b00100 
+	Parameter ADDR_IER bound to: 5'b01000 
+	Parameter ADDR_ISR bound to: 5'b01100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 5'b10000 
+	Parameter ADDR_ROWS_CTRL bound to: 5'b10100 
+	Parameter ADDR_COLS_DATA_0 bound to: 5'b11000 
+	Parameter ADDR_COLS_CTRL bound to: 5'b11100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_control_s_axi.v:199]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_control_s_axi' (1#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_control_r_s_axi' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_control_r_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_IMG_IN_DATA_0 bound to: 6'b010000 
+	Parameter ADDR_IMG_IN_DATA_1 bound to: 6'b010100 
+	Parameter ADDR_IMG_IN_CTRL bound to: 6'b011000 
+	Parameter ADDR_IMG_OUT_DATA_0 bound to: 6'b011100 
+	Parameter ADDR_IMG_OUT_DATA_1 bound to: 6'b100000 
+	Parameter ADDR_IMG_OUT_CTRL bound to: 6'b100100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_control_r_s_axi.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_control_r_s_axi' (2#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_control_r_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem0_m_axi' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:8]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem0_m_axi_write' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:1729]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_WRITE_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem0_m_axi_fifo' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:418]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem0_m_axi_fifo' (3#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem0_m_axi_reg_slice' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:314]
+	Parameter N bound to: 96 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem0_m_axi_reg_slice' (4#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem0_m_axi_fifo__parameterized0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:418]
+	Parameter DATA_BITS bound to: 96 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem0_m_axi_fifo__parameterized0' (4#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem0_m_axi_buffer' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem0_m_axi_buffer' (5#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem0_m_axi_fifo__parameterized1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem0_m_axi_fifo__parameterized1' (5#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem0_m_axi_fifo__parameterized2' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem0_m_axi_fifo__parameterized2' (5#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem0_m_axi_write' (6#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem0_m_axi_read' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:932]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_READ_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem0_m_axi_buffer__parameterized0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem0_m_axi_buffer__parameterized0' (6#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem0_m_axi_reg_slice__parameterized0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:314]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem0_m_axi_reg_slice__parameterized0' (6#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem0_m_axi_read' (7#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:932]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem0_m_axi_throttle' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:710]
+	Parameter USED_FIX bound to: 0 - type: integer 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem0_m_axi_throttle' (8#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem0_m_axi' (9#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem0_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem1_m_axi' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:8]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem1_m_axi_write' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:1729]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_WRITE_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem1_m_axi_fifo' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:418]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem1_m_axi_fifo' (10#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem1_m_axi_reg_slice' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:314]
+	Parameter N bound to: 96 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem1_m_axi_reg_slice' (11#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem1_m_axi_fifo__parameterized0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:418]
+	Parameter DATA_BITS bound to: 96 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem1_m_axi_fifo__parameterized0' (11#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem1_m_axi_buffer' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem1_m_axi_buffer' (12#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem1_m_axi_fifo__parameterized1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem1_m_axi_fifo__parameterized1' (12#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem1_m_axi_fifo__parameterized2' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem1_m_axi_fifo__parameterized2' (12#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem1_m_axi_write' (13#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem1_m_axi_read' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:932]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_READ_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem1_m_axi_buffer__parameterized0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem1_m_axi_buffer__parameterized0' (13#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem1_m_axi_reg_slice__parameterized0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:314]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem1_m_axi_reg_slice__parameterized0' (13#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem1_m_axi_read' (14#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:932]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_gmem1_m_axi_throttle' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:710]
+	Parameter USED_FIX bound to: 0 - type: integer 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem1_m_axi_throttle' (15#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_gmem1_m_axi' (16#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_gmem1_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_Block_split1_proc33' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Block_split1_proc33.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_Block_split1_proc33' (17#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Block_split1_proc33.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_Array2xfMat_32_9_32_32_1_s' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Array2xfMat_32_9_32_32_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_Axi2Mat' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Axi2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_Axi2Mat_entry3' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Axi2Mat_entry3.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_Axi2Mat_entry3' (18#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Axi2Mat_entry3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_Axi2Mat_entry19' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Axi2Mat_entry19.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_Axi2Mat_entry19' (19#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Axi2Mat_entry19.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_last_blk_pxl_width10' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_last_blk_pxl_width10.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_last_blk_pxl_width10' (20#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_last_blk_pxl_width10.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_addrbound11' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_addrbound11.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1.v:52]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter din3_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0' (21#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1' (22#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_addrbound11' (23#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_addrbound11.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_Axi2Mat_Block_split26_proc' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Axi2Mat_Block_split26_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_Axi2Mat_Block_split26_proc' (24#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Axi2Mat_Block_split26_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_Axi2AxiStream' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Axi2AxiStream.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 10'b0000000001 
+	Parameter ap_ST_fsm_state2 bound to: 10'b0000000010 
+	Parameter ap_ST_fsm_state3 bound to: 10'b0000000100 
+	Parameter ap_ST_fsm_state4 bound to: 10'b0000001000 
+	Parameter ap_ST_fsm_state5 bound to: 10'b0000010000 
+	Parameter ap_ST_fsm_state6 bound to: 10'b0000100000 
+	Parameter ap_ST_fsm_state7 bound to: 10'b0001000000 
+	Parameter ap_ST_fsm_state8 bound to: 10'b0010000000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 10'b0100000000 
+	Parameter ap_ST_fsm_state12 bound to: 10'b1000000000 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_Axi2AxiStream' (25#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Axi2AxiStream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_AxiStream2MatStream' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_AxiStream2MatStream.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state9 bound to: 5'b10000 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_mul_32s_32s_32_2_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_mul_32s_32s_32_2_1.v:25]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_mul_32s_32s_32_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0' (26#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_mul_32s_32s_32_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_mul_32s_32s_32_2_1' (27#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_mul_32s_32s_32_2_1.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_AxiStream2MatStream' (28#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_AxiStream2MatStream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w64_d2_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w64_d2_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w64_d2_S_shiftReg' (29#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w64_d2_S' (30#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w32_d2_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w32_d2_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w32_d2_S_shiftReg' (31#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w32_d2_S' (32#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w64_d4_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d4_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w64_d4_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d4_S.v:8]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w64_d4_S_shiftReg' (33#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d4_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w64_d4_S' (34#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d4_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w4_d6_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w4_d6_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w4_d6_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w4_d6_S.v:8]
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w4_d6_S_shiftReg' (35#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w4_d6_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w4_d6_S' (36#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w4_d6_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w11_d2_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w11_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w11_d2_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w11_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w11_d2_S_shiftReg' (37#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w11_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w11_d2_S' (38#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w11_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w32_d4_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d4_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w32_d4_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d4_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w32_d4_S_shiftReg' (39#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d4_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w32_d4_S' (40#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d4_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_start_for_Axi2Mat_entry19_U0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_Axi2Mat_entry19_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_start_for_Axi2Mat_entry19_U0_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_Axi2Mat_entry19_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_start_for_Axi2Mat_entry19_U0_shiftReg' (41#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_Axi2Mat_entry19_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_start_for_Axi2Mat_entry19_U0' (42#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_Axi2Mat_entry19_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_start_for_addrbound11_U0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_addrbound11_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_start_for_addrbound11_U0_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_addrbound11_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_start_for_addrbound11_U0_shiftReg' (43#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_addrbound11_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_start_for_addrbound11_U0' (44#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_addrbound11_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_start_for_AxiStream2MatStream_U0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_AxiStream2MatStream_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_start_for_AxiStream2MatStream_U0_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_AxiStream2MatStream_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_start_for_AxiStream2MatStream_U0_shiftReg' (45#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_AxiStream2MatStream_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_start_for_AxiStream2MatStream_U0' (46#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_AxiStream2MatStream_U0.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_Axi2Mat' (47#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Axi2Mat.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_Array2xfMat_32_9_32_32_1_s' (48#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Array2xfMat_32_9_32_32_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_medianBlur_3_1_9_32_32_1_s' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_medianBlur_3_1_9_32_32_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 11'b00000000001 
+	Parameter ap_ST_fsm_state2 bound to: 11'b00000000010 
+	Parameter ap_ST_fsm_state3 bound to: 11'b00000000100 
+	Parameter ap_ST_fsm_state4 bound to: 11'b00000001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 11'b00000010000 
+	Parameter ap_ST_fsm_state7 bound to: 11'b00000100000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 11'b00001000000 
+	Parameter ap_ST_fsm_state11 bound to: 11'b00010000000 
+	Parameter ap_ST_fsm_state12 bound to: 11'b00100000000 
+	Parameter ap_ST_fsm_pp3_stage0 bound to: 11'b01000000000 
+	Parameter ap_ST_fsm_state23 bound to: 11'b10000000000 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0.v:46]
+	Parameter DataWidth bound to: 24 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0.v:6]
+	Parameter DWIDTH bound to: 24 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram' (49#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0' (50#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0.v:46]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_xFMedianProc_3_1_9_3_9_s' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_xFMedianProc_3_1_9_3_9_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_xFMedianProc_3_1_9_3_9_s' (51#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_xFMedianProc_3_1_9_3_9_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_mux_32_24_1_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_mux_32_24_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 24 - type: integer 
+	Parameter din1_WIDTH bound to: 24 - type: integer 
+	Parameter din2_WIDTH bound to: 24 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_mux_32_24_1_1' (52#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_mux_32_24_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_mux_32_13_1_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_mux_32_13_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 13 - type: integer 
+	Parameter din1_WIDTH bound to: 13 - type: integer 
+	Parameter din2_WIDTH bound to: 13 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_mux_32_13_1_1' (53#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_mux_32_13_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s' (54#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_medianBlur_3_1_9_32_32_1_s' (55#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_medianBlur_3_1_9_32_32_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_xfMat2Array_32_9_32_32_1_1_s' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_xfMat2Array_32_9_32_32_1_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_Mat2Axi' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Mat2Axi.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_Mat2Axi_entry28' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Mat2Axi_entry28.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_Mat2Axi_entry28' (56#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Mat2Axi_entry28.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_addrbound' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_addrbound.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_addrbound' (57#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_addrbound.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_Mat2Axi_Block_split24_proc' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Mat2Axi_Block_split24_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_Mat2Axi_Block_split24_proc' (58#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Mat2Axi_Block_split24_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_Mat2AxiStream' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Mat2AxiStream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_last_blk_pxl_width25' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_last_blk_pxl_width25.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_last_blk_pxl_width25' (59#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_last_blk_pxl_width25.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_MatStream2AxiStream' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_MatStream2AxiStream.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state8 bound to: 5'b10000 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_mul_32ns_32ns_64_2_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_mul_32ns_32ns_64_2_1.v:25]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_mul_32ns_32ns_64_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1' (60#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_mul_32ns_32ns_64_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_mul_32ns_32ns_64_2_1' (61#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_mul_32ns_32ns_64_2_1.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_MatStream2AxiStream' (62#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_MatStream2AxiStream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w4_d2_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w4_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w4_d2_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w4_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w4_d2_S_shiftReg' (63#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w4_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w4_d2_S' (64#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w4_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w32_d2_S_x' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S_x.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w32_d2_S_x_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S_x.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w32_d2_S_x_shiftReg' (65#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w32_d2_S_x' (66#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S_x.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_Mat2AxiStream' (67#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Mat2AxiStream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_AxiStream2Axi' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_AxiStream2Axi.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state6 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state10 bound to: 8'b10000000 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_AxiStream2Axi' (68#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_AxiStream2Axi.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w64_d4_S_x' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d4_S_x.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w64_d4_S_x_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d4_S_x.v:8]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w64_d4_S_x_shiftReg' (69#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d4_S_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w64_d4_S_x' (70#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d4_S_x.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w13_d2_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w13_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 13 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w13_d2_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w13_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 13 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w13_d2_S_shiftReg' (71#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w13_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w13_d2_S' (72#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w13_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w32_d2_S_x0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S_x0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w32_d2_S_x0_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S_x0.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w32_d2_S_x0_shiftReg' (73#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S_x0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w32_d2_S_x0' (74#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S_x0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w16_d2_S' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w16_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w16_d2_S_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w16_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w16_d2_S_shiftReg' (75#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w16_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w16_d2_S' (76#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w16_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w11_d2_S_x' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w11_d2_S_x.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w11_d2_S_x_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w11_d2_S_x.v:8]
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w11_d2_S_x_shiftReg' (77#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w11_d2_S_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w11_d2_S_x' (78#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w11_d2_S_x.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_start_for_addrbound_U0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_addrbound_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_start_for_addrbound_U0_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_addrbound_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_start_for_addrbound_U0_shiftReg' (79#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_addrbound_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_start_for_addrbound_U0' (80#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_addrbound_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_start_for_Mat2AxiStream_U0' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_Mat2AxiStream_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_start_for_Mat2AxiStream_U0_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_Mat2AxiStream_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_start_for_Mat2AxiStream_U0_shiftReg' (81#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_Mat2AxiStream_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_start_for_Mat2AxiStream_U0' (82#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_start_for_Mat2AxiStream_U0.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_Mat2Axi' (83#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_Mat2Axi.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_xfMat2Array_32_9_32_32_1_1_s' (84#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_xfMat2Array_32_9_32_32_1_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w32_d2_S_x1' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S_x1.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w32_d2_S_x1_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S_x1.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w32_d2_S_x1_shiftReg' (85#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S_x1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w32_d2_S_x1' (86#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d2_S_x1.v:42]
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w32_d4_S_x' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d4_S_x.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'median_blur_accel_fifo_w32_d4_S_x_shiftReg' [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d4_S_x.v:8]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w32_d4_S_x_shiftReg' (87#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d4_S_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w32_d4_S_x' (88#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w32_d4_S_x.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w64_d2_S_x_shiftReg' (89#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d2_S_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'median_blur_accel_fifo_w64_d2_S_x' (90#1) [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ipshared/d374/hdl/verilog/median_blur_accel_fifo_w64_d2_S_x.v:42]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1344.859 ; gain = 199.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1344.859 ; gain = 199.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1344.859 ; gain = 199.848
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.249 . Memory (MB): peak = 1344.859 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_median_blur_accel_0_0/constraints/median_blur_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/ip/base_median_blur_accel_0_0/constraints/median_blur_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/vivado_prj/base/project_1/project_1.runs/base_median_blur_accel_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/vivado_prj/base/project_1/project_1.runs/base_median_blur_accel_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1468.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.173 . Memory (MB): peak = 1487.465 ; gain = 18.535
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1487.465 ; gain = 342.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1487.465 ; gain = 342.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/vivado_prj/base/project_1/project_1.runs/base_median_blur_accel_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1487.465 ; gain = 342.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'median_blur_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'median_blur_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'median_blur_accel_control_r_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'median_blur_accel_control_r_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'median_blur_accel_gmem0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'median_blur_accel_gmem0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'median_blur_accel_gmem1_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'median_blur_accel_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'median_blur_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'median_blur_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'median_blur_accel_control_r_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'median_blur_accel_control_r_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'median_blur_accel_gmem0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'median_blur_accel_gmem0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'median_blur_accel_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'median_blur_accel_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-7082] The signal ram_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (5 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1487.465 ; gain = 342.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42/mux_32_24_1_1_U81' (median_blur_accel_mux_32_24_1_1) to 'inst/medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42/mux_32_24_1_1_U83'
+INFO: [Synth 8-223] decloning instance 'inst/medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42/mux_32_24_1_1_U81' (median_blur_accel_mux_32_24_1_1) to 'inst/medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42/mux_32_24_1_1_U85'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 9     
+	   2 Input   52 Bit       Adders := 4     
+	   2 Input   32 Bit       Adders := 7     
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 14    
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 7     
+	   2 Input    6 Bit       Adders := 15    
+	   3 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 6     
+	   2 Input    3 Bit       Adders := 24    
+	   2 Input    2 Bit       Adders := 31    
++---XORs : 
+	   2 Input     24 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 13    
++---Registers : 
+	               96 Bit    Registers := 12    
+	               64 Bit    Registers := 29    
+	               63 Bit    Registers := 2     
+	               62 Bit    Registers := 1     
+	               52 Bit    Registers := 4     
+	               36 Bit    Registers := 6     
+	               35 Bit    Registers := 6     
+	               34 Bit    Registers := 4     
+	               32 Bit    Registers := 62    
+	               31 Bit    Registers := 1     
+	               24 Bit    Registers := 46    
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               13 Bit    Registers := 5     
+	               11 Bit    Registers := 16    
+	               10 Bit    Registers := 9     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 80    
+	                7 Bit    Registers := 8     
+	                6 Bit    Registers := 23    
+	                5 Bit    Registers := 12    
+	                4 Bit    Registers := 15    
+	                3 Bit    Registers := 17    
+	                2 Bit    Registers := 64    
+	                1 Bit    Registers := 339   
++---Multipliers : 
+	              32x32  Multipliers := 2     
++---RAMs : 
+	               9K Bit	(256 X 36 bit)          RAMs := 2     
+	               8K Bit	(256 X 35 bit)          RAMs := 2     
+	              768 Bit	(32 X 24 bit)          RAMs := 3     
++---Muxes : 
+	   2 Input   96 Bit        Muxes := 4     
+	   2 Input   64 Bit        Muxes := 19    
+	   2 Input   52 Bit        Muxes := 4     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input   35 Bit        Muxes := 2     
+	   2 Input   34 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 20    
+	   3 Input   31 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 43    
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 6     
+	   4 Input   12 Bit        Muxes := 4     
+	   2 Input   11 Bit        Muxes := 12    
+	   3 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 10    
+	   3 Input   10 Bit        Muxes := 1     
+	  11 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 190   
+	   4 Input    8 Bit        Muxes := 4     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 12    
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 14    
+	   6 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 12    
+	   5 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 17    
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 95    
+	   3 Input    2 Bit        Muxes := 18    
+	   5 Input    2 Bit        Muxes := 7     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 362   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: register mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U36/median_blur_accel_mul_32s_32s_32_2_1_Multiplier_0_U/p_reg.
+DSP Report: Generating DSP grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C:0x1f)+((D-A)*B2)'.
+DSP Report: register grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/ad_reg_reg is absorbed into DSP grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p is absorbed into DSP grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/m is absorbed into DSP grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/ad is absorbed into DSP grp_Axi2Mat_fu_82/addrbound11_U0/ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U24/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C:0x1f)+((D-A)*B2)'.
+DSP Report: register ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/ad_reg_reg is absorbed into DSP ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p is absorbed into DSP ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/m is absorbed into DSP ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/ad is absorbed into DSP ama_submuladd_16ns_16ns_16s_6ns_16_4_1_U106/median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product, operation Mode is: A2*B2.
+DSP Report: register MatStream2AxiStream_U0/rows_read_reg_373_reg is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product.
+DSP Report: register MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product.
+DSP Report: operator MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product.
+DSP Report: operator MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product.
+DSP Report: Generating DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register MatStream2AxiStream_U0/cols_bound_per_npc_read_reg_378_reg is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg.
+DSP Report: register MatStream2AxiStream_U0/rows_read_reg_373_reg is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg.
+DSP Report: register MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg.
+DSP Report: operator MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg.
+DSP Report: operator MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg.
+DSP Report: Generating DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product, operation Mode is: A2*B2.
+DSP Report: register MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product.
+DSP Report: register MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product.
+DSP Report: operator MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product.
+DSP Report: operator MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product.
+DSP Report: Generating DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register MatStream2AxiStream_U0/cols_bound_per_npc_read_reg_378_reg is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg.
+DSP Report: register MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg.
+DSP Report: register MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg.
+DSP Report: operator MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg.
+DSP Report: operator MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/tmp_product is absorbed into DSP MatStream2AxiStream_U0/mul_32ns_32ns_64_2_1_U116/median_blur_accel_mul_32ns_32ns_64_2_1_Multiplier_1_U/p_reg.
+warning: Removed RAM bus_write/buff_wdata/mem_reg due to inactive write enable
+INFO: [Synth 8-7082] The signal buf_V_0_U/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram_U/ram_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (5 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal buf_V_1_U/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram_U/ram_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (5 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal buf_V_2_U/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram_U/ram_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (5 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1487.465 ; gain = 342.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                     | RTL Object                                                                           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/gmem0_m_axi_U                                                              | bus_read/buff_rdata/mem_reg                                                          | 256 x 35(READ_FIRST)   | W |   | 256 x 35(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/gmem1_m_axi_U                                                              | bus_write/buff_wdata/mem_reg                                                         | 256 x 36(READ_FIRST)   | W |   | 256 x 36(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/\medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42  | buf_V_0_U/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram_U/ram_reg | 32 x 24(READ_FIRST)    | W |   | 32 x 24(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42  | buf_V_1_U/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram_U/ram_reg | 32 x 24(READ_FIRST)    | W |   | 32 x 24(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42  | buf_V_2_U/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram_U/ram_reg | 32 x 24(READ_FIRST)    | W |   | 32 x 24(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping	Report (see note below)
++-----------------------------------------------------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                      | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------------------------------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|median_blur_accel_AxiStream2MatStream                            | A2*B                 | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|median_blur_accel_AxiStream2MatStream                            | (PCIN>>17)+A*B       | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|median_blur_accel_AxiStream2MatStream                            | A2*B2                | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|median_blur_accel_AxiStream2MatStream                            | (PCIN>>17)+A2*B      | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0 | (C:0x1f)+((D-A)*B2)' | 16     | 16     | 6      | 16     | 16     | 0    | 1    | 0    | 0    | 1     | 1    | 1    | 
+|median_blur_accel_ama_submuladd_16ns_16ns_16s_6ns_16_4_1_DSP48_0 | (C:0x1f)+((D-A)*B2)' | 16     | 16     | 6      | 16     | 16     | 0    | 1    | 0    | 0    | 1     | 1    | 1    | 
+|median_blur_accel_Mat2AxiStream                                  | A2*B2                | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|median_blur_accel_Mat2AxiStream                                  | (PCIN>>17)+A2*B2     | 16     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|median_blur_accel_Mat2AxiStream                                  | A2*B2                | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|median_blur_accel_Mat2AxiStream                                  | (PCIN>>17)+A2*B2     | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++-----------------------------------------------------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1487.465 ; gain = 342.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1534.840 ; gain = 389.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                     | RTL Object                                                                           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/gmem0_m_axi_U                                                              | bus_read/buff_rdata/mem_reg                                                          | 256 x 35(READ_FIRST)   | W |   | 256 x 35(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/gmem1_m_axi_U                                                              | bus_write/buff_wdata/mem_reg                                                         | 256 x 36(READ_FIRST)   | W |   | 256 x 36(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/\medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42  | buf_V_0_U/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram_U/ram_reg | 32 x 24(READ_FIRST)    | W |   | 32 x 24(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42  | buf_V_1_U/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram_U/ram_reg | 32 x 24(READ_FIRST)    | W |   | 32 x 24(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42  | buf_V_2_U/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram_U/ram_reg | 32 x 24(READ_FIRST)    | W |   | 32 x 24(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/bus_read/buff_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/bus_write/buff_wdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42/buf_V_0_U/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42/buf_V_1_U/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42/buf_V_2_U/median_blur_accel_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_buf_V_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1571.816 ; gain = 426.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1585.867 ; gain = 440.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1585.867 ; gain = 440.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1585.867 ; gain = 440.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1585.867 ; gain = 440.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1585.875 ; gain = 440.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1585.875 ; gain = 440.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------+-------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name       | RTL Name                                                                                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------+-------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|median_blur_accel | medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42/icmp_ln882_reg_1123_pp3_iter8_reg_reg[0] | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|median_blur_accel | medianBlur_3_1_9_32_32_1_U0/grp_xFMedianNxN_32_32_3_9_1_0_33_3_9_s_fu_42/icmp_ln167_reg_1093_pp3_iter7_reg_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------------+-------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[4]     | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[4]     | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[14]    | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[4]     | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[4]     | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[4]     | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__6     | mem_reg[14]    | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__7     | mem_reg[4]     | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__8     | SRL_SIG_reg[3] | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
+|dsrl__9     | SRL_SIG_reg[5] | 4      | 4          | 4      | 0       | 0      | 0      | 0      | 
+|dsrl__10    | SRL_SIG_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__11    | SRL_SIG_reg[5] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__12    | SRL_SIG_reg[3] | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
+|dsrl__13    | SRL_SIG_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__14    | SRL_SIG_reg[3] | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
+|dsrl__15    | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   405|
+|2     |DSP48E1  |     9|
+|5     |LUT1     |   182|
+|6     |LUT2     |   414|
+|7     |LUT3     |  1519|
+|8     |LUT4     |  1774|
+|9     |LUT5     |   993|
+|10    |LUT6     |  1533|
+|11    |MUXF7    |     2|
+|12    |RAMB18E1 |     5|
+|13    |SRL16E   |   469|
+|14    |FDRE     |  6084|
+|15    |FDSE     |   106|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1585.875 ; gain = 440.863
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 1585.875 ; gain = 298.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1585.875 ; gain = 440.863
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 1597.926 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 421 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1597.926 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+263 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1597.926 ; gain = 452.914
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_prj/base/project_1/project_1.runs/base_median_blur_accel_0_0_synth_1/base_median_blur_accel_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP base_median_blur_accel_0_0, cache-ID = bdca90f1db4d40c3
+INFO: [Coretcl 2-1174] Renamed 131 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_prj/base/project_1/project_1.runs/base_median_blur_accel_0_0_synth_1/base_median_blur_accel_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_median_blur_accel_0_0_utilization_synth.rpt -pb base_median_blur_accel_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 24 05:11:58 2022...

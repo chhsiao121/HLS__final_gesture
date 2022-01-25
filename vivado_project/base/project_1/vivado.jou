@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 24 05:10:03 2022
+# Process ID: 2472
+# Current directory: D:/vivado_prj/base/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6800 D:\vivado_prj\base\project_1\project_1.xpr
+# Log file: D:/vivado_prj/base/project_1/vivado.log
+# Journal file: D:/vivado_prj/base/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_prj/base/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd}
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+launch_runs impl_1 -jobs 20
+wait_on_run impl_1
+open_bd_design {D:/vivado_prj/base/project_1/project_1.srcs/sources_1/bd/base/base.bd}
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+set_property location {0.5 -326 842} [get_bd_cells rst_ps7_0_fclk0]
+set_property location {1.5 268 720} [get_bd_cells ps7_0_axi_periph]
+set_property location {2 359 1420} [get_bd_cells concat_interrupts]
+set_property location {3 712 1451} [get_bd_cells concat_interrupts]
+set_property location {3 818 1373} [get_bd_cells concat_interrupts]
+set_property location {3 867 1578} [get_bd_cells system_interrupts]
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+open_run synth_1 -name synth_1
+open_run synth_1 -name synth_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 20
+wait_on_run impl_1
